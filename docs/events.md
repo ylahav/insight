@@ -23,7 +23,7 @@ The CLI writes `insight-session.json` in the working directory. The extension ho
 | Field | Type | Required | Rule |
 | --- | --- | --- | --- |
 | `schemaVersion` | integer | yes | `1` |
-| `flutter` | string | yes | Version reported by the connected VM, such as `3.47.8` |
+| `flutter` | string | yes | Version reported by the connected VM, such as `3.47.8` or `3.44.9` |
 | `dart` | string | yes | Dart version reported alongside Flutter |
 | `mode` | string | yes | `debug` or `profile` |
 | `startedAt` | string | yes | UTC time the collector connected, ISO-8601 |
@@ -103,9 +103,9 @@ There is no `cause` field in version 1. A name and a timestamp is the whole obse
 | `type` | `"state.changed"` | yes | |
 | `id` | string | yes | |
 | `timeUs` | integer | yes | |
-| `adapter` | string | yes | `bloc` in v1 |
-| `name` | string | yes | Bloc or Cubit runtime type, truncated to 120 characters. Example: `BoardBloc` |
-| `event` | string or null | yes | Runtime type of the bloc event, truncated to 120 characters. `null` for a Cubit. The event's fields are never included |
+| `adapter` | string | yes | `bloc` or `riverpod` |
+| `name` | string | yes | Bloc or Cubit runtime type, or the Riverpod provider's `name` when set and otherwise its runtime type. Truncated to 120 characters. Example: `BoardBloc` |
+| `event` | string or null | yes | Runtime type of the bloc event, or of the Riverpod mutation when one is in progress. Truncated to 120 characters. `null` for a Cubit and for a Riverpod update with no mutation. Fields on the event or mutation are never included |
 | `summary` | string | yes | State runtime type, truncated to 80 characters. Example: `BoardReady` |
 | `value` | object or null | yes | `null` unless the app opted in |
 

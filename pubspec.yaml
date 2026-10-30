@@ -1,16 +1,22 @@
 name: insight_workspace
 publish_to: none
 environment:
-  sdk: ^3.13.7
+  sdk: ^3.12.2
 
 workspace:
   - packages/insight
   - packages/insight_bloc
+  - packages/insight_riverpod
   - packages/insight_collector
   - packages/insight_cli
   - packages/insight_devtools
   - examples/bloc_counter
   - examples/desk
+  - examples/riverpod_shelf
+
+dependencies:
+  insight_collector:
+    path: packages/insight_collector
 
 dev_dependencies:
   lints: ^6.0.0

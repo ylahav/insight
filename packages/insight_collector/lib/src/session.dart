@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+const _stateAdapters = {'bloc', 'riverpod'};
+
 /// Builds a schema-version-1 session from raw VM payloads.
 ///
 /// Frame payloads are the `extensionData` of a `Flutter.Frame` event.
@@ -92,7 +94,8 @@ class SessionBuilder {
   /// A second message with the same [timeUs], name, and event replaces
   /// `summary` and `value`. That is the `onChange` update of an `onEvent` record.
   bool _addState(Map<String, Object?> data, int timeUs) {
-    if (timeUs < 0 || data['adapter'] != 'bloc') {
+    final adapter = data['adapter'];
+    if (timeUs < 0 || adapter is! String || !_stateAdapters.contains(adapter)) {
       rejected += 1;
       return false;
     }
@@ -116,7 +119,7 @@ class SessionBuilder {
       rejected += 1;
       return false;
     }
-    final existing = _stateRecord(timeUs, name, eventName);
+    final existing = _stateRecord(timeUs, adapter, name, eventName);
     if (existing != null) {
       existing['summary'] = summary;
       existing['value'] = value;
@@ -125,7 +128,7 @@ class SessionBuilder {
     _events.add({
       'type': 'state.changed',
       'timeUs': timeUs,
-      'adapter': 'bloc',
+      'adapter': adapter,
       'name': name,
       'event': eventName,
       'summary': summary,
@@ -188,10 +191,16 @@ class SessionBuilder {
     return true;
   }
 
-  Map<String, Object?>? _stateRecord(int timeUs, String name, String? event) {
+  Map<String, Object?>? _stateRecord(
+    int timeUs,
+    String adapter,
+    String name,
+    String? event,
+  ) {
     for (final record in _events) {
       if (record['type'] == 'state.changed' &&
           record['timeUs'] == timeUs &&
+          record['adapter'] == adapter &&
           record['name'] == name &&
           record['event'] == event) {
         return record;

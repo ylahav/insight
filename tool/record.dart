@@ -32,20 +32,24 @@ Future<void> main(List<String> arguments) async {
     return;
   }
   final outFile = File(options.out ?? '${appDir.path}/insight-session.json');
+  final flutterBin = options.flutter ?? 'flutter';
+  final disableImpeller =
+      options.device == 'windows' && await _supportsNoImpeller(flutterBin);
   final flutterArgs = <String>[
     'run',
     '-d',
     options.device,
     '--${options.mode}',
-    if (options.device == 'windows') '--no-enable-impeller',
+    if (disableImpeller) '--no-enable-impeller',
   ];
 
   stdout.writeln(
-    'Starting ${options.app} (${options.mode}) on ${options.device}.',
+    'Starting ${options.app} (${options.mode}) on ${options.device} '
+    'with $flutterBin.',
   );
   final flutter = await _start(
-    Platform.isWindows ? 'cmd' : 'flutter',
-    Platform.isWindows ? ['/c', 'flutter', ...flutterArgs] : flutterArgs,
+    Platform.isWindows ? 'cmd' : flutterBin,
+    Platform.isWindows ? ['/c', flutterBin, ...flutterArgs] : flutterArgs,
     appDir.path,
   );
 
@@ -134,12 +138,14 @@ const _usage = '''
 Starts an app and records one Insight session.
 
 dart run tool/record.dart [--app examples/desk] [--duration 15]
-    [--out path] [--device windows] [--profile] [--now] [--no-rebuilds]
+    [--out path] [--device windows] [--flutter path] [--profile] [--now]
+    [--no-rebuilds]
 
 --app        App directory, relative to the repository root.
 --duration   Seconds to record. Default 15.
 --out        Session file. Default is insight-session.json in the app directory.
 --device     flutter device id. Default windows.
+--flutter    Flutter tool to run. Default is flutter on PATH.
 --profile    Profile mode. The default is debug.
 --now        Start recording as soon as the app prints its address.
 --no-rebuilds  Leave user-widget rebuilds off.
@@ -155,11 +161,13 @@ class _Options {
     required this.rebuilds,
     required this.help,
     this.out,
+    this.flutter,
   });
 
   final String app;
   final int duration;
   final String? out;
+  final String? flutter;
   final String device;
   final String mode;
   final bool now;
@@ -170,6 +178,7 @@ class _Options {
     var app = 'examples/desk';
     var duration = 15;
     String? out;
+    String? flutterBin;
     var device = 'windows';
     var mode = 'debug';
     var now = false;
@@ -227,6 +236,13 @@ class _Options {
             return null;
           }
           device = value;
+        case '--flutter':
+          final value = next();
+          if (value == null) {
+            stderr.writeln('--flutter needs a path to the Flutter tool.');
+            return null;
+          }
+          flutterBin = value;
         default:
           stderr.writeln('Unknown argument $argument.');
           stderr.writeln(_usage);
@@ -237,6 +253,7 @@ class _Options {
       app: app,
       duration: duration,
       out: out,
+      flutter: flutterBin,
       device: device,
       mode: mode,
       now: now,
@@ -248,8 +265,9 @@ class _Options {
 
 Directory _repositoryRoot() {
   final current = Directory.current;
-  if (Directory.fromUri(current.uri.resolve('packages/insight_cli'))
-      .existsSync()) {
+  if (Directory.fromUri(
+    current.uri.resolve('packages/insight_cli'),
+  ).existsSync()) {
     return current;
   }
   return File(Platform.script.toFilePath()).parent.parent;
@@ -257,6 +275,14 @@ Directory _repositoryRoot() {
 
 Stream<String> _lines(Stream<List<int>> stream) {
   return stream.transform(utf8.decoder).transform(const LineSplitter());
+}
+
+Future<bool> _supportsNoImpeller(String flutterBin) async {
+  final result = await Process.run(
+    Platform.isWindows ? 'cmd' : flutterBin,
+    Platform.isWindows ? ['/c', flutterBin, 'run', '-h'] : ['run', '-h'],
+  );
+  return '${result.stdout}\n${result.stderr}'.contains('--no-enable-impeller');
 }
 
 Future<Process> _start(

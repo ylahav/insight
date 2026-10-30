@@ -4,7 +4,7 @@ How Flutter Insight is split across processes, which build modes produce data, a
 
 This file, [events.md](events.md), and [mvp.md](mvp.md) are the design of record.
 
-The first implementation targets **Flutter 3.47.x stable / Dart 3.13.x**, which was the stable line on 28 Oct 2026 (3.47.8, Dart 3.13.7). Another Flutter version is unsupported until a collector parser test passes on it.
+The supported lines are **Flutter 3.47.x / Dart 3.13.x** and **Flutter 3.44.x / Dart 3.12.x**. Checked builds: 3.47.8 (Dart 3.13.7) and 3.44.9 (Dart 3.12.2). The 3.44.9 check is a profile run of `examples/bloc_counter`. That file has schema version 1, `mode` `profile`, `rejected` 0, frame durations that are integers `>= 0`, one `agent.ready`, a `widget.rebuild` named `CounterText`, and a `state.changed` for `CounterCubit` with `event` null. Another Flutter version is unsupported until that same check passes on it.
 
 ## Two processes
 
@@ -27,7 +27,8 @@ The in-app agent publishes. The collector translates VM traffic into the session
 | Package | Role |
 | --- | --- |
 | `insight` | Public API. Posts agent events. Ships the DevTools extension assets under `extension/devtools/`. Depends on Flutter, not on `flutter_bloc`. |
-| `insight_bloc` | Bloc adapter. Depends on `insight` and `flutter_bloc`. This is the only state adapter in v1. The first pinned line is `flutter_bloc` 9.1.x. |
+| `insight_bloc` | Bloc adapter. Depends on `insight` and `flutter_bloc`. The first pinned line is `flutter_bloc` 9.1.x. |
+| `insight_riverpod` | Riverpod adapter. Depends on `insight` and `flutter_riverpod`. The first pinned line is `flutter_riverpod` 3.4.x. |
 
 `insight` posts on the VM Service `Extension` stream with `developer.postEvent('Insight.Event', payload)`. Each payload includes `timeUs` from `Timeline.now`. That is the same clock as `Flutter.Frame`'s `startTime`. The Extension event's own timestamp is wall-clock microseconds and is not used for ordering.
 
@@ -106,4 +107,4 @@ Build profiling is a session setting. Leaving it on after the tool disconnects w
 - `insight_collector` does not depend on Flutter.
 - Adapter authors depend on `insight`, implement the small observer hook, and post `state.changed` events. They do not link the collector.
 
-Riverpod, a desktop app, and a CI pass/fail gate are outside v1. The schedule and the non-goals are in [mvp.md](mvp.md).
+A desktop app and a CI pass/fail gate stay off the schedule. The schedule and the non-goals are in [mvp.md](mvp.md).

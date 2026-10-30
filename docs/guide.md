@@ -60,13 +60,13 @@ Open `insight-session.json`. Check the envelope first.
 | Field | What to check |
 | --- | --- |
 | `schemaVersion` | `1` |
-| `flutter` | `3.47.x`. Another line is not a supported capture |
+| `flutter` | `3.44.x` or `3.47.x`. Another line is not a supported capture |
 | `mode` | `debug` or `profile` |
 | `rejected` | `0`. A higher count means some agent or timeline records were dropped. The rest of the file is still there |
 
 Then find the one record that is your action. Ignore the rest until that record is in hand.
 
-**A bloc or cubit change** is `type` `state.changed`. Read `name`, `event`, and `summary`. For a cubit, `event` is null. `value` is null unless the app opted in.
+**A bloc, cubit, or Riverpod change** is `type` `state.changed`. Read `adapter`, `name`, `event`, and `summary`. `adapter` is `bloc` or `riverpod`. For a cubit, and for a Riverpod update with no mutation, `event` is null. `value` is null unless the app opted in. A Riverpod `name` is the provider's label when one was set, and otherwise the provider's runtime type.
 
 The frame that followed it is the earliest `frame` whose `timeUs` is at or after the state time, when the gap is at most 32 ms. In the desk example, `TicketSelected` is at `500000` and the frame starts at `500800`. The gap is 0.8 ms, so they group. A gap larger than 32 ms leaves the state ungrouped. The panel shows that row as ungrouped.
 
@@ -84,6 +84,12 @@ One action, one file. For the desk, three files are worth keeping:
 - **Wide tick.** The same cubit record. That frame does have `TicketCard`.
 - **Load.** `async.span` named `loadBoard`, `status` `completed`, a non-null `endUs`, overlapping a frame that contains `TicketCard`. **Fail load** is the same name with `status` `error`, a non-null `error` of at most 200 characters, and no stack trace.
 
-Compare the widget names in the two tick frames. Byte-identical files are not the goal.
+Compare the widget names in the two tick frames. Byte-identical files are not the goal. From the repository root, two schema-1 files can be printed together:
 
-If `rejected` is greater than zero, or `flutter` is outside 3.47.x, record again before comparing.
+```bash
+dart run tool/beside.dart --left scoped.json --right wide.json
+```
+
+Each numbered step is one change, earliest first. The left file is the first path and the right file is the second. A step shows the change, the frame time, and the app widget names. Flutter wrappers such as `Text` and `Padding` stay hidden. The process exits 0 when those names differ. A missing file, or a file that is not schema 1, exits 1.
+
+If `rejected` is greater than zero, or `flutter` is outside 3.44.x and 3.47.x, record again before comparing.

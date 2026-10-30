@@ -255,6 +255,37 @@ void main() {
     expect(grouping.states.single['name'], 'BoardBloc');
   });
 
+  test('a riverpod change is kept and an unknown adapter is rejected', () {
+    final session = builder()
+      ..addAgent({
+        'schemaVersion': 1,
+        'kind': 'state.changed',
+        'timeUs': 5,
+        'adapter': 'riverpod',
+        'name': 'NotifierProvider<Count, int>',
+        'event': null,
+        'summary': 'int',
+        'value': null,
+      })
+      ..addAgent({
+        'schemaVersion': 1,
+        'kind': 'state.changed',
+        'timeUs': 6,
+        'adapter': 'provider',
+        'name': 'Counter',
+        'event': null,
+        'summary': 'int',
+        'value': null,
+      });
+
+    final built = session.build();
+    final events = built['events'] as List<Map<String, Object?>>;
+    expect(built['rejected'], 1);
+    expect(events, hasLength(1));
+    expect(events.single['adapter'], 'riverpod');
+    expect(events.single['event'], isNull);
+  });
+
   test('a cubit change keeps a null event', () {
     final session = builder()
       ..addAgent({

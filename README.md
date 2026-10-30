@@ -1,6 +1,6 @@
 # Flutter Insight
 
-**Status: alpha.** A session shows frames, the user widgets that rebuilt during them, bloc and cubit transitions, and futures or streams the app traces. The desk checks passed on Flutter 3.47.8.
+**Status: alpha.** A session shows frames, the user widgets that rebuilt during them, bloc and cubit transitions, and futures or streams the app traces. The desk checks passed on Flutter 3.47.8. The bloc_counter parser check also passed on Flutter 3.44.9. The shelf profile check also passed on Flutter 3.47.8: a scoped tick groups `second` with `SecondReadout` and without `MarkCard`, and a wide tick groups the same provider with `MarkCard`.
 
 Flutter Insight is a debugging aid for Flutter apps. The first version groups four observations on one timeline: a frame, the user widgets that rebuilt during it, a bloc transition, and an async span the app opted to trace.
 
@@ -10,7 +10,7 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 
 | Doc | What it decides |
 | --- | --- |
-| [docs/runtime.md](docs/runtime.md) | In-app agent versus collector, build modes, Flutter 3.47.x as the first supported line |
+| [docs/runtime.md](docs/runtime.md) | In-app agent versus collector, build modes, Flutter 3.44.x and 3.47.x |
 | [docs/events.md](docs/events.md) | Schema version 1, the session file, and the agent wire format |
 | [docs/mvp.md](docs/mvp.md) | Three-month scope, acceptance checks, and non-goals |
 
@@ -49,6 +49,26 @@ Press **Tick**. On Scoped, the row is `ClockCubit` with `ClockReadout`, and `Tic
 Press **Load**. The session gains an `async.span` named `loadBoard`. The tickets are on the frame that span overlaps. Press **Fail load** for a span with `status` `error`. Press a ticket for `BoardBloc`, event `TicketSelected`, and `TicketDetail` on the following frame.
 
 `examples/bloc_counter` stays the unattended profile fixture. In profile it increments on its own, so `CounterText` shows up without a tap. Complete and Throw still trace a future.
+
+## Run the shelf
+
+`examples/riverpod_shelf` is the same comparison for Riverpod. Scoped and Wide share one `second` provider.
+
+From `examples/riverpod_shelf`:
+
+```bash
+flutter run -d windows
+```
+
+Press **Tick**. On Scoped, the row is `second` with `SecondReadout`, and `MarkCard` is absent. Press **Wide**, then **Tick** again. The same provider now lists `MarkCard`. That difference is the comparison.
+
+## Read two files
+
+`tool/beside.dart` prints two schema-1 sessions, earliest change first. Wrapper widgets stay hidden. The process exits 0 when the widget names differ. That difference is the reading.
+
+```bash
+dart run tool/beside.dart --left scoped.json --right wide.json
+```
 
 ## License
 
