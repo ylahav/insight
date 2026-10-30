@@ -84,12 +84,31 @@ One action, one file. For the desk, three files are worth keeping:
 - **Wide tick.** The same cubit record. That frame does have `TicketCard`.
 - **Load.** `async.span` named `loadBoard`, `status` `completed`, a non-null `endUs`, overlapping a frame that contains `TicketCard`. **Fail load** is the same name with `status` `error`, a non-null `error` of at most 200 characters, and no stack trace.
 
-Compare the widget names in the two tick frames. Byte-identical files are not the goal. From the repository root, two schema-1 files can be printed together:
+Compare the widget names in the two tick frames. Byte-identical files are not the goal.
+
+The exchange is the same kind of reading with two drivers. Record one ring with Bloc and the same ring with Riverpod, as [running-example.md](running-example.md) describes. The widget names should match. The state row is `ExchangeCubit` or `exchange`.
+
+From the repository root, two schema-1 files can be printed together:
 
 ```bash
 dart run tool/beside.dart --left scoped.json --right wide.json
 ```
 
-Each numbered step is one change, earliest first. The left file is the first path and the right file is the second. A step shows the change, the frame time, and the app widget names. Flutter wrappers such as `Text` and `Padding` stay hidden. The process exits 0 when those names differ. A missing file, or a file that is not schema 1, exits 1.
+Each numbered step is one change, earliest first. The left file is the first column and the right file is the second. A shelf tick prints like this:
+
+```text
+Time grouping, not a cause.
+left   scoped.json
+right  wide.json
+
+1.
+second → int        second → int
+1.7 ms · frame_159  1.7 ms · frame_69
+                    WideShelf
+SecondReadout       SecondReadout
+                    MarkCard
+```
+
+The first row of the step is the change. The second row is the frame time. The rows after that are widget names. `SecondReadout` shares a row because both files rebuilt it. `WideShelf` and `MarkCard` sit only in the right column. Flutter wrappers such as `Text` and `Padding` stay hidden. The process exits 0 when those names differ. A missing file, or a file that is not schema 1, exits 1.
 
 If `rejected` is greater than zero, or `flutter` is outside 3.44.x and 3.47.x, record again before comparing.

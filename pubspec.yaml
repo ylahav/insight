@@ -12,6 +12,7 @@ workspace:
   - packages/insight_devtools
   - examples/bloc_counter
   - examples/desk
+  - examples/exchange
   - examples/riverpod_shelf
 
 dependencies:

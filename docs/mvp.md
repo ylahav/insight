@@ -4,7 +4,7 @@ One schedule for a single developer. v1 is a profile-mode and debug-mode session
 
 [runtime.md](runtime.md) is the process split. [events.md](events.md) is the file the timeline reads. This file is the scope.
 
-The alpha is the month-3 acceptance checks passing on `examples/desk`, plus the parser checks on `examples/bloc_counter`. It is not a pub.dev publish requirement and not a CI gate.
+The alpha is the phase 3 acceptance checks passing on `examples/desk`, plus the parser checks on `examples/bloc_counter`. It is not a pub.dev publish requirement and not a CI gate.
 
 ## Non-goals
 
@@ -24,9 +24,9 @@ These are out of v1 even if a prototype of one of them would be easy.
 
 ## Schedule
 
-Each month ends with something a sample app can demonstrate. Later months depend on the previous acceptance check.
+Each phase ends with something a sample app can demonstrate. Later phases depend on the previous acceptance check.
 
-### Month 1 — Frames on disk
+### Phase 1 — Frames on disk
 
 Create the pub workspace, `insight`, `insight_collector`, and `insight_cli`.
 
@@ -37,7 +37,7 @@ Create the pub workspace, `insight`, `insight_collector`, and `insight_cli`.
 
 **Acceptance.** Profile-mode `bloc_counter` fixture, CLI attached for at least one second of frames. The session file has `schemaVersion` 1, `mode` `profile`, `rejected` 0, and at least one `frame` whose `buildUs`, `rasterUs`, and `elapsedUs` are integers `>= 0`. `agent.ready` is present.
 
-### Month 2 — Rebuilds in DevTools
+### Phase 2 — Rebuilds in DevTools
 
 - The collector enables `ext.flutter.profileUserWidgetBuilds` for the session and emits `widget.rebuild` records.
 - `insight_devtools` renders the live session through `serviceManager`. The extension does not open its own VM URI.
@@ -50,7 +50,7 @@ Create the pub workspace, `insight`, `insight_collector`, and `insight_cli`.
 3. After disconnect, `ext.flutter.profileUserWidgetBuilds` is off.
 4. CaptureGuide, unmodified, debug mode. Open Sunny 16 and change the aperture once. The session contains a `widget.rebuild` named `Sunny16View`, at least one `frame`, and zero `state.changed` or `agent.ready` records.
 
-### Month 3 — Bloc, async, alpha
+### Phase 3 — Bloc, async, alpha
 
 - `insight_bloc` emits `state.changed` through `Bloc.observer`. Cubit changes are included, with `event` set to `null`. The apps do not set `Insight.captureStateValues`, so `value` is `null`.
 - `Insight.traceFuture` and `Insight.traceStream` emit `async.span` from the public fixture.
@@ -64,22 +64,22 @@ Create the pub workspace, `insight`, `insight_collector`, and `insight_cli`.
 3. Press Load. The session contains an `async.span` named `loadBoard` with `status` `completed` and a non-null `endUs`, overlapping a frame that contains `TicketCard`. Press Fail load. That span's `status` is `error`, `error` is non-null and at most 200 characters, and there is no stack trace field.
 4. A profile session of one of these actions, written by the CLI, uses schema version 1. Byte-identical output across the two ticks is not required.
 
-Month 3 is the alpha. The README's status line changes from design to alpha only after these checks pass on Flutter 3.47.x.
+Phase 3 is the alpha. The README's status line changes from design to alpha only after these checks pass on Flutter 3.47.x.
 
 ## Apps under test
 
-Months 1 and 2 use a public fixture so the parser test can run without a larger app. The desk is the month-3 reference. CaptureGuide is the app with no state-library adapter. stayAble is not in v1.
+Phases 1 and 2 use a public fixture so the parser test can run without a larger app. The desk is the phase 3 reference. CaptureGuide is the app with no state-library adapter. `examples/exchange` is the running example after those phases. It is specified in [running-example.md](running-example.md). stayAble is not in v1.
 
 ### Public fixture
 
-`examples/bloc_counter`, added in month 1 and extended in place:
+`examples/bloc_counter`, added in phase 1 and extended in place:
 
 - Flutter 3.44.x and 3.47.x, profile and debug
 - A `CounterCubit` and a `CounterText` widget that builds its state
 - A button that completes a future and a button that throws
-- `devtools_options.yaml` with the Insight extension enabled, once the extension exists in month 2
+- `devtools_options.yaml` with the Insight extension enabled, once the extension exists in phase 2
 
-This fixture is the parser test. It is not a gallery, and it is not the product Insight is being built to explain. Complete and Throw remain on it. The desk's Load and Fail load are the async script for month 3.
+This fixture is the parser test. It is not a gallery, and it is not the product Insight is being built to explain. Complete and Throw remain on it. The desk's Load and Fail load are the async script for phase 3.
 
 ### Desk
 
@@ -110,6 +110,19 @@ The useful difference between the two tick files is which widgets rebuilt around
 | `tree` | Scoped or Wide. `summary` is `ScopedTree` or `WideTree`. |
 
 `captureStateValues` stays off. The recorded name is the provider's `name`.
+
+### Exchange
+
+`examples/exchange` is one board driven twice. The phones and cords are shared. Open with Bloc or Open with Riverpod chooses who holds the switch. Hook, signal, ringing, and camp-on are specified in [running-example.md](running-example.md). This is not a phase.
+
+| Piece | What a session shows |
+| --- | --- |
+| `ExchangeCubit` | A change. `adapter` is `bloc`. `event` is null. `summary` is `Exchange`. |
+| `exchange` | The same change under Riverpod. `adapter` is `riverpod`. `event` is null. `summary` is `Exchange`. |
+| A ring | `LinePhone` for the caller and the called phone, and `SwitchDesk`. An idle phone is absent. The cord blinks without further rebuilds. |
+| An answer | Those same widgets. The called phone was on hook with Ringing signal and is now off hook with Voice. |
+
+`captureStateValues` stays off.
 
 ### CaptureGuide
 
@@ -150,7 +163,7 @@ Names default to `future` and `stream` when omitted. `traceFuture` forwards the 
 
 ## After v1
 
-Only after the month-3 checks pass, and only one of these at a time:
+Only after the phase 3 checks pass, and only one of these at a time:
 
 1. A second supported Flutter stable. Done: the `examples/bloc_counter` profile check passed on Flutter 3.44.9. A newer stable still needs its own check.
 2. Riverpod, as `insight_riverpod`, speaking the same `state.changed` record. Done: the `examples/riverpod_shelf` profile check passed on Flutter 3.47.8. A wide tick groups `second` → `int` with `WideShelf`, `SecondReadout`, and `MarkCard` (`frame_69` and `frame_239`). A scoped tick groups the same provider with `SecondReadout` and without `MarkCard` (`frame_159`). `adapter` is `riverpod`, `event` and `value` are null, and `rejected` is 0. stayAble remains the dogfood app. That session was not this check.

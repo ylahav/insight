@@ -33,6 +33,14 @@ void main() {
     expect(scoped.single.detail, '1.7 ms · frame_159');
     expect(scoped.single.widgets, ['SecondReadout']);
     expect(wide.single.widgets, ['WideShelf', 'SecondReadout', 'MarkCard']);
+
+    expect(besideStepRows(scoped.single, wide.single), [
+      ('second → int', 'second → int'),
+      ('1.7 ms · frame_159', '1.7 ms · frame_69'),
+      (null, 'WideShelf'),
+      ('SecondReadout', 'SecondReadout'),
+      (null, 'MarkCard'),
+    ]);
   });
 
   test('an ungrouped state stays in the list', () {

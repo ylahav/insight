@@ -2,7 +2,7 @@
 
 **Status: alpha.** A session shows frames, the user widgets that rebuilt during them, bloc and cubit transitions, and futures or streams the app traces. The desk checks passed on Flutter 3.47.8. The bloc_counter parser check also passed on Flutter 3.44.9. The shelf profile check also passed on Flutter 3.47.8: a scoped tick groups `second` with `SecondReadout` and without `MarkCard`, and a wide tick groups the same provider with `MarkCard`.
 
-Flutter Insight is a debugging aid for Flutter apps. The first version groups four observations on one timeline: a frame, the user widgets that rebuilt during it, a bloc transition, and an async span the app opted to trace.
+Flutter Insight is a debugging aid for Flutter apps. The first version groups four observations on one timeline: a frame, the user widgets that rebuilt during it, a bloc transition, and an async span the app opted to trace. Why that timeline is worth opening, and how to read a row for a problem in the widget list, is [docs/overview.md](docs/overview.md).
 
 Flutter DevTools already charts frames. Insight lines a frame up with the bloc transition and the widgets that rebuilt. How to use a session, and how to read one, is [docs/guide.md](docs/guide.md). `examples/desk` is the Bloc reference. `examples/bloc_counter` is the small parser fixture. CaptureGuide is the reference with no state library. They are described in [docs/mvp.md](docs/mvp.md).
 
@@ -12,7 +12,8 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 | --- | --- |
 | [docs/runtime.md](docs/runtime.md) | In-app agent versus collector, build modes, Flutter 3.44.x and 3.47.x |
 | [docs/events.md](docs/events.md) | Schema version 1, the session file, and the agent wire format |
-| [docs/mvp.md](docs/mvp.md) | Three-month scope, acceptance checks, and non-goals |
+| [docs/mvp.md](docs/mvp.md) | Three-phase scope, acceptance checks, and non-goals |
+| [docs/running-example.md](docs/running-example.md) | The switch example, with Bloc and Riverpod on one board |
 
 ## Record a session
 
@@ -62,9 +63,21 @@ flutter run -d windows
 
 Press **Tick**. On Scoped, the row is `second` with `SecondReadout`, and `MarkCard` is absent. Press **Wide**, then **Tick** again. The same provider now lists `MarkCard`. That difference is the comparison.
 
+## Run the exchange
+
+`examples/exchange` is a private switch. The phones and cords are shared. Open with Bloc or Open with Riverpod chooses who holds the switch. The behavior is specified in [docs/running-example.md](docs/running-example.md).
+
+From `examples/exchange`:
+
+```bash
+flutter run -d windows
+```
+
+Choose a line count, open one driver, tap a phone, and dial another line. The called phone stays on hook with Ringing signal, and a cord blinks until that phone is clicked. Both phones then show Voice and the cord stays lit. An idle phone stays as it was. `01` waits for a busy line. When that line is free, the caller rings and hooks on, then hooks off, and only then the other phone rings. `01` after dialing your own number stays on Busy signal.
+
 ## Read two files
 
-`tool/beside.dart` prints two schema-1 sessions, earliest change first. Wrapper widgets stay hidden. The process exits 0 when the widget names differ. That difference is the reading.
+`tool/beside.dart` prints two schema-1 sessions, earliest change first, in two columns. How to read that print is in [docs/guide.md](docs/guide.md). The process exits 0 when the widget names differ. That difference is the reading.
 
 ```bash
 dart run tool/beside.dart --left scoped.json --right wide.json

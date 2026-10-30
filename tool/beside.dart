@@ -68,24 +68,45 @@ void _print(
     stdout.writeln('Neither file has a state change or an async span.');
     return;
   }
+  final width = _columnWidth(left);
   for (var i = 0; i < count; i++) {
     stdout.writeln('');
     stdout.writeln('${i + 1}.');
-    _side('left ', i < left.length ? left[i] : null);
-    _side('right', i < right.length ? right[i] : null);
+    final rows = besideStepRows(
+      i < left.length ? left[i] : null,
+      i < right.length ? right[i] : null,
+    );
+    for (final row in rows) {
+      stdout.writeln(_format(row.$1, row.$2, width));
+    }
   }
 }
 
-void _side(String label, BesideLine? line) {
-  if (line == null) {
-    stdout.writeln('   $label  —');
-    return;
+int _columnWidth(List<BesideLine> left) {
+  var width = '—'.length;
+  for (final line in left) {
+    if (line.title.length > width) {
+      width = line.title.length;
+    }
+    if (line.detail.length > width) {
+      width = line.detail.length;
+    }
+    for (final name in line.widgets) {
+      if (name.length > width) {
+        width = name.length;
+      }
+    }
   }
-  stdout.writeln('   $label  ${line.title}');
-  stdout.writeln('          ${line.detail}');
-  for (final name in line.widgets) {
-    stdout.writeln('          $name');
+  return width;
+}
+
+String _format(String? left, String? right, int width) {
+  final leftText = left ?? '';
+  final rightText = right ?? '';
+  if (rightText.isEmpty) {
+    return leftText;
   }
+  return '${leftText.padRight(width)}  $rightText';
 }
 
 class _Options {
@@ -128,7 +149,7 @@ _Options? _parse(List<String> arguments) {
 }
 
 const _usage = '''
-Prints two schema-1 sessions side by side. Differing widget names are shown.
+Prints two schema-1 sessions in two columns. A shared widget name is one row.
 The exit code is 0 either way.
 
 dart run tool/beside.dart --left path --right path

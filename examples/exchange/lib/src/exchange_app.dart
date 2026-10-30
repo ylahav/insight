@@ -1,0 +1,168 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:insight_riverpod/insight_riverpod.dart';
+
+import 'bloc_host.dart' as bloc;
+import 'board.dart';
+import 'exchange_scope.dart';
+import 'riverpod_host.dart' as riverpod;
+
+enum ExchangeDriver { bloc, riverpod }
+
+class ExchangeApp extends StatelessWidget {
+  const ExchangeApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        scaffoldBackgroundColor: panel,
+        fontFamily: 'Georgia',
+        colorScheme: const ColorScheme.dark(
+          surface: panel,
+          primary: cord,
+          onSurface: enamel,
+        ),
+      ),
+      home: const SetupPage(),
+    );
+  }
+}
+
+class SetupPage extends StatefulWidget {
+  const SetupPage({super.key});
+
+  @override
+  State<SetupPage> createState() => _SetupPageState();
+}
+
+class _SetupPageState extends State<SetupPage> {
+  int _lineCount = 5;
+
+  void _open(ExchangeDriver driver) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (context) => BoardPage(driver: driver, lineCount: _lineCount),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: panel,
+      body: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 640),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text(
+                'How many lines?',
+                style: TextStyle(
+                  color: enamel,
+                  fontSize: 32,
+                  fontFamily: 'Georgia',
+                ),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                '0 starts a service. 01 waits for a busy line.',
+                style: TextStyle(
+                  color: enamel,
+                  fontSize: 16,
+                  fontFamily: 'Georgia',
+                ),
+              ),
+              const SizedBox(height: 24),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  for (var count = 3; count <= 9; count++)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: TextButton(
+                        key: Key('lines-$count'),
+                        onPressed: () => setState(() => _lineCount = count),
+                        style: TextButton.styleFrom(
+                          foregroundColor: enamel,
+                          backgroundColor: _lineCount == count
+                              ? const Color(0xff29403c)
+                              : null,
+                        ),
+                        child: Text(
+                          '$count',
+                          style: TextStyle(
+                            fontSize: 28,
+                            fontFamily: 'Georgia',
+                            decoration: _lineCount == count
+                                ? TextDecoration.underline
+                                : null,
+                            decorationColor: cord,
+                            decorationThickness: 3,
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 28),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  OutlinedButton(
+                    key: const Key('open-bloc'),
+                    onPressed: () => _open(ExchangeDriver.bloc),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: enamel,
+                      side: const BorderSide(color: cord),
+                    ),
+                    child: const Text('Open with Bloc'),
+                  ),
+                  const SizedBox(width: 16),
+                  OutlinedButton(
+                    key: const Key('open-riverpod'),
+                    onPressed: () => _open(ExchangeDriver.riverpod),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: enamel,
+                      side: const BorderSide(color: cord),
+                    ),
+                    child: const Text('Open with Riverpod'),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class BoardPage extends StatelessWidget {
+  const BoardPage({required this.driver, required this.lineCount, super.key});
+
+  final ExchangeDriver driver;
+  final int lineCount;
+
+  @override
+  Widget build(BuildContext context) {
+    return LineCountScope(
+      lineCount: lineCount,
+      child: switch (driver) {
+        ExchangeDriver.bloc => BlocProvider(
+          create: (_) => bloc.ExchangeCubit(lineCount),
+          child: const bloc.ExchangeHost(),
+        ),
+        ExchangeDriver.riverpod => ProviderScope(
+          overrides: [riverpod.lineCountProvider.overrideWithValue(lineCount)],
+          observers: const [InsightRiverpodObserver()],
+          child: const riverpod.ExchangeHost(),
+        ),
+      },
+    );
+  }
+}

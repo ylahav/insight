@@ -121,3 +121,62 @@ int _spanFrameCount(FrameGrouping grouping, Map<String, Object?> span) {
 }
 
 int _time(Object? value) => value is int ? value : 0;
+
+/// One step of the side-by-side print.
+///
+/// The title is the first row and the frame line is the second. Widget
+/// names follow. A name present in both files shares a row. A name present
+/// in one file occupies that file's column. Order inside each file is kept.
+List<(String?, String?)> besideStepRows(BesideLine? left, BesideLine? right) {
+  return [
+    (left?.title ?? '—', right?.title ?? '—'),
+    (left?.detail, right?.detail),
+    ...alignWidgetNames(left?.widgets ?? const [], right?.widgets ?? const []),
+  ];
+}
+
+/// Pairs equal names onto one row and leaves the others in their own column.
+List<(String?, String?)> alignWidgetNames(
+  List<String> left,
+  List<String> right,
+) {
+  final n = left.length;
+  final m = right.length;
+  final lengths = List.generate(n + 1, (_) => List<int>.filled(m + 1, 0));
+  for (var i = n - 1; i >= 0; i--) {
+    for (var j = m - 1; j >= 0; j--) {
+      if (left[i] == right[j]) {
+        lengths[i][j] = lengths[i + 1][j + 1] + 1;
+      } else {
+        final skipLeft = lengths[i + 1][j];
+        final skipRight = lengths[i][j + 1];
+        lengths[i][j] = skipLeft >= skipRight ? skipLeft : skipRight;
+      }
+    }
+  }
+  final rows = <(String?, String?)>[];
+  var i = 0;
+  var j = 0;
+  while (i < n && j < m) {
+    if (left[i] == right[j]) {
+      rows.add((left[i], right[j]));
+      i += 1;
+      j += 1;
+    } else if (lengths[i + 1][j] >= lengths[i][j + 1]) {
+      rows.add((left[i], null));
+      i += 1;
+    } else {
+      rows.add((null, right[j]));
+      j += 1;
+    }
+  }
+  while (i < n) {
+    rows.add((left[i], null));
+    i += 1;
+  }
+  while (j < m) {
+    rows.add((null, right[j]));
+    j += 1;
+  }
+  return rows;
+}
