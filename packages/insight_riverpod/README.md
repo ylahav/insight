@@ -19,3 +19,5 @@ void main() {
 The record name is the provider's `name` when one is set, and otherwise the provider's runtime type. A mutation supplies the event type. The first value of a provider is not recorded as a change.
 
 The pinned line is `flutter_riverpod` 3.4.x.
+
+Suggestions and new features go to [the issues page](https://github.com/ylahav/flutter_insigth/issues).

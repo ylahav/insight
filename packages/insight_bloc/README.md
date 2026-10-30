@@ -15,3 +15,5 @@ void main() {
 A bloc event is recorded as its type name. A cubit record has a null event. `Insight.captureStateValues` stays off, so the record carries the state type and leaves the state value in the app.
 
 The pinned line is `flutter_bloc` 9.1.x.
+
+Suggestions and new features go to [the issues page](https://github.com/ylahav/flutter_insigth/issues).

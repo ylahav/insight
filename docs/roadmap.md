@@ -22,7 +22,13 @@ That pair is the use this alpha still owes. It comes before any new phase.
 
 ## Next phase
 
-The Insight tab shows two saved sessions in the same columns the terminal already prints. The tab today is one live session.
+Compare two saved sessions by the state change, not only by the order the steps happened. The terminal today pairs step 1 with step 1. That hides a change of order.
+
+Take one login recorded twice. In the first file the app leaves the login page, and the next page shows the loading. In the second file the loading stays on the login page, and the next page appears only when that page is ready. Walked in time order, the loading step of one file sits beside the navigation step of the other.
+
+The comparison lines up the same state change, and the signal that belongs with it. The login change shares a row. The loading change shares a row. On one side the next page is already open when loading shows. On the other side the login page is still up, and the next page comes after the load. The widget names on that shared loading row are the finding.
+
+The Insight tab shows that comparison. The tab today is one live session. The columns are the ones the terminal already uses for widget names inside a single step.
 
 One phase at a time. A newer Flutter stable, when one exists, still needs the profile parser check on `examples/bloc_counter` before that line is supported. 3.44.9 and 3.47.8 have passed.
 
@@ -34,3 +40,9 @@ One phase at a time. A newer Flutter stable, when one exists, still needs the pr
 - Release mode, and Flutter web.
 - Full state values by default.
 - An adapter besides Bloc, Cubit, and Riverpod.
+
+## Suggest a change
+
+Open an [issue](https://github.com/ylahav/flutter_insigth/issues) for an improvement or a new feature. Name the action, the state change, and what the session did not make visible. A login that loads on one page in one build and on another page in the next build is the kind of note that fits.
+
+An idea that sits in the list above can still be opened. It stays off this page until a session shows it belongs. Leave `Insight.captureStateValues` off, and keep the session file on your machine.

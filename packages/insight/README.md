@@ -30,4 +30,4 @@ Leave `Insight.captureStateValues` off. A record then carries type names. Event 
 
 A Bloc or Cubit app also depends on `insight_bloc`. A Riverpod app also depends on `insight_riverpod`.
 
-The repository is [flutter_insigth](https://github.com/ylahav/flutter_insigth).
+The repository is [flutter_insigth](https://github.com/ylahav/flutter_insigth). Suggestions and new features go to [the issues page](https://github.com/ylahav/flutter_insigth/issues).
