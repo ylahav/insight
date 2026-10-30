@@ -1,0 +1,20 @@
+name: insight_bloc
+description: Bloc and Cubit adapter for Flutter Insight.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.7
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  insight:
+    path: ../insight
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

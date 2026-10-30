@@ -1,0 +1,16 @@
+name: insight_cli
+description: Records an Insight session from a Flutter VM Service URI.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  args: ^2.7.0
+  insight_collector:
+    path: ../insight_collector
+
+executables:
+  insight_cli:

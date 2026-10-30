@@ -1,0 +1,25 @@
+name: bloc_counter
+description: Profile fixture for Flutter Insight month 1.
+publish_to: none
+resolution: workspace
+version: 0.1.0
+
+environment:
+  sdk: ^3.13.7
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  insight:
+    path: ../../packages/insight
+  insight_bloc:
+    path: ../../packages/insight_bloc
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

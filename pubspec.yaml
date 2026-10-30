@@ -1,0 +1,16 @@
+name: insight_workspace
+publish_to: none
+environment:
+  sdk: ^3.13.7
+
+workspace:
+  - packages/insight
+  - packages/insight_bloc
+  - packages/insight_collector
+  - packages/insight_cli
+  - packages/insight_devtools
+  - examples/bloc_counter
+  - examples/desk
+
+dev_dependencies:
+  lints: ^6.0.0

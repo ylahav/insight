@@ -1,0 +1,12 @@
+.dart_tool/
+/build/
+packages/*/build/
+packages/*/*/build/
+examples/*/build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+insight-session.json
+/[0-9].json
+examples/*/[0-9].json

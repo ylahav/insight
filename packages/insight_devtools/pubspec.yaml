@@ -1,0 +1,24 @@
+name: insight_devtools
+description: DevTools panel for Flutter Insight.
+publish_to: none
+resolution: workspace
+version: 0.1.0
+
+environment:
+  sdk: ^3.13.7
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  devtools_app_shared: ^0.5.1
+  devtools_extensions: ^0.5.1
+  insight_collector:
+    path: ../insight_collector
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
