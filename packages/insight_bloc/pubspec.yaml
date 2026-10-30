@@ -1,7 +1,10 @@
 name: insight_bloc
-description: Bloc and Cubit adapter for Flutter Insight.
+description: >-
+  Bloc and Cubit adapter for Flutter Insight. Records each state change
+  through Bloc.observer.
 version: 0.1.0
-publish_to: none
+repository: https://github.com/ylahav/flutter_insigth
+issue_tracker: https://github.com/ylahav/flutter_insigth/issues
 resolution: workspace
 
 environment:
@@ -12,8 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
-  insight:
-    path: ../insight
+  insight: ^0.1.0
 
 dev_dependencies:
   flutter_test:

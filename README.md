@@ -2,7 +2,7 @@
 
 **Status: alpha.** A session shows frames, the user widgets that rebuilt during them, bloc and cubit transitions, and futures or streams the app traces. The desk checks passed on Flutter 3.47.8. The bloc_counter parser check also passed on Flutter 3.44.9. The shelf profile check also passed on Flutter 3.47.8: a scoped tick groups `second` with `SecondReadout` and without `MarkCard`, and a wide tick groups the same provider with `MarkCard`.
 
-Flutter Insight is a debugging aid for Flutter apps. The first version groups four observations on one timeline: a frame, the user widgets that rebuilt during it, a bloc transition, and an async span the app opted to trace. Why that timeline is worth opening, and how to read a row for a problem in the widget list, is [docs/overview.md](docs/overview.md).
+Flutter Insight is a debugging aid for Flutter apps. The first version groups four observations on one timeline: a frame, the user widgets that rebuilt during it, a bloc transition, and an async span the app opted to trace. Why that timeline is worth opening, and how to read a row for a problem in the widget list, is [docs/overview.md](docs/overview.md). What comes after this alpha is [docs/roadmap.md](docs/roadmap.md).
 
 Flutter DevTools already charts frames. Insight lines a frame up with the bloc transition and the widgets that rebuilt. How to use a session, and how to read one, is [docs/guide.md](docs/guide.md). `examples/desk` is the Bloc reference. `examples/bloc_counter` is the small parser fixture. CaptureGuide is the reference with no state library. They are described in [docs/mvp.md](docs/mvp.md).
 
@@ -14,6 +14,7 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 | [docs/events.md](docs/events.md) | Schema version 1, the session file, and the agent wire format |
 | [docs/mvp.md](docs/mvp.md) | Three-phase scope, acceptance checks, and non-goals |
 | [docs/running-example.md](docs/running-example.md) | The switch example, with Bloc and Riverpod on one board |
+| [docs/roadmap.md](docs/roadmap.md) | What comes after the alpha |
 
 ## Record a session
 

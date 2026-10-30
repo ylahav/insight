@@ -1,14 +1,17 @@
 name: insight_collector
-description: Reads a Flutter VM Service and writes an Insight session.
+description: >-
+  Reads a Flutter VM Service and writes a session of frames, rebuilds, and
+  state changes.
 version: 0.1.0
-publish_to: none
+repository: https://github.com/ylahav/flutter_insigth
+issue_tracker: https://github.com/ylahav/flutter_insigth/issues
 resolution: workspace
 
 environment:
   sdk: ^3.12.2
 
 dependencies:
-  vm_service: 15.2.0
+  vm_service: ^15.2.0
 
 dev_dependencies:
   test: ^1.26.2

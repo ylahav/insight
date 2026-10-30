@@ -1,7 +1,10 @@
 name: insight_riverpod
-description: Riverpod adapter for Flutter Insight.
+description: >-
+  Riverpod adapter for Flutter Insight. Records provider updates through a
+  ProviderObserver.
 version: 0.1.0
-publish_to: none
+repository: https://github.com/ylahav/flutter_insigth
+issue_tracker: https://github.com/ylahav/flutter_insigth/issues
 resolution: workspace
 
 environment:
@@ -12,8 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^3.4.3
-  insight:
-    path: ../insight
+  insight: ^0.1.0
 
 dev_dependencies:
   flutter_test:
