@@ -43,6 +43,6 @@ One phase at a time. A newer Flutter stable, when one exists, still needs the pr
 
 ## Suggest a change
 
-Open an [issue](https://github.com/ylahav/flutter_insigth/issues) for an improvement or a new feature. Name the action, the state change, and what the session did not make visible. A login that loads on one page in one build and on another page in the next build is the kind of note that fits.
+Open an [issue](https://github.com/ylahav/insight/issues) for an improvement or a new feature. Name the action, the state change, and what the session did not make visible. A login that loads on one page in one build and on another page in the next build is the kind of note that fits.
 
 An idea that sits in the list above can still be opened. It stays off this page until a session shows it belongs. Leave `Insight.captureStateValues` off, and keep the session file on your machine.

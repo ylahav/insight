@@ -1,5 +1,5 @@
 name: insight
-issueTracker: https://github.com/ylahav/flutter_insigth/issues
+issueTracker: https://github.com/ylahav/insight/issues
 version: 0.1.0
 materialIconCodePoint: '0xe347'
 requiresConnection: true

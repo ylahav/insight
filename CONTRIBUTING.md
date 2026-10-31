@@ -1,6 +1,6 @@
 # Contributing
 
-Suggestions and new features are welcome. Open an [issue](https://github.com/ylahav/flutter_insigth/issues). Name the action you recorded, the state change, and what the session did not make visible. The current sequence is [docs/roadmap.md](docs/roadmap.md). Leave `Insight.captureStateValues` off, and keep the session file on your machine.
+Suggestions and new features are welcome. Open an [issue](https://github.com/ylahav/insight/issues). Name the action you recorded, the state change, and what the session did not make visible. The current sequence is [docs/roadmap.md](docs/roadmap.md). Leave `Insight.captureStateValues` off, and keep the session file on your machine.
 
 The design of record is:
 
@@ -10,7 +10,7 @@ The design of record is:
 - [docs/running-example.md](docs/running-example.md)
 - [docs/roadmap.md](docs/roadmap.md)
 
-Phase 1 is a pub workspace with `insight`, `insight_collector`, `insight_cli`, and `examples/bloc_counter`. Phase 2 adds the DevTools panel in `packages/insight_devtools`. Phase 3 adds `packages/insight_bloc` and `examples/desk`. `packages/insight_riverpod` is the Riverpod adapter. The repository is [ylahav/flutter_insigth](https://github.com/ylahav/flutter_insigth). The extension config uses its issues page for the DevTools report-an-issue link.
+Phase 1 is a pub workspace with `insight`, `insight_collector`, `insight_cli`, and `examples/bloc_counter`. Phase 2 adds the DevTools panel in `packages/insight_devtools`. Phase 3 adds `packages/insight_bloc` and `examples/desk`. `packages/insight_riverpod` is the Riverpod adapter. The repository is [ylahav/insight](https://github.com/ylahav/insight). The extension config uses its issues page for the DevTools report-an-issue link.
 
 ## Commands that work
 

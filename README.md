@@ -90,4 +90,4 @@ dart run tool/beside.dart --left scoped.json --right wide.json
 
 ## Contributing
 
-Suggestions and new features go to [the issues page](https://github.com/ylahav/flutter_insigth/issues). The current sequence is [docs/roadmap.md](docs/roadmap.md). Code changes follow [CONTRIBUTING.md](CONTRIBUTING.md).
+Suggestions and new features go to [the issues page](https://github.com/ylahav/insight/issues). The current sequence is [docs/roadmap.md](docs/roadmap.md). Code changes follow [CONTRIBUTING.md](CONTRIBUTING.md).

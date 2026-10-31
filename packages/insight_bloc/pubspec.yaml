@@ -3,8 +3,8 @@ description: >-
   Bloc and Cubit adapter for Flutter Insight. Records each state change
   through Bloc.observer.
 version: 0.1.0
-repository: https://github.com/ylahav/flutter_insigth
-issue_tracker: https://github.com/ylahav/flutter_insigth/issues
+repository: https://github.com/ylahav/insight
+issue_tracker: https://github.com/ylahav/insight/issues
 resolution: workspace
 
 environment:
