@@ -21,6 +21,13 @@ The Windows programs are Analyzer, `compare`, `play`, `record`, `parser_check`, 
 
 The machine that runs Analyzer, or any of the compiled programs, needs the [Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) for the x64 architecture. Flutter's Windows build and the compiled Dart programs both use it.
 
+## Download
+
+The current files are on the [latest release](https://github.com/ylahav/insight/releases/latest).
+
+- Windows: `Insight-Setup.exe`
+- Linux: `Insight-linux-x64.zip`
+
 ## Build the installer
 
 From the repository root:
