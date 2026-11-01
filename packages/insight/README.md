@@ -1,6 +1,6 @@
 # insight
 
-Alpha. The in-app agent for Flutter Insight.
+Alpha. The in-app agent for Insight for Flutter.
 
 Call `Insight.attach()` before `runApp`. The DevTools extension in this package then shows a frame, the user widgets that rebuilt during it, and a state change or a traced call on one timeline.
 
@@ -31,3 +31,5 @@ Leave `Insight.captureStateValues` off. A record then carries type names. Event 
 A Bloc or Cubit app also depends on `insight_bloc`. A Riverpod app also depends on `insight_riverpod`.
 
 The repository is [insight](https://github.com/ylahav/insight). Suggestions and new features go to [the issues page](https://github.com/ylahav/insight/issues).
+
+Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.

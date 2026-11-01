@@ -12,3 +12,5 @@ Copy the VM Service URI from `flutter run`. Leave the Insight DevTools tab close
 `--no-rebuilds` leaves user-widget rebuilds off. The default duration is 2 seconds.
 
 Suggestions and new features go to [the issues page](https://github.com/ylahav/insight/issues).
+
+Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.

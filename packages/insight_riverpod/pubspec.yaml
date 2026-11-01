@@ -1,6 +1,6 @@
 name: insight_riverpod
 description: >-
-  Riverpod adapter for Flutter Insight. Records provider updates through a
+  Riverpod adapter for Insight for Flutter. Records provider updates through a
   ProviderObserver.
 version: 0.1.0
 repository: https://github.com/ylahav/insight

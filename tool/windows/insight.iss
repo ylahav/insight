@@ -2,7 +2,7 @@
 ; Build the stage folder first: tool\package_windows.ps1
 ; Then this script, which that same command runs when Inno Setup is installed.
 
-#define MyAppName "Insight"
+#define MyAppName "Insight for Flutter"
 #define MyAppVersion "0.1.0"
 #define MyAppPublisher "Yair Lahav"
 #define MyAppURL "https://github.com/ylahav/insight"

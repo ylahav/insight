@@ -1,5 +1,5 @@
 name: desk
-description: Dispatch desk that shows what Flutter Insight lines up.
+description: Dispatch desk that shows what Insight for Flutter lines up.
 publish_to: none
 resolution: workspace
 version: 0.1.0

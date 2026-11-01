@@ -1,5 +1,5 @@
 name: insight_devtools
-description: DevTools panel for Flutter Insight.
+description: DevTools panel for Insight for Flutter.
 publish_to: none
 resolution: workspace
 version: 0.1.0

@@ -1,6 +1,6 @@
 # insight_bloc
 
-Alpha. The Bloc and Cubit adapter for Flutter Insight.
+Alpha. The Bloc and Cubit adapter for Insight for Flutter.
 
 Depend on `insight` and `insight_bloc`. Attach the agent, then set the observer.
 
@@ -17,3 +17,5 @@ A bloc event is recorded as its type name. A cubit record has a null event. `Ins
 The pinned line is `flutter_bloc` 9.1.x.
 
 Suggestions and new features go to [the issues page](https://github.com/ylahav/insight/issues).
+
+Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.

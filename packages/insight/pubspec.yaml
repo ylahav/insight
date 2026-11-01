@@ -1,5 +1,5 @@
 name: insight
-description: In-app agent for Flutter Insight. Posts events the collector reads.
+description: In-app agent for Insight for Flutter. Posts events the collector reads.
 version: 0.1.0
 repository: https://github.com/ylahav/insight
 issue_tracker: https://github.com/ylahav/insight/issues

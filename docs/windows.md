@@ -2,6 +2,8 @@
 
 <img src="../brand/icon.png" alt="Insight icon" width="96">
 
+The product name is Insight for Flutter. Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.
+
 The Windows programs are Analyzer, `compare`, `play`, `record`, `parser_check`, and `insight_cli`. One installer puts them on the machine. The five pub.dev packages are a separate publish. They wait until this repository is public. That list is in [roadmap.md](roadmap.md).
 
 ## What the installer contains

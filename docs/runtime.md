@@ -1,6 +1,6 @@
 # Runtime
 
-How Flutter Insight is split across processes, which build modes produce data, and which Flutter versions the collector claims to understand.
+How Insight for Flutter is split across processes, which build modes produce data, and which Flutter versions the collector claims to understand.
 
 This file, [events.md](events.md), and [mvp.md](mvp.md) are the design of record.
 

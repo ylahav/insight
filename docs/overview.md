@@ -1,10 +1,12 @@
-# Why Flutter Insight
+# Why Insight for Flutter
 
-<img src="../brand/logo.png" alt="Flutter Insight" width="560">
+<img src="../brand/logo.png" alt="Insight for Flutter" width="560">
 
-The wordmark is [brand/logo.png](../brand/logo.png), cropped from [brand/wordmark.jpg](../brand/wordmark.jpg). The app icon is [brand/icon.png](../brand/icon.png), cropped from [brand/logo.jpeg](../brand/logo.jpeg). Analyzer and the Windows installer use that icon.
+Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.
 
-Flutter Insight is a debugging aid. One row shows a state change, the frame that followed it, and the user widgets that rebuilt in that frame.
+The wordmark is [brand/logo.png](../brand/logo.png) and the app icon is [brand/icon.png](../brand/icon.png). Both are cut from [brand/sheet.jpg](../brand/sheet.jpg). Analyzer and the Windows installer use that icon.
+
+Insight for Flutter is a debugging aid. One row shows a state change, the frame that followed it, and the user widgets that rebuilt in that frame.
 
 DevTools already charts how long a frame took. A bloc log already says a cubit changed. The widget inspector can show what rebuilt. Those are three places. The question that sits between them is one question: when this state changed, which frame followed, and which of your widgets rebuilt.
 

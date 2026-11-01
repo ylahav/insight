@@ -1,5 +1,5 @@
 name: riverpod_shelf
-description: Two Riverpod trees that show what Flutter Insight lines up.
+description: Two Riverpod trees that show what Insight for Flutter lines up.
 publish_to: none
 resolution: workspace
 version: 0.1.0

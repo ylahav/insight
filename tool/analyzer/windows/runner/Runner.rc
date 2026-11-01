@@ -95,7 +95,7 @@ BEGIN
             VALUE "InternalName", "analyzer" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 Yair Lahav." "\0"
             VALUE "OriginalFilename", "analyzer.exe" "\0"
-            VALUE "ProductName", "Insight Analyzer" "\0"
+            VALUE "ProductName", "Insight for Flutter" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

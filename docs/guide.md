@@ -1,6 +1,8 @@
 # Using Insight
 
-<img src="../brand/logo.png" alt="Flutter Insight" width="560">
+<img src="../brand/logo.png" alt="Insight for Flutter" width="560">
+
+Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.
 
 Who this is for: someone opening a session to see what an app did, not someone changing the collector.
 

@@ -1,6 +1,6 @@
 name: insight_bloc
 description: >-
-  Bloc and Cubit adapter for Flutter Insight. Records each state change
+  Bloc and Cubit adapter for Insight for Flutter. Records each state change
   through Bloc.observer.
 version: 0.1.0
 repository: https://github.com/ylahav/insight

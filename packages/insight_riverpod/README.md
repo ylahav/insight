@@ -1,6 +1,6 @@
 # insight_riverpod
 
-Alpha. The Riverpod adapter for Flutter Insight.
+Alpha. The Riverpod adapter for Insight for Flutter.
 
 Depend on `insight` and `insight_riverpod`. Attach the agent, then pass the observer to `ProviderScope`.
 
@@ -21,3 +21,5 @@ The record name is the provider's `name` when one is set, and otherwise the prov
 The pinned line is `flutter_riverpod` 3.4.x.
 
 Suggestions and new features go to [the issues page](https://github.com/ylahav/insight/issues).
+
+Insight is an independent project and is not affiliated with, sponsored by, or endorsed by Google LLC. Flutter and the related logo are trademarks of Google LLC.
