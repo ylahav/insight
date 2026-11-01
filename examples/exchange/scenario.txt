@@ -1,0 +1,20 @@
+# The setup screen has no phones. Open six lines first; this file taps phone 6.
+tap lines-6
+tap open
+tap phone-3
+tap digit-3-1
+tap phone-1
+tap phone-4
+tap digit-4-5
+tap phone-6
+tap digit-6-5
+tap digit-6-0
+tap digit-6-1
+tap phone-4
+tap phone-6
+tap phone-5
+tap phone-5
+tap phone-6
+tap phone-5
+tap phone-3
+tap phone-5

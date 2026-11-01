@@ -1,0 +1,11 @@
+# Phone 1 dials phone 2, and phone 2 answers.
+# "open" is the button for whichever --board this run uses.
+# "see" waits until that text is on screen. Phone 2 is already tappable
+# while it is idle, so the answer tap has to wait for the ring.
+tap lines-3
+tap open
+tap phone-1
+tap digit-1-2
+see Calling 2
+tap phone-2
+see 1 and 2

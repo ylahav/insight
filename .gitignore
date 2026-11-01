@@ -10,3 +10,5 @@ examples/*/build/
 insight-session.json
 /[0-9].json
 examples/*/[0-9].json
+examples/*/compare.json
+/dist/

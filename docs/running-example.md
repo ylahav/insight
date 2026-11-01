@@ -8,7 +8,7 @@ The screen is the example `examples/exchange`.
 
 The switch has three to nine lines, numbered 1 through 9. The digit 0 is not a line. It starts a service code. The only service is `01`, camp-on.
 
-At startup the user chooses how many lines, from 3 to 9, and chooses Bloc or Riverpod. That count and that driver stay fixed until the board is closed. The screen then shows one phone per line and the cords in the middle.
+At startup the user chooses how many lines, from 3 to 9, and chooses Bloc, Riverpod, or the Plinth board. That count and that face stay fixed until the board is closed. The switch sits in the middle. The phones stand on a circle around it. Each phone has its own color. A cord runs from one phone to the other through the switch, and the color at the switch is the mix of those two phones.
 
 Each phone shows the hook, then at most one signal.
 
@@ -31,7 +31,8 @@ Click an idle phone. It goes off hook and shows the digits `1` through the last 
 Dial one digit from 1 to the last line:
 
 - That phone is idle. It rings. A blinking cord joins the two phones. The called phone stays on hook with Ringing signal. The caller is off hook with Ringing signal.
-- That phone is off hook, ringing, calling, or already in a call. The dialing phone shows Busy signal. No cord is drawn.
+- That phone is waiting after `01`. It rings, and the camp-on stays. A blinking cord joins the two phones. When that call ends, the phone is waiting again.
+- That phone is dialing, hearing busy, calling, ringing, or already in a call. The dialing phone shows Busy signal. No cord is drawn.
 - The digit is the dialing phone’s own number, or it is higher than the line count. The dialing phone shows Busy signal, and there is no line to wait for.
 
 The called phone answers by clicking its body. That hooks it off. Both phones show Voice, and the cord stays lit. **Hook on** under the ringing phone refuses the call. The caller can also click its own body to hook on and stop the ring.
@@ -50,7 +51,7 @@ Dial `0`, then a line number other than `1`. That is the same call. `01` is camp
 
 `01` with no line to wait for does not call line 1. That includes a phone that is only off hook, a phone that dialed its own number, and a phone that dialed a missing line. The phone stays on Busy signal and the switch records nothing.
 
-When the waited line becomes idle, the caller rings first. The caller is still off hook and shows Ringing signal. No cord is drawn, and the other phone stays idle. That line is busy to every other caller until this recall is finished or refused. The caller hooks on. The phone stays on hook with Ringing signal. The caller then hooks off. Only then does the other phone ring, and the cord blinks. Later waiters stay on the list until that recall is finished or refused. **Hook on** under the caller's ring, after the caller has hooked on, refuses the recall. Any other off-hook phone is busy to callers, including a phone that is dialing, calling, ringing, hearing busy, or waiting.
+When the waited line becomes idle, the caller rings first. The caller is still off hook and shows Ringing signal. No cord is drawn, and the other phone stays idle. That line is busy to every other caller until this recall is finished or refused. The caller hooks on. The phone stays on hook with Ringing signal. The caller then hooks off. Only then does the other phone ring, and the cord blinks. Later waiters stay on the list until that recall is finished or refused. **Hook on** under the caller's ring, after the caller has hooked on, refuses the recall. Any other off-hook phone is busy to callers, including a phone that is dialing, calling, ringing, or hearing busy. A phone that is waiting can still be called. The camp-on stays through that ring and that call. When the call ends, the phone is waiting again. If the waited line is already idle, the caller rings first.
 
 ## What one action should show
 
@@ -95,7 +96,30 @@ dart run tool/record.dart --app examples/exchange --duration 25 --profile --out 
 Press Enter, choose 3, Open with Riverpod, tap phone 1, tap 2.
 
 ```bash
-dart run tool/beside.dart --left examples/exchange/1.json --right examples/exchange/2.json
+dart run tool/compare.dart --left examples/exchange/1.json --right examples/exchange/2.json
 ```
 
-Compare the widget names on the row where the call is established. How that print is laid out is in [guide.md](guide.md). Bloc names `ExchangeCubit`. Riverpod names `exchange`. The process exits 0 when those rows differ.
+Compare the widget names on the row where the call is established. How that print is laid out is in [guide.md](guide.md). Bloc names `ExchangeCubit`. Riverpod names `exchange`. The process exits 0 when those rows differ. Those widget names should match. The state row is the part that differs.
+
+The same ring can be played from a file. The script waits until the collector is listening, then runs every line in [examples/exchange/ring.txt](../examples/exchange/ring.txt). `tap` presses that control. `see` waits until that text is on screen. `tap open` follows `--board`. Edit the file, or pass `--scenario` with another file, and run that file once for each driver. Leave the Insight tab closed.
+
+```bash
+dart run tool/play.dart --board bloc --out examples/exchange/1.json
+dart run tool/play.dart --board riverpod --out examples/exchange/2.json
+dart run tool/compare.dart --left examples/exchange/1.json --right examples/exchange/2.json --out examples/exchange/compare.json
+```
+
+`--board` is `bloc`, `riverpod`, or `plinth`. The default mode is profile. `--debug` records the order without frame times worth keeping. `--scenario` on `play` replaces `ring.txt`. Each recording stores that file and the git commit. Compare reads the two stored scripts and says whether they are the same taps.
+
+Analyzer reads one of those recordings, then another beside it. On each step, the shortest frame time is marked best and the longest is marked worst. Two times that print as the same tenth of a millisecond are left unmarked. The mark says which recording was shorter. It does not pass or fail the run.
+
+```bash
+cd tool/analyzer
+flutter run -d windows
+```
+
+A release copy of that app is described in [windows.md](windows.md). Press Select file and choose the session. Add result chooses the recording to compare with it. A tap recorded on the board, including a manual run, is printed above the step that follows it. Export taps writes the scenario that recording stored. A manual run has no scenario file, so Export taps writes the taps the session recorded.
+
+## A second board
+
+A later recording keeps Bloc and changes the board. `--board bloc` is the enamel phones. `--board plinth` is the same switch drawn with `PlinthPaper`, `PlinthBadge`, and `PlinthButton`. The taps stay phone 1 dials phone 2. The state row stays `ExchangeCubit`. The widget names are the difference. The sequence is in [roadmap.md](roadmap.md).

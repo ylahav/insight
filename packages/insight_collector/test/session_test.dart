@@ -33,6 +33,28 @@ void main() {
     expect(events[1]['budgetExceeded'], isNull);
   });
 
+  test('a tap is kept and an empty name is rejected', () {
+    final session = builder()
+      ..addAgent({
+        'schemaVersion': 1,
+        'kind': 'user.action',
+        'timeUs': 40,
+        'name': 'phone-1',
+      })
+      ..addAgent({
+        'schemaVersion': 1,
+        'kind': 'user.action',
+        'timeUs': 50,
+        'name': '',
+      });
+
+    final built = session.build();
+    final events = built['events'] as List<Map<String, Object?>>;
+    expect(built['rejected'], 1);
+    expect(events.single['id'], 'action_1');
+    expect(events.single['name'], 'phone-1');
+  });
+
   test('a negative duration is rejected and the session continues', () {
     final session = builder()
       ..addFrame({'startTime': 10, 'build': -1, 'raster': 1, 'elapsed': 1})

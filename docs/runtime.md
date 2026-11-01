@@ -52,7 +52,7 @@ The repo uses a Dart pub workspace at the root once these packages exist. `flutt
 
 Users enable the tool by depending on `insight` and `insight_bloc`. The app sets `Bloc.observer` to the observer `insight_bloc` provides. That assignment is the whole install. `examples/desk` does it in `main`. DevTools loads the extension from `insight/extension/devtools/` after the app's `devtools_options.yaml` enables it. The first open asks the user to allow the extension. That is the DevTools extension flow, documented at <https://docs.flutter.dev/tools/devtools/extensions>.
 
-`flutter pub global activate` is the install path for `insight_cli` only. It does not add a DevTools tab.
+On Windows, [windows.md](windows.md) is the install path for `insight_cli` and the other tools. `flutter pub global activate` remains the Dart SDK install for `insight_cli` alone. Neither one adds a DevTools tab.
 
 The extension reads the VM through the `serviceManager` global provided under the `DevToolsExtension` widget. DevTools passes the connected app's VM Service URI, and `serviceManager` owns that client. The extension does not look up a VM URI on its own and does not open a second client beside `serviceManager`.
 

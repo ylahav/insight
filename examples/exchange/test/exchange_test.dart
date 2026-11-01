@@ -77,6 +77,52 @@ void main() {
     expect(ringing.line(4).status, LineStatus.waiting);
   });
 
+  test('calling a waiting line keeps the camp-on', () {
+    final waiting = Exchange.opened(4)
+        .offHook(1)
+        .dial(1, 2)
+        .offHook(2)
+        .offHook(3)
+        .dial(3, 1)
+        .dial(3, 0)
+        .dial(3, 1);
+    expect(waiting.line(3).status, LineStatus.waiting);
+
+    final ringing = waiting.offHook(4).dial(4, 3);
+
+    expect(ringing.line(4).status, LineStatus.calling);
+    expect(ringing.line(3).status, LineStatus.ringing);
+    expect(ringing.line(3).peer, 4);
+    expect(ringing.line(3).waitingFor, 1);
+    expect(ringing.line(3).detail, 'Waiting for 1');
+    expect(ringing.rings, [(4, 3)]);
+    expect(ringing.waiting, [const CampOn(waiter: 3, target: 1)]);
+    expect(ringing.calls, [(1, 2)]);
+
+    final back = ringing.onHook(4);
+    expect(back.line(4).status, LineStatus.idle);
+    expect(back.line(3).status, LineStatus.waiting);
+    expect(back.line(3).waitingFor, 1);
+    expect(back.waiting, [const CampOn(waiter: 3, target: 1)]);
+
+    final again = back.offHook(4).dial(4, 3).offHook(3);
+    expect(again.line(3).status, LineStatus.inCall);
+    expect(again.line(3).waitingFor, 1);
+    expect(again.line(3).detail, 'In call with 4, waiting for 1');
+    expect(again.waiting, [const CampOn(waiter: 3, target: 1)]);
+
+    final freed = again.onHook(1);
+    expect(freed.line(1).status, LineStatus.idle);
+    expect(freed.line(3).status, LineStatus.inCall);
+    expect(freed.waiting, [const CampOn(waiter: 3, target: 1)]);
+
+    final recalled = freed.onHook(4);
+    expect(recalled.line(4).status, LineStatus.idle);
+    expect(recalled.line(3).status, LineStatus.recall);
+    expect(recalled.line(3).peer, 1);
+    expect(recalled.waiting, isEmpty);
+  });
+
   test('hooking on cancels a camp-on request', () {
     final waiting = Exchange.opened(
       3,

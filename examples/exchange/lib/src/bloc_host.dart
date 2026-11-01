@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'board.dart';
 import 'exchange.dart';
 import 'exchange_scope.dart';
+import 'plinth_board.dart';
 
 class ExchangeCubit extends Cubit<Exchange> {
   ExchangeCubit(int lineCount) : super(Exchange.opened(lineCount));
@@ -16,7 +17,9 @@ class ExchangeCubit extends Cubit<Exchange> {
 }
 
 class ExchangeHost extends StatefulWidget {
-  const ExchangeHost({super.key});
+  const ExchangeHost({this.plinth = false, super.key});
+
+  final bool plinth;
 
   @override
   State<ExchangeHost> createState() => _ExchangeHostState();
@@ -37,7 +40,10 @@ class _ExchangeHostState extends State<ExchangeHost> {
       offHook: _offHook,
       onHook: _onHook,
       dial: _dial,
-      child: ExchangeScope(exchange: exchange, child: const ExchangeBoard()),
+      child: ExchangeScope(
+        exchange: exchange,
+        child: widget.plinth ? const PlinthBoard() : const ExchangeBoard(),
+      ),
     );
   }
 }

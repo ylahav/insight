@@ -70,6 +70,8 @@ class SessionBuilder {
     switch (data['kind']) {
       case 'agent.ready':
         return _addReady(timeUs);
+      case 'user.action':
+        return _addAction(data, timeUs);
       case 'state.changed':
         return _addState(data, timeUs);
       case 'async.start':
@@ -88,6 +90,16 @@ class SessionBuilder {
     }
     _sawReady = true;
     _events.add({'type': 'agent.ready', 'timeUs': timeUs, 'schemaVersion': 1});
+    return true;
+  }
+
+  bool _addAction(Map<String, Object?> data, int timeUs) {
+    final name = _clip(data['name'], 80);
+    if (timeUs < 0 || name == null) {
+      rejected += 1;
+      return false;
+    }
+    _events.add({'type': 'user.action', 'timeUs': timeUs, 'name': name});
     return true;
   }
 
@@ -260,10 +272,11 @@ int _timeOf(Map<String, Object?> event) {
 int _rank(String type) {
   return switch (type) {
     'agent.ready' => 0,
-    'state.changed' => 1,
-    'async.span' => 2,
-    'widget.rebuild' => 3,
-    'frame' => 4,
+    'user.action' => 1,
+    'state.changed' => 2,
+    'async.span' => 3,
+    'widget.rebuild' => 4,
+    'frame' => 5,
     _ => 5,
   };
 }
@@ -271,6 +284,7 @@ int _rank(String type) {
 String _prefix(String type) {
   return switch (type) {
     'agent.ready' => 'agent',
+    'user.action' => 'action',
     'state.changed' => 'state',
     'async.span' => 'async',
     'widget.rebuild' => 'widget',

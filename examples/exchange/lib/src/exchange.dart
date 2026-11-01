@@ -122,10 +122,19 @@ class Line {
       LineStatus.waiting => 'Waiting for $waitingFor',
       LineStatus.recall ||
       LineStatus.recallRing ||
-      LineStatus.calling => 'Calling $peer',
-      LineStatus.inCall => 'In call with $peer',
+      LineStatus.calling => _withWait('Calling $peer'),
+      LineStatus.ringing => waitingFor == null ? '' : 'Waiting for $waitingFor',
+      LineStatus.inCall => _withWait('In call with $peer'),
       _ => '',
     };
+  }
+
+  String _withWait(String text) {
+    final held = waitingFor;
+    if (held == null) {
+      return text;
+    }
+    return '$text, waiting for $held';
   }
 
   @override
@@ -274,7 +283,8 @@ class Exchange {
         phone.status == LineStatus.calling ||
         phone.status == LineStatus.ringing) {
       final peer = phone.peer!;
-      return _replace(phone.cleared())._replace(line(peer).cleared())._grant();
+      final released = _release(phone);
+      return released._release(released.line(peer))._grant();
     }
     return _replace(phone.cleared())._grant();
   }
@@ -285,7 +295,11 @@ class Exchange {
         phone.copy(status: LineStatus.busyTone, digits: '', clearAttempt: true),
       );
     }
-    if (line(digit).status != LineStatus.idle || _reserved(this, digit)) {
+    final target = line(digit);
+    if (target.status == LineStatus.waiting) {
+      return _ring(phone.number, digit);
+    }
+    if (target.status != LineStatus.idle || _reserved(this, digit)) {
       return _replace(
         phone.copy(status: LineStatus.busyTone, digits: '', attempt: digit),
       );
@@ -353,32 +367,58 @@ class Exchange {
       clearAttempt: true,
       clearWaiting: true,
     );
-    final to = line(called).copy(
+    final calledLine = line(called);
+    final to = calledLine.copy(
       status: LineStatus.ringing,
       digits: '',
       peer: caller,
       clearAttempt: true,
-      clearWaiting: true,
+      clearWaiting: calledLine.waitingFor == null,
     );
-    return _replace(from)._replace(to);
+    final ringing = _replace(from)._replace(to);
+    if (calledLine.waitingFor != null) {
+      return ringing;
+    }
+    return ringing._withoutWaiter(called);
   }
 
   Exchange _connect(int a, int b) {
-    final left = line(a).copy(
+    final leftLine = line(a);
+    final rightLine = line(b);
+    final left = leftLine.copy(
       status: LineStatus.inCall,
       digits: '',
       peer: b,
       clearAttempt: true,
-      clearWaiting: true,
+      clearWaiting: leftLine.waitingFor == null,
     );
-    final right = line(b).copy(
+    final right = rightLine.copy(
       status: LineStatus.inCall,
       digits: '',
       peer: a,
       clearAttempt: true,
-      clearWaiting: true,
+      clearWaiting: rightLine.waitingFor == null,
     );
     return _replace(left)._replace(right);
+  }
+
+  /// Ends one side of a ring or a call. A camp-on on that phone stays.
+  Exchange _release(Line phone) {
+    final held = phone.waitingFor;
+    if (held != null &&
+        (phone.status == LineStatus.ringing ||
+            phone.status == LineStatus.calling ||
+            phone.status == LineStatus.inCall)) {
+      return _replace(
+        phone.copy(
+          status: LineStatus.waiting,
+          digits: '',
+          clearPeer: true,
+          clearAttempt: true,
+        ),
+      );
+    }
+    return _replace(phone.cleared());
   }
 
   Exchange _grant() {
@@ -387,13 +427,17 @@ class Exchange {
     for (final request in waiting) {
       final waiter = current.line(request.waiter);
       final target = current.line(request.target);
-      final stillWaiting =
-          waiter.status == LineStatus.waiting &&
-          waiter.waitingFor == request.target;
-      if (!stillWaiting) {
+      final holds =
+          waiter.waitingFor == request.target &&
+          (waiter.status == LineStatus.waiting ||
+              waiter.status == LineStatus.ringing ||
+              waiter.status == LineStatus.calling ||
+              waiter.status == LineStatus.inCall);
+      if (!holds) {
         continue;
       }
-      if (target.status == LineStatus.idle &&
+      if (waiter.status == LineStatus.waiting &&
+          target.status == LineStatus.idle &&
           !_reserved(current, request.target)) {
         current = current._recall(request.waiter, request.target);
       } else {

@@ -2,6 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:insight_collector/cli.dart';
+
+import 'repository.dart';
+
 /// Starts an app, reads the VM Service address from `flutter run`, and
 /// records one session with `insight_cli`.
 ///
@@ -24,7 +28,15 @@ Future<void> main(List<String> arguments) async {
     return;
   }
 
-  final root = _repositoryRoot();
+  final root = findRepository();
+  if (root == null) {
+    stderr.writeln(
+      'record needs the Insight repository. '
+      'It starts an example from that checkout.',
+    );
+    exitCode = 64;
+    return;
+  }
   final appDir = Directory.fromUri(root.uri.resolve(options.app));
   if (!File.fromUri(appDir.uri.resolve('pubspec.yaml')).existsSync()) {
     stderr.writeln('No pubspec.yaml in ${appDir.path}.');
@@ -107,26 +119,36 @@ Future<void> main(List<String> arguments) async {
     );
   }
 
-  final cliArgs = <String>[
-    'run',
-    'insight_cli',
-    '--uri',
-    uri,
-    '--duration',
-    '${options.duration}',
-    '--out',
-    outFile.absolute.path,
-    if (!options.rebuilds) '--no-rebuilds',
-  ];
-  final cli = await Process.start(
-    'dart',
-    cliArgs,
-    workingDirectory: '${root.path}/packages/insight_cli',
-    mode: ProcessStartMode.inheritStdio,
-  );
-  final code = await cli.exitCode;
-  await _stop(flutter);
-  stdout.writeln('Stopped ${options.app}.');
+  var code = 0;
+  try {
+    final session = await const InsightCollector().record(
+      vmServiceUri: uri,
+      duration: Duration(seconds: options.duration),
+      rebuilds: options.rebuilds,
+    );
+    await outFile.parent.create(recursive: true);
+    await outFile.writeAsString(
+      '${const JsonEncoder.withIndent('  ').convert(session)}\n',
+    );
+    final events = session['events'] as List<Object?>;
+    int count(String type) {
+      return events.where((event) {
+        return event is Map && event['type'] == type;
+      }).length;
+    }
+
+    stdout.writeln(
+      'Wrote ${outFile.path} '
+      '(${count('frame')} frames, ${count('widget.rebuild')} rebuilds, '
+      '${count('state.changed')} state changes, ${count('async.span')} spans).',
+    );
+  } on Object catch (error) {
+    stderr.writeln(error);
+    code = 1;
+  } finally {
+    await _stop(flutter);
+    stdout.writeln('Stopped ${options.app}.');
+  }
   exitCode = code;
 }
 
@@ -137,9 +159,11 @@ final _vmServiceUri = RegExp(
 const _usage = '''
 Starts an app and records one Insight session.
 
-dart run tool/record.dart [--app examples/desk] [--duration 15]
+record [--app examples/desk] [--duration 15]
     [--out path] [--device windows] [--flutter path] [--profile] [--now]
     [--no-rebuilds]
+
+From a checkout: dart run tool/record.dart --app examples/desk --duration 15
 
 --app        App directory, relative to the repository root.
 --duration   Seconds to record. Default 15.
@@ -261,16 +285,6 @@ class _Options {
       help: help,
     );
   }
-}
-
-Directory _repositoryRoot() {
-  final current = Directory.current;
-  if (Directory.fromUri(
-    current.uri.resolve('packages/insight_cli'),
-  ).existsSync()) {
-    return current;
-  }
-  return File(Platform.script.toFilePath()).parent.parent;
 }
 
 Stream<String> _lines(Stream<List<int>> stream) {

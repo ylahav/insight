@@ -28,6 +28,15 @@ abstract final class Insight {
     _postReady();
   }
 
+  /// Posts one `user.action`. [name] is the control the user tapped,
+  /// such as `phone-1`. An empty name is not posted.
+  static void action(String name) {
+    if (name.isEmpty) {
+      return;
+    }
+    _emit(Timeline.now, {'kind': 'user.action', 'name': _clip(name, 80)});
+  }
+
   /// Posts one `state.changed` and returns its `timeUs`.
   ///
   /// [value] is sent only when [captureStateValues] is set. Otherwise the

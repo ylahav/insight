@@ -1,0 +1,5713 @@
+{
+  "schemaVersion": 1,
+  "flutter": "3.47.8",
+  "dart": "3.13.7",
+  "mode": "profile",
+  "startedAt": "2026-11-01T08:16:20.322746Z",
+  "events": [
+    {
+      "type": "agent.ready",
+      "timeUs": 135939715006,
+      "schemaVersion": 1,
+      "id": "agent_1"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939739387,
+      "buildUs": 108,
+      "rasterUs": 954,
+      "elapsedUs": 1930,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_1"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939742340,
+      "name": "lines-6",
+      "id": "action_1"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939755405,
+      "buildUs": 1134,
+      "rasterUs": 1691,
+      "elapsedUs": 3054,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_2"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755547,
+      "name": "SetupPage",
+      "id": "widget_1"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755568,
+      "name": "Scaffold",
+      "id": "widget_2"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755759,
+      "name": "Center",
+      "id": "widget_3"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755762,
+      "name": "ConstrainedBox",
+      "id": "widget_4"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755763,
+      "name": "Column",
+      "id": "widget_5"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755767,
+      "name": "Row",
+      "id": "widget_6"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755768,
+      "name": "Padding",
+      "id": "widget_7"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755770,
+      "name": "TextButton",
+      "id": "widget_8"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755849,
+      "name": "Text",
+      "id": "widget_9"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755860,
+      "name": "Padding",
+      "id": "widget_10"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755862,
+      "name": "TextButton",
+      "id": "widget_11"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755884,
+      "name": "Text",
+      "id": "widget_12"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755888,
+      "name": "TextButton",
+      "id": "widget_13"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755888,
+      "name": "Padding",
+      "id": "widget_14"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755912,
+      "name": "Text",
+      "id": "widget_15"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755916,
+      "name": "Padding",
+      "id": "widget_16"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755917,
+      "name": "TextButton",
+      "id": "widget_17"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755937,
+      "name": "Text",
+      "id": "widget_18"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755942,
+      "name": "Padding",
+      "id": "widget_19"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755943,
+      "name": "TextButton",
+      "id": "widget_20"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755962,
+      "name": "Text",
+      "id": "widget_21"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755966,
+      "name": "Padding",
+      "id": "widget_22"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755967,
+      "name": "TextButton",
+      "id": "widget_23"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755990,
+      "name": "Text",
+      "id": "widget_24"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755994,
+      "name": "TextButton",
+      "id": "widget_25"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939755994,
+      "name": "Padding",
+      "id": "widget_26"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939756012,
+      "name": "Text",
+      "id": "widget_27"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939756018,
+      "name": "Wrap",
+      "id": "widget_28"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939756020,
+      "name": "OutlinedButton",
+      "id": "widget_29"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939756043,
+      "name": "OutlinedButton",
+      "id": "widget_30"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939756064,
+      "name": "OutlinedButton",
+      "id": "widget_31"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939756096,
+      "name": "TextButton",
+      "id": "widget_32"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939772716,
+      "buildUs": 341,
+      "rasterUs": 6294,
+      "elapsedUs": 7624,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_3"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939773416,
+      "name": "open-riverpod",
+      "id": "action_2"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939788723,
+      "buildUs": 5658,
+      "rasterUs": 1731,
+      "elapsedUs": 7597,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_4"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789015,
+      "name": "BoardPage",
+      "id": "widget_33"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789018,
+      "name": "LineCountScope",
+      "id": "widget_34"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789019,
+      "name": "ProviderScope",
+      "id": "widget_35"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789043,
+      "name": "UncontrolledProviderScope",
+      "id": "widget_36"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789046,
+      "name": "_UncontrolledProviderScope",
+      "id": "widget_37"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789048,
+      "name": "ExchangeHost",
+      "id": "widget_38"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789149,
+      "name": "ExchangeActions",
+      "id": "widget_39"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789151,
+      "name": "ExchangeScope",
+      "id": "widget_40"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789152,
+      "name": "ExchangeBoard",
+      "id": "widget_41"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789154,
+      "name": "RoundDesk",
+      "id": "widget_42"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789157,
+      "name": "ColoredBox",
+      "id": "widget_43"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789159,
+      "name": "Column",
+      "id": "widget_44"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789162,
+      "name": "Padding",
+      "id": "widget_45"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789165,
+      "name": "Row",
+      "id": "widget_46"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789167,
+      "name": "Text",
+      "id": "widget_47"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789184,
+      "name": "Spacer",
+      "id": "widget_48"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789188,
+      "name": "TextButton",
+      "id": "widget_49"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789268,
+      "name": "Text",
+      "id": "widget_50"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789278,
+      "name": "Expanded",
+      "id": "widget_51"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789280,
+      "name": "LayoutBuilder",
+      "id": "widget_52"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939789436,
+      "name": "OutlinedButton",
+      "id": "widget_53"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791473,
+      "name": "Stack",
+      "id": "widget_54"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791484,
+      "name": "Positioned",
+      "id": "widget_55"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791487,
+      "name": "SwitchDesk",
+      "id": "widget_56"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791497,
+      "name": "CustomPaint",
+      "id": "widget_57"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791501,
+      "name": "Center",
+      "id": "widget_58"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791503,
+      "name": "Column",
+      "id": "widget_59"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791505,
+      "name": "Text",
+      "id": "widget_60"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791515,
+      "name": "Positioned",
+      "id": "widget_61"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791516,
+      "name": "FittedBox",
+      "id": "widget_62"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791518,
+      "name": "SizedBox",
+      "id": "widget_63"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791520,
+      "name": "LinePhone",
+      "id": "widget_64"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791526,
+      "name": "Padding",
+      "id": "widget_65"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791532,
+      "name": "Column",
+      "id": "widget_66"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791534,
+      "name": "Material",
+      "id": "widget_67"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791549,
+      "name": "InkWell",
+      "id": "widget_68"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791581,
+      "name": "Padding",
+      "id": "widget_69"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791582,
+      "name": "Column",
+      "id": "widget_70"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791583,
+      "name": "Row",
+      "id": "widget_71"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791585,
+      "name": "_Lamp",
+      "id": "widget_72"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791587,
+      "name": "Container",
+      "id": "widget_73"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791596,
+      "name": "SizedBox",
+      "id": "widget_74"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791598,
+      "name": "Text",
+      "id": "widget_75"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791603,
+      "name": "SizedBox",
+      "id": "widget_76"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791604,
+      "name": "Text",
+      "id": "widget_77"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791618,
+      "name": "FittedBox",
+      "id": "widget_78"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791618,
+      "name": "Positioned",
+      "id": "widget_79"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791619,
+      "name": "SizedBox",
+      "id": "widget_80"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791620,
+      "name": "LinePhone",
+      "id": "widget_81"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791623,
+      "name": "Padding",
+      "id": "widget_82"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791624,
+      "name": "Column",
+      "id": "widget_83"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791625,
+      "name": "Material",
+      "id": "widget_84"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791742,
+      "name": "InkWell",
+      "id": "widget_85"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791806,
+      "name": "Padding",
+      "id": "widget_86"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791807,
+      "name": "Column",
+      "id": "widget_87"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791809,
+      "name": "Row",
+      "id": "widget_88"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791810,
+      "name": "_Lamp",
+      "id": "widget_89"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791811,
+      "name": "Container",
+      "id": "widget_90"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791814,
+      "name": "SizedBox",
+      "id": "widget_91"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791815,
+      "name": "Text",
+      "id": "widget_92"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791824,
+      "name": "SizedBox",
+      "id": "widget_93"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791826,
+      "name": "Text",
+      "id": "widget_94"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791833,
+      "name": "Positioned",
+      "id": "widget_95"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791834,
+      "name": "FittedBox",
+      "id": "widget_96"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791835,
+      "name": "SizedBox",
+      "id": "widget_97"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791836,
+      "name": "LinePhone",
+      "id": "widget_98"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791839,
+      "name": "Padding",
+      "id": "widget_99"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791840,
+      "name": "Column",
+      "id": "widget_100"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791841,
+      "name": "Material",
+      "id": "widget_101"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791849,
+      "name": "InkWell",
+      "id": "widget_102"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791861,
+      "name": "Column",
+      "id": "widget_103"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791861,
+      "name": "Padding",
+      "id": "widget_104"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791862,
+      "name": "Row",
+      "id": "widget_105"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791863,
+      "name": "_Lamp",
+      "id": "widget_106"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939791864,
+      "name": "Container",
+      "id": "widget_107"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939792887,
+      "name": "SizedBox",
+      "id": "widget_108"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939792890,
+      "name": "Text",
+      "id": "widget_109"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793209,
+      "name": "SizedBox",
+      "id": "widget_110"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793213,
+      "name": "Text",
+      "id": "widget_111"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793226,
+      "name": "Positioned",
+      "id": "widget_112"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793227,
+      "name": "FittedBox",
+      "id": "widget_113"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793229,
+      "name": "SizedBox",
+      "id": "widget_114"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793231,
+      "name": "LinePhone",
+      "id": "widget_115"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793237,
+      "name": "Padding",
+      "id": "widget_116"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793238,
+      "name": "Column",
+      "id": "widget_117"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793240,
+      "name": "Material",
+      "id": "widget_118"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793256,
+      "name": "InkWell",
+      "id": "widget_119"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793287,
+      "name": "Padding",
+      "id": "widget_120"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793288,
+      "name": "Column",
+      "id": "widget_121"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793290,
+      "name": "Row",
+      "id": "widget_122"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793291,
+      "name": "_Lamp",
+      "id": "widget_123"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793292,
+      "name": "Container",
+      "id": "widget_124"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793295,
+      "name": "SizedBox",
+      "id": "widget_125"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793297,
+      "name": "Text",
+      "id": "widget_126"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793300,
+      "name": "SizedBox",
+      "id": "widget_127"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793302,
+      "name": "Text",
+      "id": "widget_128"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793309,
+      "name": "Positioned",
+      "id": "widget_129"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793309,
+      "name": "FittedBox",
+      "id": "widget_130"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793310,
+      "name": "SizedBox",
+      "id": "widget_131"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793311,
+      "name": "LinePhone",
+      "id": "widget_132"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793314,
+      "name": "Padding",
+      "id": "widget_133"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793315,
+      "name": "Column",
+      "id": "widget_134"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793316,
+      "name": "Material",
+      "id": "widget_135"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793322,
+      "name": "InkWell",
+      "id": "widget_136"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793335,
+      "name": "Padding",
+      "id": "widget_137"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793336,
+      "name": "Column",
+      "id": "widget_138"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793337,
+      "name": "Row",
+      "id": "widget_139"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793338,
+      "name": "_Lamp",
+      "id": "widget_140"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793338,
+      "name": "Container",
+      "id": "widget_141"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793440,
+      "name": "SizedBox",
+      "id": "widget_142"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793443,
+      "name": "Text",
+      "id": "widget_143"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793450,
+      "name": "SizedBox",
+      "id": "widget_144"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793451,
+      "name": "Text",
+      "id": "widget_145"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793457,
+      "name": "Positioned",
+      "id": "widget_146"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793458,
+      "name": "FittedBox",
+      "id": "widget_147"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793459,
+      "name": "SizedBox",
+      "id": "widget_148"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793460,
+      "name": "LinePhone",
+      "id": "widget_149"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793462,
+      "name": "Padding",
+      "id": "widget_150"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793463,
+      "name": "Column",
+      "id": "widget_151"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793465,
+      "name": "Material",
+      "id": "widget_152"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793471,
+      "name": "InkWell",
+      "id": "widget_153"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793487,
+      "name": "Column",
+      "id": "widget_154"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793487,
+      "name": "Padding",
+      "id": "widget_155"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793489,
+      "name": "Row",
+      "id": "widget_156"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793489,
+      "name": "_Lamp",
+      "id": "widget_157"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793490,
+      "name": "Container",
+      "id": "widget_158"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793493,
+      "name": "SizedBox",
+      "id": "widget_159"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793494,
+      "name": "Text",
+      "id": "widget_160"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793497,
+      "name": "SizedBox",
+      "id": "widget_161"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939793498,
+      "name": "Text",
+      "id": "widget_162"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939806690,
+      "buildUs": 1254,
+      "rasterUs": 18719,
+      "elapsedUs": 21989,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_5"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939808292,
+      "name": "phone-3",
+      "id": "action_3"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135939808372,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_1"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939822217,
+      "buildUs": 1389,
+      "rasterUs": 1039,
+      "elapsedUs": 6455,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_6"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822440,
+      "name": "ExchangeHost",
+      "id": "widget_163"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822447,
+      "name": "ExchangeActions",
+      "id": "widget_164"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822450,
+      "name": "ExchangeScope",
+      "id": "widget_165"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822467,
+      "name": "LinePhone",
+      "id": "widget_166"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822474,
+      "name": "Padding",
+      "id": "widget_167"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822477,
+      "name": "Column",
+      "id": "widget_168"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822480,
+      "name": "Material",
+      "id": "widget_169"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822495,
+      "name": "InkWell",
+      "id": "widget_170"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822523,
+      "name": "Padding",
+      "id": "widget_171"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822524,
+      "name": "Column",
+      "id": "widget_172"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822525,
+      "name": "Row",
+      "id": "widget_173"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822526,
+      "name": "_Lamp",
+      "id": "widget_174"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822528,
+      "name": "Container",
+      "id": "widget_175"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822536,
+      "name": "Text",
+      "id": "widget_176"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822546,
+      "name": "Text",
+      "id": "widget_177"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822564,
+      "name": "Text",
+      "id": "widget_178"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822582,
+      "name": "Padding",
+      "id": "widget_179"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822584,
+      "name": "Wrap",
+      "id": "widget_180"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822587,
+      "name": "DialKey",
+      "id": "widget_181"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822592,
+      "name": "SizedBox",
+      "id": "widget_182"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822595,
+      "name": "TextButton",
+      "id": "widget_183"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822686,
+      "name": "Text",
+      "id": "widget_184"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822805,
+      "name": "DialKey",
+      "id": "widget_185"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822808,
+      "name": "SizedBox",
+      "id": "widget_186"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822810,
+      "name": "TextButton",
+      "id": "widget_187"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822853,
+      "name": "Text",
+      "id": "widget_188"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822859,
+      "name": "DialKey",
+      "id": "widget_189"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822861,
+      "name": "SizedBox",
+      "id": "widget_190"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822862,
+      "name": "TextButton",
+      "id": "widget_191"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822892,
+      "name": "Text",
+      "id": "widget_192"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822897,
+      "name": "DialKey",
+      "id": "widget_193"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822899,
+      "name": "SizedBox",
+      "id": "widget_194"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822900,
+      "name": "TextButton",
+      "id": "widget_195"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822928,
+      "name": "Text",
+      "id": "widget_196"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822934,
+      "name": "DialKey",
+      "id": "widget_197"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822936,
+      "name": "SizedBox",
+      "id": "widget_198"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822937,
+      "name": "TextButton",
+      "id": "widget_199"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822968,
+      "name": "Text",
+      "id": "widget_200"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822977,
+      "name": "DialKey",
+      "id": "widget_201"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822979,
+      "name": "SizedBox",
+      "id": "widget_202"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939822980,
+      "name": "TextButton",
+      "id": "widget_203"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939823010,
+      "name": "Text",
+      "id": "widget_204"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939823016,
+      "name": "DialKey",
+      "id": "widget_205"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939823018,
+      "name": "SizedBox",
+      "id": "widget_206"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939823019,
+      "name": "TextButton",
+      "id": "widget_207"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939823049,
+      "name": "Text",
+      "id": "widget_208"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939839895,
+      "buildUs": 238,
+      "rasterUs": 4497,
+      "elapsedUs": 6106,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_7"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939840416,
+      "name": "digit-3-1",
+      "id": "action_4"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135939840481,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_2"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939855790,
+      "buildUs": 1208,
+      "rasterUs": 838,
+      "elapsedUs": 2657,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_8"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939855962,
+      "name": "ExchangeHost",
+      "id": "widget_209"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939855970,
+      "name": "ExchangeActions",
+      "id": "widget_210"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939855972,
+      "name": "ExchangeScope",
+      "id": "widget_211"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939855989,
+      "name": "SwitchDesk",
+      "id": "widget_212"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856000,
+      "name": "CustomPaint",
+      "id": "widget_213"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856003,
+      "name": "Center",
+      "id": "widget_214"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856006,
+      "name": "Column",
+      "id": "widget_215"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856009,
+      "name": "Text",
+      "id": "widget_216"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856041,
+      "name": "LinePhone",
+      "id": "widget_217"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856047,
+      "name": "Padding",
+      "id": "widget_218"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856048,
+      "name": "Column",
+      "id": "widget_219"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856049,
+      "name": "Material",
+      "id": "widget_220"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856063,
+      "name": "InkWell",
+      "id": "widget_221"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856091,
+      "name": "Padding",
+      "id": "widget_222"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856092,
+      "name": "Column",
+      "id": "widget_223"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856093,
+      "name": "Row",
+      "id": "widget_224"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856095,
+      "name": "_Lamp",
+      "id": "widget_225"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856098,
+      "name": "Container",
+      "id": "widget_226"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856104,
+      "name": "Text",
+      "id": "widget_227"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856109,
+      "name": "Text",
+      "id": "widget_228"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856113,
+      "name": "Text",
+      "id": "widget_229"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856140,
+      "name": "TextButton",
+      "id": "widget_230"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856350,
+      "name": "Text",
+      "id": "widget_231"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856391,
+      "name": "LinePhone",
+      "id": "widget_232"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856396,
+      "name": "Padding",
+      "id": "widget_233"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856397,
+      "name": "Column",
+      "id": "widget_234"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856399,
+      "name": "Material",
+      "id": "widget_235"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856409,
+      "name": "InkWell",
+      "id": "widget_236"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856423,
+      "name": "Padding",
+      "id": "widget_237"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856424,
+      "name": "Column",
+      "id": "widget_238"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856426,
+      "name": "Row",
+      "id": "widget_239"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856427,
+      "name": "_Lamp",
+      "id": "widget_240"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856428,
+      "name": "Container",
+      "id": "widget_241"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856433,
+      "name": "Text",
+      "id": "widget_242"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856439,
+      "name": "Text",
+      "id": "widget_243"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856442,
+      "name": "Text",
+      "id": "widget_244"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856455,
+      "name": "Text",
+      "id": "widget_245"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939856546,
+      "name": "TextButton",
+      "id": "widget_246"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939872775,
+      "buildUs": 260,
+      "rasterUs": 676,
+      "elapsedUs": 1855,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_9"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939873273,
+      "name": "phone-1",
+      "id": "action_5"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135939873335,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_3"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939888776,
+      "buildUs": 1175,
+      "rasterUs": 382,
+      "elapsedUs": 1818,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_10"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889104,
+      "name": "ExchangeHost",
+      "id": "widget_247"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889112,
+      "name": "ExchangeActions",
+      "id": "widget_248"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889114,
+      "name": "ExchangeScope",
+      "id": "widget_249"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889132,
+      "name": "SwitchDesk",
+      "id": "widget_250"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889139,
+      "name": "CustomPaint",
+      "id": "widget_251"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889142,
+      "name": "Center",
+      "id": "widget_252"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889146,
+      "name": "Column",
+      "id": "widget_253"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889148,
+      "name": "Text",
+      "id": "widget_254"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889174,
+      "name": "LinePhone",
+      "id": "widget_255"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889181,
+      "name": "Padding",
+      "id": "widget_256"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889183,
+      "name": "Column",
+      "id": "widget_257"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889184,
+      "name": "Material",
+      "id": "widget_258"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889197,
+      "name": "InkWell",
+      "id": "widget_259"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889233,
+      "name": "Padding",
+      "id": "widget_260"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889234,
+      "name": "Column",
+      "id": "widget_261"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889235,
+      "name": "Row",
+      "id": "widget_262"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889237,
+      "name": "_Lamp",
+      "id": "widget_263"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889239,
+      "name": "Container",
+      "id": "widget_264"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889245,
+      "name": "Text",
+      "id": "widget_265"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889251,
+      "name": "Text",
+      "id": "widget_266"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889265,
+      "name": "Text",
+      "id": "widget_267"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889272,
+      "name": "Text",
+      "id": "widget_268"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889318,
+      "name": "LinePhone",
+      "id": "widget_269"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889320,
+      "name": "Padding",
+      "id": "widget_270"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889321,
+      "name": "Column",
+      "id": "widget_271"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889323,
+      "name": "Material",
+      "id": "widget_272"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889329,
+      "name": "InkWell",
+      "id": "widget_273"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889341,
+      "name": "Padding",
+      "id": "widget_274"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889342,
+      "name": "Row",
+      "id": "widget_275"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889342,
+      "name": "Column",
+      "id": "widget_276"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889343,
+      "name": "_Lamp",
+      "id": "widget_277"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889344,
+      "name": "Container",
+      "id": "widget_278"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889348,
+      "name": "Text",
+      "id": "widget_279"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889476,
+      "name": "Text",
+      "id": "widget_280"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889482,
+      "name": "Text",
+      "id": "widget_281"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939889491,
+      "name": "Text",
+      "id": "widget_282"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939905766,
+      "buildUs": 354,
+      "rasterUs": 400,
+      "elapsedUs": 1350,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_11"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939906381,
+      "name": "phone-4",
+      "id": "action_6"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135939906439,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_4"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939922274,
+      "buildUs": 1237,
+      "rasterUs": 349,
+      "elapsedUs": 2009,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_12"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922488,
+      "name": "ExchangeHost",
+      "id": "widget_283"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922495,
+      "name": "ExchangeActions",
+      "id": "widget_284"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922497,
+      "name": "ExchangeScope",
+      "id": "widget_285"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922513,
+      "name": "LinePhone",
+      "id": "widget_286"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922521,
+      "name": "Padding",
+      "id": "widget_287"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922523,
+      "name": "Column",
+      "id": "widget_288"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922526,
+      "name": "Material",
+      "id": "widget_289"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922541,
+      "name": "InkWell",
+      "id": "widget_290"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922568,
+      "name": "Padding",
+      "id": "widget_291"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922569,
+      "name": "Column",
+      "id": "widget_292"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922570,
+      "name": "Row",
+      "id": "widget_293"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922572,
+      "name": "_Lamp",
+      "id": "widget_294"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922574,
+      "name": "Container",
+      "id": "widget_295"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922703,
+      "name": "Text",
+      "id": "widget_296"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922712,
+      "name": "Text",
+      "id": "widget_297"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922733,
+      "name": "Text",
+      "id": "widget_298"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922751,
+      "name": "Padding",
+      "id": "widget_299"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922753,
+      "name": "Wrap",
+      "id": "widget_300"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922755,
+      "name": "DialKey",
+      "id": "widget_301"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922762,
+      "name": "SizedBox",
+      "id": "widget_302"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922765,
+      "name": "TextButton",
+      "id": "widget_303"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922855,
+      "name": "Text",
+      "id": "widget_304"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922862,
+      "name": "DialKey",
+      "id": "widget_305"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922864,
+      "name": "SizedBox",
+      "id": "widget_306"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922865,
+      "name": "TextButton",
+      "id": "widget_307"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922903,
+      "name": "Text",
+      "id": "widget_308"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922945,
+      "name": "DialKey",
+      "id": "widget_309"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922949,
+      "name": "SizedBox",
+      "id": "widget_310"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922950,
+      "name": "TextButton",
+      "id": "widget_311"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939922994,
+      "name": "Text",
+      "id": "widget_312"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923000,
+      "name": "DialKey",
+      "id": "widget_313"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923002,
+      "name": "SizedBox",
+      "id": "widget_314"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923003,
+      "name": "TextButton",
+      "id": "widget_315"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923032,
+      "name": "Text",
+      "id": "widget_316"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923037,
+      "name": "DialKey",
+      "id": "widget_317"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923039,
+      "name": "SizedBox",
+      "id": "widget_318"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923040,
+      "name": "TextButton",
+      "id": "widget_319"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923069,
+      "name": "Text",
+      "id": "widget_320"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923074,
+      "name": "DialKey",
+      "id": "widget_321"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923076,
+      "name": "TextButton",
+      "id": "widget_322"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923076,
+      "name": "SizedBox",
+      "id": "widget_323"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923109,
+      "name": "Text",
+      "id": "widget_324"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923114,
+      "name": "DialKey",
+      "id": "widget_325"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923223,
+      "name": "SizedBox",
+      "id": "widget_326"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923225,
+      "name": "TextButton",
+      "id": "widget_327"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939923262,
+      "name": "Text",
+      "id": "widget_328"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939940700,
+      "buildUs": 222,
+      "rasterUs": 619,
+      "elapsedUs": 3040,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_13"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939941229,
+      "name": "digit-4-5",
+      "id": "action_7"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135939941278,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_5"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939956338,
+      "buildUs": 1095,
+      "rasterUs": 305,
+      "elapsedUs": 2557,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_14"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956533,
+      "name": "ExchangeHost",
+      "id": "widget_329"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956540,
+      "name": "ExchangeActions",
+      "id": "widget_330"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956542,
+      "name": "ExchangeScope",
+      "id": "widget_331"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956670,
+      "name": "SwitchDesk",
+      "id": "widget_332"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956683,
+      "name": "CustomPaint",
+      "id": "widget_333"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956686,
+      "name": "Center",
+      "id": "widget_334"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956688,
+      "name": "Column",
+      "id": "widget_335"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956692,
+      "name": "Text",
+      "id": "widget_336"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956715,
+      "name": "Text",
+      "id": "widget_337"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956736,
+      "name": "LinePhone",
+      "id": "widget_338"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956741,
+      "name": "Padding",
+      "id": "widget_339"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956743,
+      "name": "Column",
+      "id": "widget_340"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956744,
+      "name": "Material",
+      "id": "widget_341"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956757,
+      "name": "InkWell",
+      "id": "widget_342"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956783,
+      "name": "Padding",
+      "id": "widget_343"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956784,
+      "name": "Column",
+      "id": "widget_344"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956785,
+      "name": "Row",
+      "id": "widget_345"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956787,
+      "name": "_Lamp",
+      "id": "widget_346"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956788,
+      "name": "Container",
+      "id": "widget_347"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956794,
+      "name": "Text",
+      "id": "widget_348"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956800,
+      "name": "Text",
+      "id": "widget_349"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956803,
+      "name": "Text",
+      "id": "widget_350"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956811,
+      "name": "Text",
+      "id": "widget_351"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956896,
+      "name": "LinePhone",
+      "id": "widget_352"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956899,
+      "name": "Padding",
+      "id": "widget_353"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956900,
+      "name": "Column",
+      "id": "widget_354"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956901,
+      "name": "Material",
+      "id": "widget_355"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956907,
+      "name": "InkWell",
+      "id": "widget_356"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956916,
+      "name": "Padding",
+      "id": "widget_357"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956916,
+      "name": "Column",
+      "id": "widget_358"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956917,
+      "name": "Row",
+      "id": "widget_359"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956918,
+      "name": "_Lamp",
+      "id": "widget_360"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956919,
+      "name": "Container",
+      "id": "widget_361"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956922,
+      "name": "Text",
+      "id": "widget_362"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956926,
+      "name": "Text",
+      "id": "widget_363"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939956928,
+      "name": "Text",
+      "id": "widget_364"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939957032,
+      "name": "TextButton",
+      "id": "widget_365"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939957114,
+      "name": "Text",
+      "id": "widget_366"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939957121,
+      "name": "TextButton",
+      "id": "widget_367"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939972910,
+      "buildUs": 417,
+      "rasterUs": 355,
+      "elapsedUs": 1842,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_15"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135939973607,
+      "name": "phone-6",
+      "id": "action_8"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135939973652,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_6"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135939989279,
+      "buildUs": 1271,
+      "rasterUs": 680,
+      "elapsedUs": 2713,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_16"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989465,
+      "name": "ExchangeHost",
+      "id": "widget_368"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989472,
+      "name": "ExchangeActions",
+      "id": "widget_369"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989474,
+      "name": "ExchangeScope",
+      "id": "widget_370"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989489,
+      "name": "LinePhone",
+      "id": "widget_371"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989497,
+      "name": "Padding",
+      "id": "widget_372"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989500,
+      "name": "Column",
+      "id": "widget_373"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989503,
+      "name": "Material",
+      "id": "widget_374"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989519,
+      "name": "InkWell",
+      "id": "widget_375"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989547,
+      "name": "Padding",
+      "id": "widget_376"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989548,
+      "name": "Column",
+      "id": "widget_377"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989549,
+      "name": "Row",
+      "id": "widget_378"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989551,
+      "name": "_Lamp",
+      "id": "widget_379"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989552,
+      "name": "Container",
+      "id": "widget_380"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989674,
+      "name": "Text",
+      "id": "widget_381"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989681,
+      "name": "Text",
+      "id": "widget_382"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989702,
+      "name": "Text",
+      "id": "widget_383"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989720,
+      "name": "Padding",
+      "id": "widget_384"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989722,
+      "name": "Wrap",
+      "id": "widget_385"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989725,
+      "name": "DialKey",
+      "id": "widget_386"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989731,
+      "name": "SizedBox",
+      "id": "widget_387"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989733,
+      "name": "TextButton",
+      "id": "widget_388"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989905,
+      "name": "Text",
+      "id": "widget_389"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989917,
+      "name": "DialKey",
+      "id": "widget_390"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989921,
+      "name": "SizedBox",
+      "id": "widget_391"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989923,
+      "name": "TextButton",
+      "id": "widget_392"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989958,
+      "name": "Text",
+      "id": "widget_393"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989964,
+      "name": "DialKey",
+      "id": "widget_394"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989966,
+      "name": "SizedBox",
+      "id": "widget_395"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989967,
+      "name": "TextButton",
+      "id": "widget_396"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989993,
+      "name": "Text",
+      "id": "widget_397"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939989998,
+      "name": "DialKey",
+      "id": "widget_398"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990000,
+      "name": "TextButton",
+      "id": "widget_399"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990000,
+      "name": "SizedBox",
+      "id": "widget_400"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990027,
+      "name": "Text",
+      "id": "widget_401"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990032,
+      "name": "DialKey",
+      "id": "widget_402"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990034,
+      "name": "SizedBox",
+      "id": "widget_403"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990035,
+      "name": "TextButton",
+      "id": "widget_404"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990098,
+      "name": "Text",
+      "id": "widget_405"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990105,
+      "name": "DialKey",
+      "id": "widget_406"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990108,
+      "name": "SizedBox",
+      "id": "widget_407"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990109,
+      "name": "TextButton",
+      "id": "widget_408"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990146,
+      "name": "Text",
+      "id": "widget_409"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990153,
+      "name": "DialKey",
+      "id": "widget_410"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990269,
+      "name": "SizedBox",
+      "id": "widget_411"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990272,
+      "name": "TextButton",
+      "id": "widget_412"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135939990309,
+      "name": "Text",
+      "id": "widget_413"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940006132,
+      "buildUs": 393,
+      "rasterUs": 462,
+      "elapsedUs": 1815,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_17"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940006784,
+      "name": "digit-6-5",
+      "id": "action_9"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940006830,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_7"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940022637,
+      "buildUs": 964,
+      "rasterUs": 320,
+      "elapsedUs": 2076,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_18"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022829,
+      "name": "ExchangeHost",
+      "id": "widget_414"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022835,
+      "name": "ExchangeActions",
+      "id": "widget_415"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022838,
+      "name": "ExchangeScope",
+      "id": "widget_416"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022854,
+      "name": "LinePhone",
+      "id": "widget_417"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022862,
+      "name": "Padding",
+      "id": "widget_418"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022865,
+      "name": "Column",
+      "id": "widget_419"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022868,
+      "name": "Material",
+      "id": "widget_420"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022883,
+      "name": "InkWell",
+      "id": "widget_421"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022908,
+      "name": "Column",
+      "id": "widget_422"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022908,
+      "name": "Padding",
+      "id": "widget_423"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022910,
+      "name": "Row",
+      "id": "widget_424"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022911,
+      "name": "_Lamp",
+      "id": "widget_425"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022913,
+      "name": "Container",
+      "id": "widget_426"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022920,
+      "name": "Text",
+      "id": "widget_427"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940022927,
+      "name": "Text",
+      "id": "widget_428"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023040,
+      "name": "Text",
+      "id": "widget_429"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023059,
+      "name": "Padding",
+      "id": "widget_430"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023060,
+      "name": "Wrap",
+      "id": "widget_431"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023062,
+      "name": "DialKey",
+      "id": "widget_432"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023068,
+      "name": "SizedBox",
+      "id": "widget_433"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023070,
+      "name": "TextButton",
+      "id": "widget_434"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023132,
+      "name": "Text",
+      "id": "widget_435"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023139,
+      "name": "DialKey",
+      "id": "widget_436"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023142,
+      "name": "SizedBox",
+      "id": "widget_437"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023143,
+      "name": "TextButton",
+      "id": "widget_438"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023170,
+      "name": "Text",
+      "id": "widget_439"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023175,
+      "name": "DialKey",
+      "id": "widget_440"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023177,
+      "name": "SizedBox",
+      "id": "widget_441"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023178,
+      "name": "TextButton",
+      "id": "widget_442"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023198,
+      "name": "Text",
+      "id": "widget_443"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023202,
+      "name": "DialKey",
+      "id": "widget_444"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023207,
+      "name": "SizedBox",
+      "id": "widget_445"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023208,
+      "name": "TextButton",
+      "id": "widget_446"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023227,
+      "name": "Text",
+      "id": "widget_447"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023231,
+      "name": "DialKey",
+      "id": "widget_448"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023233,
+      "name": "SizedBox",
+      "id": "widget_449"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023234,
+      "name": "TextButton",
+      "id": "widget_450"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023253,
+      "name": "Text",
+      "id": "widget_451"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023257,
+      "name": "DialKey",
+      "id": "widget_452"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023258,
+      "name": "SizedBox",
+      "id": "widget_453"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023259,
+      "name": "TextButton",
+      "id": "widget_454"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023280,
+      "name": "Text",
+      "id": "widget_455"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023284,
+      "name": "DialKey",
+      "id": "widget_456"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023285,
+      "name": "SizedBox",
+      "id": "widget_457"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023286,
+      "name": "TextButton",
+      "id": "widget_458"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023306,
+      "name": "Text",
+      "id": "widget_459"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940023413,
+      "name": "TextButton",
+      "id": "widget_460"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940039631,
+      "buildUs": 328,
+      "rasterUs": 364,
+      "elapsedUs": 1815,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_19"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940040294,
+      "name": "digit-6-0",
+      "id": "action_10"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940040344,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_8"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940056836,
+      "buildUs": 966,
+      "rasterUs": 418,
+      "elapsedUs": 3049,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_20"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057003,
+      "name": "ExchangeHost",
+      "id": "widget_461"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057010,
+      "name": "ExchangeActions",
+      "id": "widget_462"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057013,
+      "name": "ExchangeScope",
+      "id": "widget_463"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057028,
+      "name": "LinePhone",
+      "id": "widget_464"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057035,
+      "name": "Padding",
+      "id": "widget_465"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057038,
+      "name": "Column",
+      "id": "widget_466"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057041,
+      "name": "Material",
+      "id": "widget_467"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057056,
+      "name": "InkWell",
+      "id": "widget_468"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057083,
+      "name": "Padding",
+      "id": "widget_469"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057084,
+      "name": "Column",
+      "id": "widget_470"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057085,
+      "name": "Row",
+      "id": "widget_471"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057086,
+      "name": "_Lamp",
+      "id": "widget_472"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057088,
+      "name": "Container",
+      "id": "widget_473"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057094,
+      "name": "Text",
+      "id": "widget_474"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057101,
+      "name": "Text",
+      "id": "widget_475"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057211,
+      "name": "Text",
+      "id": "widget_476"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057217,
+      "name": "Text",
+      "id": "widget_477"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057236,
+      "name": "Padding",
+      "id": "widget_478"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057238,
+      "name": "Wrap",
+      "id": "widget_479"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057240,
+      "name": "DialKey",
+      "id": "widget_480"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057245,
+      "name": "SizedBox",
+      "id": "widget_481"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057247,
+      "name": "TextButton",
+      "id": "widget_482"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057303,
+      "name": "Text",
+      "id": "widget_483"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057308,
+      "name": "DialKey",
+      "id": "widget_484"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057310,
+      "name": "SizedBox",
+      "id": "widget_485"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057316,
+      "name": "TextButton",
+      "id": "widget_486"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057339,
+      "name": "Text",
+      "id": "widget_487"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057344,
+      "name": "DialKey",
+      "id": "widget_488"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057346,
+      "name": "SizedBox",
+      "id": "widget_489"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057348,
+      "name": "TextButton",
+      "id": "widget_490"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057369,
+      "name": "Text",
+      "id": "widget_491"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057375,
+      "name": "DialKey",
+      "id": "widget_492"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057377,
+      "name": "SizedBox",
+      "id": "widget_493"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057378,
+      "name": "TextButton",
+      "id": "widget_494"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057418,
+      "name": "Text",
+      "id": "widget_495"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057422,
+      "name": "DialKey",
+      "id": "widget_496"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057425,
+      "name": "SizedBox",
+      "id": "widget_497"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057426,
+      "name": "TextButton",
+      "id": "widget_498"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057455,
+      "name": "Text",
+      "id": "widget_499"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057460,
+      "name": "DialKey",
+      "id": "widget_500"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057461,
+      "name": "SizedBox",
+      "id": "widget_501"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057462,
+      "name": "TextButton",
+      "id": "widget_502"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057485,
+      "name": "Text",
+      "id": "widget_503"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057490,
+      "name": "DialKey",
+      "id": "widget_504"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057492,
+      "name": "SizedBox",
+      "id": "widget_505"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057493,
+      "name": "TextButton",
+      "id": "widget_506"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057516,
+      "name": "Text",
+      "id": "widget_507"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940057617,
+      "name": "TextButton",
+      "id": "widget_508"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940073220,
+      "buildUs": 292,
+      "rasterUs": 525,
+      "elapsedUs": 2256,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_21"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940073793,
+      "name": "digit-6-1",
+      "id": "action_11"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940073842,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_9"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940089325,
+      "buildUs": 1274,
+      "rasterUs": 33858,
+      "elapsedUs": 35955,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_22"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089599,
+      "name": "ExchangeHost",
+      "id": "widget_509"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089605,
+      "name": "ExchangeActions",
+      "id": "widget_510"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089607,
+      "name": "ExchangeScope",
+      "id": "widget_511"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089625,
+      "name": "SwitchDesk",
+      "id": "widget_512"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089631,
+      "name": "CustomPaint",
+      "id": "widget_513"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089634,
+      "name": "Center",
+      "id": "widget_514"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089636,
+      "name": "Column",
+      "id": "widget_515"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089638,
+      "name": "Text",
+      "id": "widget_516"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089646,
+      "name": "Text",
+      "id": "widget_517"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089651,
+      "name": "Text",
+      "id": "widget_518"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089778,
+      "name": "LinePhone",
+      "id": "widget_519"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089785,
+      "name": "Padding",
+      "id": "widget_520"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089787,
+      "name": "Column",
+      "id": "widget_521"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089788,
+      "name": "Material",
+      "id": "widget_522"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089802,
+      "name": "InkWell",
+      "id": "widget_523"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089825,
+      "name": "Padding",
+      "id": "widget_524"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089826,
+      "name": "Column",
+      "id": "widget_525"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089827,
+      "name": "Row",
+      "id": "widget_526"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089829,
+      "name": "_Lamp",
+      "id": "widget_527"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089831,
+      "name": "Container",
+      "id": "widget_528"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089838,
+      "name": "Text",
+      "id": "widget_529"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089843,
+      "name": "Text",
+      "id": "widget_530"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089846,
+      "name": "Text",
+      "id": "widget_531"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089861,
+      "name": "Text",
+      "id": "widget_532"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940089959,
+      "name": "TextButton",
+      "id": "widget_533"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940106332,
+      "buildUs": 292,
+      "rasterUs": 663,
+      "elapsedUs": 19980,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_23"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940106875,
+      "name": "phone-4",
+      "id": "action_12"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940106930,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_10"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940140785,
+      "buildUs": 1019,
+      "rasterUs": 16774,
+      "elapsedUs": 19041,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_24"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140913,
+      "name": "ExchangeHost",
+      "id": "widget_534"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140922,
+      "name": "ExchangeActions",
+      "id": "widget_535"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140925,
+      "name": "ExchangeScope",
+      "id": "widget_536"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140944,
+      "name": "SwitchDesk",
+      "id": "widget_537"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140955,
+      "name": "CustomPaint",
+      "id": "widget_538"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140959,
+      "name": "Center",
+      "id": "widget_539"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140962,
+      "name": "Column",
+      "id": "widget_540"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140965,
+      "name": "Text",
+      "id": "widget_541"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940140989,
+      "name": "Text",
+      "id": "widget_542"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141004,
+      "name": "LinePhone",
+      "id": "widget_543"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141010,
+      "name": "Padding",
+      "id": "widget_544"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141011,
+      "name": "Column",
+      "id": "widget_545"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141013,
+      "name": "Material",
+      "id": "widget_546"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141030,
+      "name": "InkWell",
+      "id": "widget_547"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141057,
+      "name": "Padding",
+      "id": "widget_548"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141058,
+      "name": "Column",
+      "id": "widget_549"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141060,
+      "name": "Row",
+      "id": "widget_550"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141061,
+      "name": "_Lamp",
+      "id": "widget_551"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141063,
+      "name": "Container",
+      "id": "widget_552"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141069,
+      "name": "Text",
+      "id": "widget_553"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141074,
+      "name": "Text",
+      "id": "widget_554"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141181,
+      "name": "Text",
+      "id": "widget_555"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141193,
+      "name": "Text",
+      "id": "widget_556"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141202,
+      "name": "LinePhone",
+      "id": "widget_557"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141204,
+      "name": "Padding",
+      "id": "widget_558"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141206,
+      "name": "Column",
+      "id": "widget_559"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141206,
+      "name": "Material",
+      "id": "widget_560"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141213,
+      "name": "InkWell",
+      "id": "widget_561"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141223,
+      "name": "Padding",
+      "id": "widget_562"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141224,
+      "name": "Column",
+      "id": "widget_563"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141225,
+      "name": "Row",
+      "id": "widget_564"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141226,
+      "name": "_Lamp",
+      "id": "widget_565"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141226,
+      "name": "Container",
+      "id": "widget_566"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141230,
+      "name": "Text",
+      "id": "widget_567"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141233,
+      "name": "Text",
+      "id": "widget_568"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141281,
+      "name": "LinePhone",
+      "id": "widget_569"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141283,
+      "name": "Padding",
+      "id": "widget_570"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141284,
+      "name": "Column",
+      "id": "widget_571"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141285,
+      "name": "Material",
+      "id": "widget_572"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141292,
+      "name": "InkWell",
+      "id": "widget_573"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141302,
+      "name": "Padding",
+      "id": "widget_574"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141303,
+      "name": "Column",
+      "id": "widget_575"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141304,
+      "name": "Row",
+      "id": "widget_576"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141304,
+      "name": "_Lamp",
+      "id": "widget_577"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141305,
+      "name": "Container",
+      "id": "widget_578"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141309,
+      "name": "Text",
+      "id": "widget_579"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940141312,
+      "name": "Text",
+      "id": "widget_580"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940156842,
+      "buildUs": 679,
+      "rasterUs": 796,
+      "elapsedUs": 3215,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_25"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940158297,
+      "name": "phone-6",
+      "id": "action_13"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940158374,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_11"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940174208,
+      "buildUs": 948,
+      "rasterUs": 811,
+      "elapsedUs": 3100,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_26"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174381,
+      "name": "ExchangeHost",
+      "id": "widget_581"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174397,
+      "name": "ExchangeActions",
+      "id": "widget_582"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174403,
+      "name": "ExchangeScope",
+      "id": "widget_583"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174434,
+      "name": "LinePhone",
+      "id": "widget_584"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174455,
+      "name": "Padding",
+      "id": "widget_585"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174462,
+      "name": "Column",
+      "id": "widget_586"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174468,
+      "name": "Material",
+      "id": "widget_587"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174505,
+      "name": "InkWell",
+      "id": "widget_588"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174558,
+      "name": "Padding",
+      "id": "widget_589"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174559,
+      "name": "Column",
+      "id": "widget_590"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174561,
+      "name": "Row",
+      "id": "widget_591"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174563,
+      "name": "_Lamp",
+      "id": "widget_592"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174566,
+      "name": "Container",
+      "id": "widget_593"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174576,
+      "name": "Text",
+      "id": "widget_594"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174588,
+      "name": "Text",
+      "id": "widget_595"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174615,
+      "name": "Text",
+      "id": "widget_596"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174623,
+      "name": "Text",
+      "id": "widget_597"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174633,
+      "name": "TextButton",
+      "id": "widget_598"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940174778,
+      "name": "Text",
+      "id": "widget_599"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940191030,
+      "buildUs": 589,
+      "rasterUs": 688,
+      "elapsedUs": 3023,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_27"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940192317,
+      "name": "phone-5",
+      "id": "action_14"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940192365,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_12"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940207171,
+      "buildUs": 1470,
+      "rasterUs": 1144,
+      "elapsedUs": 3585,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_28"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207311,
+      "name": "ExchangeHost",
+      "id": "widget_600"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207320,
+      "name": "ExchangeActions",
+      "id": "widget_601"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207323,
+      "name": "ExchangeScope",
+      "id": "widget_602"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207340,
+      "name": "LinePhone",
+      "id": "widget_603"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207352,
+      "name": "Padding",
+      "id": "widget_604"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207356,
+      "name": "Column",
+      "id": "widget_605"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207359,
+      "name": "Material",
+      "id": "widget_606"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207380,
+      "name": "InkWell",
+      "id": "widget_607"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207408,
+      "name": "Padding",
+      "id": "widget_608"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207411,
+      "name": "Column",
+      "id": "widget_609"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207412,
+      "name": "Row",
+      "id": "widget_610"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207413,
+      "name": "_Lamp",
+      "id": "widget_611"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207415,
+      "name": "Container",
+      "id": "widget_612"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207423,
+      "name": "Text",
+      "id": "widget_613"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207431,
+      "name": "Text",
+      "id": "widget_614"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207448,
+      "name": "Text",
+      "id": "widget_615"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207464,
+      "name": "Padding",
+      "id": "widget_616"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207580,
+      "name": "Wrap",
+      "id": "widget_617"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207584,
+      "name": "DialKey",
+      "id": "widget_618"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207591,
+      "name": "SizedBox",
+      "id": "widget_619"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207594,
+      "name": "TextButton",
+      "id": "widget_620"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207693,
+      "name": "Text",
+      "id": "widget_621"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207699,
+      "name": "DialKey",
+      "id": "widget_622"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207702,
+      "name": "SizedBox",
+      "id": "widget_623"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207703,
+      "name": "TextButton",
+      "id": "widget_624"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207782,
+      "name": "Text",
+      "id": "widget_625"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207794,
+      "name": "DialKey",
+      "id": "widget_626"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207796,
+      "name": "SizedBox",
+      "id": "widget_627"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207797,
+      "name": "TextButton",
+      "id": "widget_628"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207829,
+      "name": "Text",
+      "id": "widget_629"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207834,
+      "name": "DialKey",
+      "id": "widget_630"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207835,
+      "name": "SizedBox",
+      "id": "widget_631"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207836,
+      "name": "TextButton",
+      "id": "widget_632"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207865,
+      "name": "Text",
+      "id": "widget_633"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207870,
+      "name": "DialKey",
+      "id": "widget_634"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207875,
+      "name": "SizedBox",
+      "id": "widget_635"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207875,
+      "name": "TextButton",
+      "id": "widget_636"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207899,
+      "name": "Text",
+      "id": "widget_637"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207907,
+      "name": "DialKey",
+      "id": "widget_638"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207908,
+      "name": "SizedBox",
+      "id": "widget_639"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207909,
+      "name": "TextButton",
+      "id": "widget_640"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207938,
+      "name": "Text",
+      "id": "widget_641"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207943,
+      "name": "DialKey",
+      "id": "widget_642"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207945,
+      "name": "TextButton",
+      "id": "widget_643"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207945,
+      "name": "SizedBox",
+      "id": "widget_644"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940207974,
+      "name": "Text",
+      "id": "widget_645"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940224548,
+      "buildUs": 417,
+      "rasterUs": 870,
+      "elapsedUs": 3110,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_29"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940225206,
+      "name": "phone-5",
+      "id": "action_15"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940225255,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_13"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940240593,
+      "buildUs": 715,
+      "rasterUs": 1292,
+      "elapsedUs": 3066,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_30"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240704,
+      "name": "ExchangeHost",
+      "id": "widget_646"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240713,
+      "name": "ExchangeActions",
+      "id": "widget_647"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240717,
+      "name": "ExchangeScope",
+      "id": "widget_648"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240735,
+      "name": "LinePhone",
+      "id": "widget_649"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240748,
+      "name": "Padding",
+      "id": "widget_650"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240752,
+      "name": "Column",
+      "id": "widget_651"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240755,
+      "name": "Material",
+      "id": "widget_652"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240777,
+      "name": "InkWell",
+      "id": "widget_653"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240807,
+      "name": "Padding",
+      "id": "widget_654"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240807,
+      "name": "Column",
+      "id": "widget_655"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240809,
+      "name": "Row",
+      "id": "widget_656"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240810,
+      "name": "_Lamp",
+      "id": "widget_657"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240812,
+      "name": "Container",
+      "id": "widget_658"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240938,
+      "name": "Text",
+      "id": "widget_659"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940240948,
+      "name": "Text",
+      "id": "widget_660"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940256775,
+      "buildUs": 616,
+      "rasterUs": 540,
+      "elapsedUs": 1738,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_31"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940257702,
+      "name": "phone-6",
+      "id": "action_16"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940257760,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_14"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940274221,
+      "buildUs": 1125,
+      "rasterUs": 975,
+      "elapsedUs": 3458,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_32"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274354,
+      "name": "ExchangeHost",
+      "id": "widget_661"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274363,
+      "name": "ExchangeActions",
+      "id": "widget_662"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274366,
+      "name": "ExchangeScope",
+      "id": "widget_663"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274385,
+      "name": "SwitchDesk",
+      "id": "widget_664"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274400,
+      "name": "CustomPaint",
+      "id": "widget_665"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274403,
+      "name": "Center",
+      "id": "widget_666"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274406,
+      "name": "Column",
+      "id": "widget_667"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274409,
+      "name": "Text",
+      "id": "widget_668"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274436,
+      "name": "Text",
+      "id": "widget_669"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274556,
+      "name": "LinePhone",
+      "id": "widget_670"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274565,
+      "name": "Padding",
+      "id": "widget_671"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274567,
+      "name": "Column",
+      "id": "widget_672"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274568,
+      "name": "Material",
+      "id": "widget_673"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274587,
+      "name": "InkWell",
+      "id": "widget_674"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274613,
+      "name": "Padding",
+      "id": "widget_675"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274615,
+      "name": "Column",
+      "id": "widget_676"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274616,
+      "name": "Row",
+      "id": "widget_677"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274617,
+      "name": "_Lamp",
+      "id": "widget_678"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274619,
+      "name": "Container",
+      "id": "widget_679"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274624,
+      "name": "Text",
+      "id": "widget_680"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274629,
+      "name": "Text",
+      "id": "widget_681"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274639,
+      "name": "Text",
+      "id": "widget_682"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274644,
+      "name": "Text",
+      "id": "widget_683"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274678,
+      "name": "LinePhone",
+      "id": "widget_684"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274681,
+      "name": "Padding",
+      "id": "widget_685"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274682,
+      "name": "Column",
+      "id": "widget_686"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274683,
+      "name": "Material",
+      "id": "widget_687"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274689,
+      "name": "InkWell",
+      "id": "widget_688"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274697,
+      "name": "Padding",
+      "id": "widget_689"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274698,
+      "name": "Column",
+      "id": "widget_690"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274699,
+      "name": "Row",
+      "id": "widget_691"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274700,
+      "name": "_Lamp",
+      "id": "widget_692"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274700,
+      "name": "Container",
+      "id": "widget_693"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274705,
+      "name": "Text",
+      "id": "widget_694"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274709,
+      "name": "Text",
+      "id": "widget_695"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274713,
+      "name": "Text",
+      "id": "widget_696"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274729,
+      "name": "TextButton",
+      "id": "widget_697"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940274856,
+      "name": "Text",
+      "id": "widget_698"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940291136,
+      "buildUs": 305,
+      "rasterUs": 639,
+      "elapsedUs": 2664,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_33"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940291797,
+      "name": "phone-5",
+      "id": "action_17"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940291847,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_15"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940308227,
+      "buildUs": 1074,
+      "rasterUs": 1166,
+      "elapsedUs": 4262,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_34"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308365,
+      "name": "ExchangeHost",
+      "id": "widget_699"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308374,
+      "name": "ExchangeActions",
+      "id": "widget_700"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308377,
+      "name": "ExchangeScope",
+      "id": "widget_701"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308395,
+      "name": "SwitchDesk",
+      "id": "widget_702"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308407,
+      "name": "CustomPaint",
+      "id": "widget_703"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308411,
+      "name": "Center",
+      "id": "widget_704"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308414,
+      "name": "Column",
+      "id": "widget_705"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308417,
+      "name": "Text",
+      "id": "widget_706"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308442,
+      "name": "Text",
+      "id": "widget_707"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308454,
+      "name": "LinePhone",
+      "id": "widget_708"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308461,
+      "name": "Padding",
+      "id": "widget_709"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308462,
+      "name": "Column",
+      "id": "widget_710"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308463,
+      "name": "Material",
+      "id": "widget_711"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308480,
+      "name": "InkWell",
+      "id": "widget_712"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308508,
+      "name": "Padding",
+      "id": "widget_713"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308509,
+      "name": "Column",
+      "id": "widget_714"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308510,
+      "name": "Row",
+      "id": "widget_715"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308511,
+      "name": "_Lamp",
+      "id": "widget_716"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308513,
+      "name": "Container",
+      "id": "widget_717"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308520,
+      "name": "Text",
+      "id": "widget_718"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308526,
+      "name": "Text",
+      "id": "widget_719"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308530,
+      "name": "Text",
+      "id": "widget_720"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308540,
+      "name": "Text",
+      "id": "widget_721"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308690,
+      "name": "LinePhone",
+      "id": "widget_722"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308695,
+      "name": "Padding",
+      "id": "widget_723"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308696,
+      "name": "Column",
+      "id": "widget_724"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308697,
+      "name": "Material",
+      "id": "widget_725"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308711,
+      "name": "InkWell",
+      "id": "widget_726"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308724,
+      "name": "Column",
+      "id": "widget_727"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308724,
+      "name": "Padding",
+      "id": "widget_728"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308726,
+      "name": "Row",
+      "id": "widget_729"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308727,
+      "name": "_Lamp",
+      "id": "widget_730"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308728,
+      "name": "Container",
+      "id": "widget_731"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308731,
+      "name": "Text",
+      "id": "widget_732"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308735,
+      "name": "Text",
+      "id": "widget_733"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308743,
+      "name": "Text",
+      "id": "widget_734"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940308748,
+      "name": "Text",
+      "id": "widget_735"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940323956,
+      "buildUs": 322,
+      "rasterUs": 522,
+      "elapsedUs": 1923,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_35"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940324503,
+      "name": "phone-3",
+      "id": "action_18"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940324560,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_16"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940340832,
+      "buildUs": 853,
+      "rasterUs": 699,
+      "elapsedUs": 2841,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_36"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341048,
+      "name": "ExchangeHost",
+      "id": "widget_736"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341058,
+      "name": "ExchangeActions",
+      "id": "widget_737"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341061,
+      "name": "ExchangeScope",
+      "id": "widget_738"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341080,
+      "name": "SwitchDesk",
+      "id": "widget_739"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341090,
+      "name": "CustomPaint",
+      "id": "widget_740"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341094,
+      "name": "Center",
+      "id": "widget_741"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341097,
+      "name": "Column",
+      "id": "widget_742"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341100,
+      "name": "Text",
+      "id": "widget_743"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341133,
+      "name": "LinePhone",
+      "id": "widget_744"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341139,
+      "name": "Padding",
+      "id": "widget_745"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341141,
+      "name": "Column",
+      "id": "widget_746"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341142,
+      "name": "Material",
+      "id": "widget_747"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341161,
+      "name": "InkWell",
+      "id": "widget_748"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341190,
+      "name": "Padding",
+      "id": "widget_749"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341191,
+      "name": "Column",
+      "id": "widget_750"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341192,
+      "name": "Row",
+      "id": "widget_751"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341194,
+      "name": "_Lamp",
+      "id": "widget_752"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341197,
+      "name": "Container",
+      "id": "widget_753"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341204,
+      "name": "Text",
+      "id": "widget_754"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341209,
+      "name": "Text",
+      "id": "widget_755"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341227,
+      "name": "LinePhone",
+      "id": "widget_756"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341230,
+      "name": "Padding",
+      "id": "widget_757"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341231,
+      "name": "Material",
+      "id": "widget_758"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341231,
+      "name": "Column",
+      "id": "widget_759"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341237,
+      "name": "InkWell",
+      "id": "widget_760"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341246,
+      "name": "Padding",
+      "id": "widget_761"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341246,
+      "name": "Column",
+      "id": "widget_762"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341247,
+      "name": "Row",
+      "id": "widget_763"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341248,
+      "name": "_Lamp",
+      "id": "widget_764"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341248,
+      "name": "Container",
+      "id": "widget_765"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341252,
+      "name": "Text",
+      "id": "widget_766"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940341256,
+      "name": "Text",
+      "id": "widget_767"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940356928,
+      "buildUs": 507,
+      "rasterUs": 1088,
+      "elapsedUs": 2471,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_37"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 135940357998,
+      "name": "phone-5",
+      "id": "action_19"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 135940358079,
+      "adapter": "riverpod",
+      "name": "exchange",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_17"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940373816,
+      "buildUs": 1180,
+      "rasterUs": 904,
+      "elapsedUs": 3039,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_38"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374016,
+      "name": "ExchangeHost",
+      "id": "widget_768"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374030,
+      "name": "ExchangeActions",
+      "id": "widget_769"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374035,
+      "name": "ExchangeScope",
+      "id": "widget_770"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374065,
+      "name": "SwitchDesk",
+      "id": "widget_771"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374078,
+      "name": "CustomPaint",
+      "id": "widget_772"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374083,
+      "name": "Center",
+      "id": "widget_773"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374088,
+      "name": "Column",
+      "id": "widget_774"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374216,
+      "name": "Text",
+      "id": "widget_775"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374262,
+      "name": "LinePhone",
+      "id": "widget_776"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374275,
+      "name": "Padding",
+      "id": "widget_777"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374277,
+      "name": "Column",
+      "id": "widget_778"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374279,
+      "name": "Material",
+      "id": "widget_779"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374307,
+      "name": "InkWell",
+      "id": "widget_780"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374351,
+      "name": "Padding",
+      "id": "widget_781"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374352,
+      "name": "Column",
+      "id": "widget_782"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374353,
+      "name": "Row",
+      "id": "widget_783"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374355,
+      "name": "_Lamp",
+      "id": "widget_784"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374358,
+      "name": "Container",
+      "id": "widget_785"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374367,
+      "name": "Text",
+      "id": "widget_786"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374374,
+      "name": "Text",
+      "id": "widget_787"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374402,
+      "name": "LinePhone",
+      "id": "widget_788"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374410,
+      "name": "Padding",
+      "id": "widget_789"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374410,
+      "name": "Column",
+      "id": "widget_790"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374411,
+      "name": "Material",
+      "id": "widget_791"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374419,
+      "name": "InkWell",
+      "id": "widget_792"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374431,
+      "name": "Padding",
+      "id": "widget_793"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374431,
+      "name": "Column",
+      "id": "widget_794"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374432,
+      "name": "Row",
+      "id": "widget_795"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374433,
+      "name": "_Lamp",
+      "id": "widget_796"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374433,
+      "name": "Container",
+      "id": "widget_797"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374437,
+      "name": "Text",
+      "id": "widget_798"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 135940374441,
+      "name": "Text",
+      "id": "widget_799"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940389805,
+      "buildUs": 282,
+      "rasterUs": 478,
+      "elapsedUs": 1016,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_39"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940406367,
+      "buildUs": 420,
+      "rasterUs": 624,
+      "elapsedUs": 1214,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_40"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940424154,
+      "buildUs": 592,
+      "rasterUs": 778,
+      "elapsedUs": 2663,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_41"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940440665,
+      "buildUs": 387,
+      "rasterUs": 654,
+      "elapsedUs": 2493,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_42"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940457088,
+      "buildUs": 441,
+      "rasterUs": 636,
+      "elapsedUs": 1969,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_43"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940473710,
+      "buildUs": 432,
+      "rasterUs": 447,
+      "elapsedUs": 1714,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_44"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940490130,
+      "buildUs": 508,
+      "rasterUs": 1192,
+      "elapsedUs": 2300,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_45"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940507696,
+      "buildUs": 356,
+      "rasterUs": 824,
+      "elapsedUs": 2711,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_46"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940523919,
+      "buildUs": 395,
+      "rasterUs": 416,
+      "elapsedUs": 1856,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_47"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940540664,
+      "buildUs": 483,
+      "rasterUs": 907,
+      "elapsedUs": 2531,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_48"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940556770,
+      "buildUs": 337,
+      "rasterUs": 620,
+      "elapsedUs": 1689,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_49"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940573686,
+      "buildUs": 286,
+      "rasterUs": 431,
+      "elapsedUs": 1525,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_50"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940590814,
+      "buildUs": 360,
+      "rasterUs": 753,
+      "elapsedUs": 2397,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_51"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940605347,
+      "buildUs": 503,
+      "rasterUs": 592,
+      "elapsedUs": 1266,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_52"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940622368,
+      "buildUs": 407,
+      "rasterUs": 781,
+      "elapsedUs": 1982,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_53"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940639256,
+      "buildUs": 314,
+      "rasterUs": 518,
+      "elapsedUs": 1698,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_54"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940656122,
+      "buildUs": 639,
+      "rasterUs": 629,
+      "elapsedUs": 2221,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_55"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940673702,
+      "buildUs": 313,
+      "rasterUs": 550,
+      "elapsedUs": 2931,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_56"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940688795,
+      "buildUs": 445,
+      "rasterUs": 632,
+      "elapsedUs": 1367,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_57"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940705988,
+      "buildUs": 248,
+      "rasterUs": 432,
+      "elapsedUs": 1488,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_58"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940722550,
+      "buildUs": 522,
+      "rasterUs": 726,
+      "elapsedUs": 1953,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_59"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940739526,
+      "buildUs": 235,
+      "rasterUs": 541,
+      "elapsedUs": 1926,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_60"
+    },
+    {
+      "type": "frame",
+      "timeUs": 135940755517,
+      "buildUs": 243,
+      "rasterUs": 486,
+      "elapsedUs": 1067,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_61"
+    }
+  ],
+  "rejected": 0,
+  "play": {
+    "board": "riverpod",
+    "scenarioPath": ".\\examples\\exchange\\scenario.txt",
+    "scenario": "# The setup screen has no phones. Open six lines first; this file taps phone 6.\ntap lines-6\ntap open\ntap phone-3\ntap digit-3-1\ntap phone-1\ntap phone-4\ntap digit-4-5\ntap phone-6\ntap digit-6-5\ntap digit-6-0\ntap digit-6-1\ntap phone-4\ntap phone-6\ntap phone-5\ntap phone-5\ntap phone-6\ntap phone-5\ntap phone-3\ntap phone-5\n",
+    "commit": "fd4cf670824a92d12d8007a139341e9c0346afcb",
+    "branch": "main",
+    "subject": "Point the repository at ylahav/insight.",
+    "scenarioDirty": true
+  }
+}

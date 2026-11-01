@@ -1,4 +1,7 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
+import 'package:insight/insight.dart';
 
 import 'exchange.dart';
 import 'exchange_scope.dart';
@@ -13,6 +16,61 @@ const waitLamp = Color(0xff3d8ea6);
 const idleLamp = Color(0xff8aa094);
 const lineLamp = Color(0xfff7f1dc);
 
+/// Jack colors. One per line, in telephone-pair order.
+const phoneColors = <Color>[
+  Color(0xff2f6fbf),
+  Color(0xffe07a2f),
+  Color(0xff2f9a62),
+  Color(0xff8d5a3c),
+  Color(0xff6e7c8a),
+  Color(0xffc4473a),
+  Color(0xffc9a227),
+  Color(0xff6d5cae),
+  Color(0xffd06a8a),
+];
+
+Color phoneColor(int number) => phoneColors[(number - 1) % phoneColors.length];
+
+Color labelOn(Color color) =>
+    color.computeLuminance() > 0.45 ? ink : const Color(0xfff7f4ee);
+
+/// Where the phones sit, and where a cord meets a phone.
+class DeskGeometry {
+  DeskGeometry(this.size, this.lineCount);
+
+  final Size size;
+  final int lineCount;
+
+  static const slot = Size(118, 168);
+
+  Offset get hub => size.center(Offset.zero);
+
+  double get radius {
+    if (size.isEmpty) {
+      return 0;
+    }
+    final limit = math.min(size.width, size.height) / 2 - slot.height / 2 - 8;
+    return math.max(limit, 36);
+  }
+
+  Offset centerOf(int number) {
+    final angle = -math.pi / 2 + (number - 1) * 2 * math.pi / lineCount;
+    return hub + Offset(math.cos(angle), math.sin(angle)) * radius;
+  }
+
+  /// A point on the phone's inner edge, toward the switch.
+  Offset cordEnd(int number) {
+    final phone = centerOf(number);
+    final delta = hub - phone;
+    final length = delta.distance;
+    final inset = slot.shortestSide / 2 + 2;
+    if (length <= inset) {
+      return phone;
+    }
+    return phone + delta / length * inset;
+  }
+}
+
 /// Rebuild counters for the widget tests. Insight records the same split.
 class ExchangeBuilds {
   static int phones = 0;
@@ -26,6 +84,18 @@ class ExchangeBuilds {
 
 class ExchangeBoard extends StatelessWidget {
   const ExchangeBoard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return RoundDesk(phone: (number) => LinePhone(number: number));
+  }
+}
+
+/// Switch in the middle. Phones stand on a circle around it.
+class RoundDesk extends StatelessWidget {
+  const RoundDesk({required this.phone, super.key});
+
+  final Widget Function(int number) phone;
 
   @override
   Widget build(BuildContext context) {
@@ -58,17 +128,37 @@ class ExchangeBoard extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                for (var number = 1; number <= lineCount; number++)
-                  Expanded(child: LinePhone(number: number)),
-              ],
+          Expanded(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final geometry = DeskGeometry(constraints.biggest, lineCount);
+                return Stack(
+                  children: [
+                    const Positioned.fill(child: SwitchDesk()),
+                    for (var number = 1; number <= lineCount; number++)
+                      Positioned(
+                        left:
+                            geometry.centerOf(number).dx -
+                            DeskGeometry.slot.width / 2,
+                        top:
+                            geometry.centerOf(number).dy -
+                            DeskGeometry.slot.height / 2,
+                        width: DeskGeometry.slot.width,
+                        height: DeskGeometry.slot.height,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.center,
+                          child: SizedBox(
+                            width: DeskGeometry.slot.width,
+                            child: phone(number),
+                          ),
+                        ),
+                      ),
+                  ],
+                );
+              },
             ),
           ),
-          const Expanded(child: SwitchDesk()),
         ],
       ),
     );
@@ -88,17 +178,20 @@ class LinePhone extends StatelessWidget {
     final actions = ExchangeActions.of(context);
     final showDigits =
         line.status == LineStatus.dialing || line.status == LineStatus.busyTone;
+    final body = phoneColor(number);
+    final label = labelOn(body);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 4),
       child: Column(
         children: [
           Material(
-            color: enamel,
+            color: body,
             borderRadius: BorderRadius.circular(18),
             child: InkWell(
               key: Key('phone-$number'),
               borderRadius: BorderRadius.circular(18),
               onTap: () {
+                Insight.action('phone-$number');
                 if (line.status == LineStatus.idle ||
                     line.status == LineStatus.ringing ||
                     line.status == LineStatus.recallRing) {
@@ -121,11 +214,11 @@ class LinePhone extends StatelessWidget {
                         const SizedBox(width: 8),
                         Text(
                           '$number',
-                          style: const TextStyle(
-                            color: ink,
-                            fontSize: 36,
+                          style: TextStyle(
+                            color: label,
+                            fontSize: 32,
                             fontFamily: 'Georgia',
-                            fontFeatures: [FontFeature.tabularFigures()],
+                            fontFeatures: const [FontFeature.tabularFigures()],
                           ),
                         ),
                       ],
@@ -134,9 +227,9 @@ class LinePhone extends StatelessWidget {
                     Text(
                       line.hookLabel,
                       textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        color: ink,
-                        fontSize: 13,
+                      style: TextStyle(
+                        color: label,
+                        fontSize: 12,
                         fontFamily: 'Georgia',
                       ),
                     ),
@@ -144,9 +237,9 @@ class LinePhone extends StatelessWidget {
                       Text(
                         line.signalLabel,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: ink,
-                          fontSize: 13,
+                        style: TextStyle(
+                          color: label,
+                          fontSize: 12,
                           fontFamily: 'Georgia',
                         ),
                       ),
@@ -154,9 +247,9 @@ class LinePhone extends StatelessWidget {
                       Text(
                         line.detail,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: ink,
-                          fontSize: 13,
+                        style: TextStyle(
+                          color: label,
+                          fontSize: 12,
                           fontFamily: 'Georgia',
                         ),
                       ),
@@ -169,7 +262,10 @@ class LinePhone extends StatelessWidget {
               line.status == LineStatus.recallRing)
             TextButton(
               key: Key('hook-on-$number'),
-              onPressed: () => actions.onHook(number),
+              onPressed: () {
+                Insight.action('hook-on-$number');
+                actions.onHook(number);
+              },
               child: const Text(
                 'Hook on',
                 style: TextStyle(color: enamel, fontFamily: 'Georgia'),
@@ -213,7 +309,10 @@ class DialKey extends StatelessWidget {
           foregroundColor: enamel,
           backgroundColor: const Color(0xff29403c),
         ),
-        onPressed: () => ExchangeActions.of(context).dial(number, digit),
+        onPressed: () {
+          Insight.action('digit-$number-$digit');
+          ExchangeActions.of(context).dial(number, digit);
+        },
         child: Text(
           '$digit',
           style: const TextStyle(fontFamily: 'Georgia', fontSize: 14),
@@ -380,33 +479,49 @@ class _CordPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final hub = Offset(size.width / 2, size.height * 0.42);
-    final cordPaint = Paint()
-      ..color = cord
-      ..strokeWidth = 3
-      ..strokeCap = StrokeCap.round;
-    canvas.drawCircle(hub, 8, Paint()..color = cord);
+    if (size.isEmpty) {
+      return;
+    }
+    final geometry = DeskGeometry(size, lineCount);
+    final hub = geometry.hub;
+    canvas.drawCircle(hub, 16, Paint()..color = panel);
+    canvas.drawCircle(
+      hub,
+      16,
+      Paint()
+        ..color = enamel
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 2,
+    );
     for (final call in calls) {
-      _drawCord(canvas, size, call, cordPaint);
+      _drawCord(canvas, geometry, call);
     }
     final showRing = blink == null || blink!.value >= 0.5;
     if (showRing) {
       for (final ring in rings) {
-        _drawCord(canvas, size, ring, cordPaint);
+        _drawCord(canvas, geometry, ring);
       }
     }
   }
 
-  void _drawCord(Canvas canvas, Size size, (int, int) pair, Paint paint) {
-    final from = _slot(pair.$1, size);
-    final to = _slot(pair.$2, size);
-    final hub = Offset(size.width / 2, size.height * 0.42);
-    canvas.drawLine(from, hub, paint);
-    canvas.drawLine(hub, to, paint);
+  void _drawCord(Canvas canvas, DeskGeometry geometry, (int, int) pair) {
+    final from = geometry.cordEnd(pair.$1);
+    final to = geometry.cordEnd(pair.$2);
+    final hub = geometry.hub;
+    final mix = Color.lerp(phoneColor(pair.$1), phoneColor(pair.$2), 0.5)!;
+    _leg(canvas, from, hub, phoneColor(pair.$1), mix);
+    _leg(canvas, to, hub, phoneColor(pair.$2), mix);
   }
 
-  Offset _slot(int number, Size size) {
-    return Offset((number - 0.5) * size.width / lineCount, 0);
+  void _leg(Canvas canvas, Offset from, Offset hub, Color start, Color end) {
+    final paint = Paint()
+      ..shader = LinearGradient(
+        colors: [start, end],
+      ).createShader(Rect.fromPoints(from, hub))
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5
+      ..strokeCap = StrokeCap.round;
+    canvas.drawLine(from, hub, paint);
   }
 
   @override

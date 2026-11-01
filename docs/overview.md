@@ -1,5 +1,9 @@
 # Why Flutter Insight
 
+<img src="../brand/logo.png" alt="Flutter Insight" width="560">
+
+The wordmark is [brand/logo.png](../brand/logo.png), cropped from [brand/wordmark.jpg](../brand/wordmark.jpg). The app icon is [brand/icon.png](../brand/icon.png), cropped from [brand/logo.jpeg](../brand/logo.jpeg). Analyzer and the Windows installer use that icon.
+
 Flutter Insight is a debugging aid. One row shows a state change, the frame that followed it, and the user widgets that rebuilt in that frame.
 
 DevTools already charts how long a frame took. A bloc log already says a cubit changed. The widget inspector can show what rebuilt. Those are three places. The question that sits between them is one question: when this state changed, which frame followed, and which of your widgets rebuilt.
@@ -20,7 +24,7 @@ The alpha has been checked on Flutter 3.47.8. The small parser fixture has also 
 
 **The names are the finding.** On the desk, a scoped tick lists `ClockReadout` and leaves `TicketCard` off the row. The same tick on the wide tree lists `ClockReadout` and every `TicketCard`. The cubit record is the same. The extra names are the issue: the board is watching the clock above the list.
 
-**A file you can keep.** One action, one session file. `tool/beside.dart` prints two files in step order. It exits 0 when the widget names differ. That difference is the reading.
+**A file you can keep.** One action, one session file. `tool/compare.dart` prints two files in step order. It exits 0 when the widgets differ. That difference is the reading. `tool/analyzer` opens one recording, and Add result compares another with it. On Windows the tools are one installer, as [windows.md](windows.md) describes.
 
 **A span for a call you already care about.** `Insight.traceFuture` records one `async.span`. On the desk, `loadBoard` stays open until the frame that paints the tickets, so the span and the `TicketCard` rebuilds share a row. Fail load is the same name with status `error`.
 
@@ -71,7 +75,7 @@ Press Enter when the window is up, then do the one action. The file is `insight-
 **Two files.**
 
 ```bash
-dart run tool/beside.dart --left scoped.json --right wide.json
+dart run tool/compare.dart --left scoped.json --right wide.json
 ```
 
 Each step is one change, in two columns. How to read that print is in [guide.md](guide.md).
@@ -82,7 +86,7 @@ Before you compare, check the envelope. `schemaVersion` is `1`. `flutter` is `3.
 
 **A widget you did not expect.** The title is the change you made. A name under it rebuilt in the following frame. On the exchange, dialing an idle line lists `LinePhone` for the caller and the called phone, and `SwitchDesk`. An idle phone is absent. A third `LinePhone` on that row rebuilt for a call it is not in.
 
-**The same change, a longer list.** Record the action twice, once in each arrangement, and read them with `beside`. The state title matches. The extra names are the widgets the wider tree rebuilt. The desk's `TicketCard` rows and the shelf's `MarkCard` rows are that finding.
+**The same change, a longer list.** Record the action twice, once in each arrangement, and read them with `compare`. The state title matches. The extra names are the widgets the wider tree rebuilt. The desk's `TicketCard` rows and the shelf's `MarkCard` rows are that finding.
 
 **A call and the frame that painted it.** Trace the call you already care about:
 

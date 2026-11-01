@@ -40,6 +40,15 @@ void main() {
     expect(messages.last['name'], isNull);
   });
 
+  test('a tap posts the control name', () {
+    Insight.action('phone-1');
+    Insight.action('');
+
+    expect(messages, hasLength(1));
+    expect(messages.single['kind'], 'user.action');
+    expect(messages.single['name'], 'phone-1');
+  });
+
   test('state values stay off unless the app opts in', () {
     Insight.stateChanged(
       adapter: 'bloc',

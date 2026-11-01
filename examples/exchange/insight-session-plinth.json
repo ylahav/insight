@@ -1,0 +1,7443 @@
+{
+  "schemaVersion": 1,
+  "flutter": "3.47.8",
+  "dart": "3.13.7",
+  "mode": "profile",
+  "startedAt": "2026-11-01T08:17:26.845234Z",
+  "events": [
+    {
+      "type": "agent.ready",
+      "timeUs": 136006238850,
+      "schemaVersion": 1,
+      "id": "agent_1"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006255198,
+      "buildUs": 87,
+      "rasterUs": 1043,
+      "elapsedUs": 1644,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_1"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006255583,
+      "name": "lines-6",
+      "id": "action_1"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006272046,
+      "buildUs": 1022,
+      "rasterUs": 746,
+      "elapsedUs": 2471,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_2"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272172,
+      "name": "SetupPage",
+      "id": "widget_1"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272195,
+      "name": "Scaffold",
+      "id": "widget_2"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272398,
+      "name": "Center",
+      "id": "widget_3"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272401,
+      "name": "ConstrainedBox",
+      "id": "widget_4"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272403,
+      "name": "Column",
+      "id": "widget_5"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272407,
+      "name": "Row",
+      "id": "widget_6"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272408,
+      "name": "Padding",
+      "id": "widget_7"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272410,
+      "name": "TextButton",
+      "id": "widget_8"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272494,
+      "name": "Text",
+      "id": "widget_9"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272503,
+      "name": "Padding",
+      "id": "widget_10"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272504,
+      "name": "TextButton",
+      "id": "widget_11"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272527,
+      "name": "Text",
+      "id": "widget_12"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272531,
+      "name": "Padding",
+      "id": "widget_13"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272532,
+      "name": "TextButton",
+      "id": "widget_14"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272559,
+      "name": "Text",
+      "id": "widget_15"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272564,
+      "name": "Padding",
+      "id": "widget_16"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272565,
+      "name": "TextButton",
+      "id": "widget_17"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272585,
+      "name": "Text",
+      "id": "widget_18"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272589,
+      "name": "Padding",
+      "id": "widget_19"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272590,
+      "name": "TextButton",
+      "id": "widget_20"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272609,
+      "name": "Text",
+      "id": "widget_21"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272613,
+      "name": "Padding",
+      "id": "widget_22"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272614,
+      "name": "TextButton",
+      "id": "widget_23"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272636,
+      "name": "Text",
+      "id": "widget_24"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272640,
+      "name": "TextButton",
+      "id": "widget_25"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272640,
+      "name": "Padding",
+      "id": "widget_26"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272659,
+      "name": "Text",
+      "id": "widget_27"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272663,
+      "name": "Wrap",
+      "id": "widget_28"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272666,
+      "name": "OutlinedButton",
+      "id": "widget_29"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272688,
+      "name": "OutlinedButton",
+      "id": "widget_30"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272709,
+      "name": "OutlinedButton",
+      "id": "widget_31"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006272742,
+      "name": "TextButton",
+      "id": "widget_32"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006289038,
+      "buildUs": 340,
+      "rasterUs": 5251,
+      "elapsedUs": 6746,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_3"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006289789,
+      "name": "open-plinth",
+      "id": "action_2"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006306088,
+      "buildUs": 3518,
+      "rasterUs": 1074,
+      "elapsedUs": 5485,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_4"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306386,
+      "name": "BoardPage",
+      "id": "widget_33"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306388,
+      "name": "LineCountScope",
+      "id": "widget_34"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306391,
+      "name": "BlocProvider<ExchangeCubit>",
+      "id": "widget_35"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306396,
+      "name": "InheritedProvider<ExchangeCubit>",
+      "id": "widget_36"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306402,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_37"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306413,
+      "name": "ExchangeHost",
+      "id": "widget_38"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306455,
+      "name": "ExchangeActions",
+      "id": "widget_39"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306456,
+      "name": "ExchangeScope",
+      "id": "widget_40"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306458,
+      "name": "PlinthBoard",
+      "id": "widget_41"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306460,
+      "name": "RoundDesk",
+      "id": "widget_42"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306464,
+      "name": "ColoredBox",
+      "id": "widget_43"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306467,
+      "name": "Column",
+      "id": "widget_44"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306470,
+      "name": "Padding",
+      "id": "widget_45"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306473,
+      "name": "Row",
+      "id": "widget_46"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306474,
+      "name": "Text",
+      "id": "widget_47"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306487,
+      "name": "Spacer",
+      "id": "widget_48"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306491,
+      "name": "TextButton",
+      "id": "widget_49"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306573,
+      "name": "Text",
+      "id": "widget_50"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306580,
+      "name": "Expanded",
+      "id": "widget_51"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306582,
+      "name": "LayoutBuilder",
+      "id": "widget_52"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006306740,
+      "name": "OutlinedButton",
+      "id": "widget_53"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307453,
+      "name": "Stack",
+      "id": "widget_54"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307466,
+      "name": "Positioned",
+      "id": "widget_55"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307467,
+      "name": "SwitchDesk",
+      "id": "widget_56"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307479,
+      "name": "CustomPaint",
+      "id": "widget_57"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307482,
+      "name": "Center",
+      "id": "widget_58"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307484,
+      "name": "Column",
+      "id": "widget_59"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307487,
+      "name": "Text",
+      "id": "widget_60"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307501,
+      "name": "Positioned",
+      "id": "widget_61"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307502,
+      "name": "FittedBox",
+      "id": "widget_62"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307504,
+      "name": "SizedBox",
+      "id": "widget_63"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307506,
+      "name": "PlinthLine",
+      "id": "widget_64"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307511,
+      "name": "Column",
+      "id": "widget_65"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307513,
+      "name": "GestureDetector",
+      "id": "widget_66"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307523,
+      "name": "PlinthPaper",
+      "id": "widget_67"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307539,
+      "name": "Container",
+      "id": "widget_68"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307544,
+      "name": "Column",
+      "id": "widget_69"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307550,
+      "name": "Text",
+      "id": "widget_70"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307555,
+      "name": "Text",
+      "id": "widget_71"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307564,
+      "name": "Positioned",
+      "id": "widget_72"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307565,
+      "name": "FittedBox",
+      "id": "widget_73"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307566,
+      "name": "SizedBox",
+      "id": "widget_74"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307567,
+      "name": "PlinthLine",
+      "id": "widget_75"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307569,
+      "name": "Column",
+      "id": "widget_76"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307570,
+      "name": "GestureDetector",
+      "id": "widget_77"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307573,
+      "name": "PlinthPaper",
+      "id": "widget_78"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307575,
+      "name": "Container",
+      "id": "widget_79"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307577,
+      "name": "Column",
+      "id": "widget_80"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307578,
+      "name": "Text",
+      "id": "widget_81"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307581,
+      "name": "Text",
+      "id": "widget_82"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307696,
+      "name": "FittedBox",
+      "id": "widget_83"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307696,
+      "name": "Positioned",
+      "id": "widget_84"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307698,
+      "name": "SizedBox",
+      "id": "widget_85"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307700,
+      "name": "PlinthLine",
+      "id": "widget_86"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307702,
+      "name": "Column",
+      "id": "widget_87"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307703,
+      "name": "GestureDetector",
+      "id": "widget_88"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307707,
+      "name": "PlinthPaper",
+      "id": "widget_89"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307708,
+      "name": "Container",
+      "id": "widget_90"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307716,
+      "name": "Column",
+      "id": "widget_91"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307718,
+      "name": "Text",
+      "id": "widget_92"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307721,
+      "name": "Text",
+      "id": "widget_93"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307727,
+      "name": "Positioned",
+      "id": "widget_94"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307728,
+      "name": "FittedBox",
+      "id": "widget_95"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307729,
+      "name": "SizedBox",
+      "id": "widget_96"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307730,
+      "name": "PlinthLine",
+      "id": "widget_97"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307732,
+      "name": "Column",
+      "id": "widget_98"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307733,
+      "name": "GestureDetector",
+      "id": "widget_99"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307735,
+      "name": "PlinthPaper",
+      "id": "widget_100"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307736,
+      "name": "Container",
+      "id": "widget_101"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307738,
+      "name": "Column",
+      "id": "widget_102"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307739,
+      "name": "Text",
+      "id": "widget_103"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307742,
+      "name": "Text",
+      "id": "widget_104"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307750,
+      "name": "Positioned",
+      "id": "widget_105"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307750,
+      "name": "FittedBox",
+      "id": "widget_106"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307751,
+      "name": "SizedBox",
+      "id": "widget_107"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307752,
+      "name": "PlinthLine",
+      "id": "widget_108"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307754,
+      "name": "Column",
+      "id": "widget_109"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307755,
+      "name": "GestureDetector",
+      "id": "widget_110"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307760,
+      "name": "PlinthPaper",
+      "id": "widget_111"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307761,
+      "name": "Container",
+      "id": "widget_112"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307763,
+      "name": "Column",
+      "id": "widget_113"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307764,
+      "name": "Text",
+      "id": "widget_114"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307767,
+      "name": "Text",
+      "id": "widget_115"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307865,
+      "name": "Positioned",
+      "id": "widget_116"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307866,
+      "name": "FittedBox",
+      "id": "widget_117"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307867,
+      "name": "SizedBox",
+      "id": "widget_118"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307868,
+      "name": "PlinthLine",
+      "id": "widget_119"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307869,
+      "name": "Column",
+      "id": "widget_120"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307870,
+      "name": "GestureDetector",
+      "id": "widget_121"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307873,
+      "name": "PlinthPaper",
+      "id": "widget_122"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307874,
+      "name": "Container",
+      "id": "widget_123"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307876,
+      "name": "Text",
+      "id": "widget_124"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307876,
+      "name": "Column",
+      "id": "widget_125"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006307880,
+      "name": "Text",
+      "id": "widget_126"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006322392,
+      "buildUs": 525,
+      "rasterUs": 31413,
+      "elapsedUs": 33261,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_5"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006323073,
+      "name": "phone-3",
+      "id": "action_3"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006323119,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_1"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006339895,
+      "buildUs": 3386,
+      "rasterUs": 828,
+      "elapsedUs": 17447,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_6"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340069,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_127"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340079,
+      "name": "ExchangeHost",
+      "id": "widget_128"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340084,
+      "name": "ExchangeActions",
+      "id": "widget_129"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340086,
+      "name": "ExchangeScope",
+      "id": "widget_130"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340103,
+      "name": "PlinthLine",
+      "id": "widget_131"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340111,
+      "name": "Column",
+      "id": "widget_132"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340116,
+      "name": "GestureDetector",
+      "id": "widget_133"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340124,
+      "name": "PlinthPaper",
+      "id": "widget_134"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340131,
+      "name": "Container",
+      "id": "widget_135"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340138,
+      "name": "Column",
+      "id": "widget_136"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340140,
+      "name": "Text",
+      "id": "widget_137"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340148,
+      "name": "Text",
+      "id": "widget_138"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340167,
+      "name": "FittedBox",
+      "id": "widget_139"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340178,
+      "name": "PlinthBadge",
+      "id": "widget_140"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340197,
+      "name": "Container",
+      "id": "widget_141"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340202,
+      "name": "Row",
+      "id": "widget_142"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340205,
+      "name": "Text",
+      "id": "widget_143"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340215,
+      "name": "Wrap",
+      "id": "widget_144"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340217,
+      "name": "_Digit",
+      "id": "widget_145"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340219,
+      "name": "PlinthButton",
+      "id": "widget_146"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340225,
+      "name": "PlinthTapTarget",
+      "id": "widget_147"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340231,
+      "name": "ConstrainedBox",
+      "id": "widget_148"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340233,
+      "name": "SizedBox",
+      "id": "widget_149"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340234,
+      "name": "Semantics",
+      "id": "widget_150"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340242,
+      "name": "Material",
+      "id": "widget_151"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340264,
+      "name": "InkWell",
+      "id": "widget_152"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340316,
+      "name": "Container",
+      "id": "widget_153"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340318,
+      "name": "Row",
+      "id": "widget_154"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340321,
+      "name": "Flexible",
+      "id": "widget_155"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340441,
+      "name": "Text",
+      "id": "widget_156"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340454,
+      "name": "_Digit",
+      "id": "widget_157"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340456,
+      "name": "PlinthButton",
+      "id": "widget_158"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340460,
+      "name": "PlinthTapTarget",
+      "id": "widget_159"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340462,
+      "name": "ConstrainedBox",
+      "id": "widget_160"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340463,
+      "name": "SizedBox",
+      "id": "widget_161"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340464,
+      "name": "Semantics",
+      "id": "widget_162"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340467,
+      "name": "Material",
+      "id": "widget_163"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340477,
+      "name": "InkWell",
+      "id": "widget_164"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340492,
+      "name": "Container",
+      "id": "widget_165"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340494,
+      "name": "Row",
+      "id": "widget_166"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340522,
+      "name": "Flexible",
+      "id": "widget_167"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340524,
+      "name": "Text",
+      "id": "widget_168"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340533,
+      "name": "_Digit",
+      "id": "widget_169"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340534,
+      "name": "PlinthButton",
+      "id": "widget_170"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340536,
+      "name": "PlinthTapTarget",
+      "id": "widget_171"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340538,
+      "name": "ConstrainedBox",
+      "id": "widget_172"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340539,
+      "name": "SizedBox",
+      "id": "widget_173"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340539,
+      "name": "Semantics",
+      "id": "widget_174"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340542,
+      "name": "Material",
+      "id": "widget_175"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340550,
+      "name": "InkWell",
+      "id": "widget_176"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340564,
+      "name": "Container",
+      "id": "widget_177"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340567,
+      "name": "Row",
+      "id": "widget_178"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340569,
+      "name": "Flexible",
+      "id": "widget_179"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340570,
+      "name": "Text",
+      "id": "widget_180"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340581,
+      "name": "_Digit",
+      "id": "widget_181"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340583,
+      "name": "PlinthButton",
+      "id": "widget_182"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340585,
+      "name": "PlinthTapTarget",
+      "id": "widget_183"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340685,
+      "name": "ConstrainedBox",
+      "id": "widget_184"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340686,
+      "name": "SizedBox",
+      "id": "widget_185"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340688,
+      "name": "Semantics",
+      "id": "widget_186"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340690,
+      "name": "Material",
+      "id": "widget_187"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340696,
+      "name": "InkWell",
+      "id": "widget_188"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340709,
+      "name": "Container",
+      "id": "widget_189"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340710,
+      "name": "Row",
+      "id": "widget_190"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340711,
+      "name": "Flexible",
+      "id": "widget_191"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340713,
+      "name": "Text",
+      "id": "widget_192"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340721,
+      "name": "_Digit",
+      "id": "widget_193"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340722,
+      "name": "PlinthButton",
+      "id": "widget_194"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340724,
+      "name": "PlinthTapTarget",
+      "id": "widget_195"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340725,
+      "name": "ConstrainedBox",
+      "id": "widget_196"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340726,
+      "name": "SizedBox",
+      "id": "widget_197"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340730,
+      "name": "Semantics",
+      "id": "widget_198"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340732,
+      "name": "Material",
+      "id": "widget_199"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340737,
+      "name": "InkWell",
+      "id": "widget_200"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340748,
+      "name": "Container",
+      "id": "widget_201"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340750,
+      "name": "Row",
+      "id": "widget_202"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340751,
+      "name": "Flexible",
+      "id": "widget_203"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340752,
+      "name": "Text",
+      "id": "widget_204"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340762,
+      "name": "_Digit",
+      "id": "widget_205"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340763,
+      "name": "PlinthButton",
+      "id": "widget_206"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340765,
+      "name": "PlinthTapTarget",
+      "id": "widget_207"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340766,
+      "name": "ConstrainedBox",
+      "id": "widget_208"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340767,
+      "name": "SizedBox",
+      "id": "widget_209"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340768,
+      "name": "Semantics",
+      "id": "widget_210"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340770,
+      "name": "Material",
+      "id": "widget_211"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340777,
+      "name": "InkWell",
+      "id": "widget_212"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340789,
+      "name": "Container",
+      "id": "widget_213"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340791,
+      "name": "Row",
+      "id": "widget_214"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340792,
+      "name": "Flexible",
+      "id": "widget_215"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006340793,
+      "name": "Text",
+      "id": "widget_216"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341140,
+      "name": "_Digit",
+      "id": "widget_217"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341146,
+      "name": "PlinthButton",
+      "id": "widget_218"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341167,
+      "name": "PlinthTapTarget",
+      "id": "widget_219"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341169,
+      "name": "ConstrainedBox",
+      "id": "widget_220"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341175,
+      "name": "SizedBox",
+      "id": "widget_221"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341177,
+      "name": "Semantics",
+      "id": "widget_222"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341184,
+      "name": "Material",
+      "id": "widget_223"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341215,
+      "name": "InkWell",
+      "id": "widget_224"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341252,
+      "name": "Container",
+      "id": "widget_225"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341257,
+      "name": "Row",
+      "id": "widget_226"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341260,
+      "name": "Flexible",
+      "id": "widget_227"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006341262,
+      "name": "Text",
+      "id": "widget_228"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006356535,
+      "buildUs": 412,
+      "rasterUs": 5678,
+      "elapsedUs": 7302,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_7"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006357306,
+      "name": "digit-3-1",
+      "id": "action_4"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006357354,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_2"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006372530,
+      "buildUs": 1375,
+      "rasterUs": 763,
+      "elapsedUs": 2685,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_8"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372737,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_229"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372746,
+      "name": "ExchangeHost",
+      "id": "widget_230"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372751,
+      "name": "ExchangeActions",
+      "id": "widget_231"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372754,
+      "name": "ExchangeScope",
+      "id": "widget_232"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372886,
+      "name": "SwitchDesk",
+      "id": "widget_233"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372897,
+      "name": "CustomPaint",
+      "id": "widget_234"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372900,
+      "name": "Center",
+      "id": "widget_235"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372903,
+      "name": "Column",
+      "id": "widget_236"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372905,
+      "name": "Text",
+      "id": "widget_237"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372933,
+      "name": "PlinthLine",
+      "id": "widget_238"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372939,
+      "name": "Column",
+      "id": "widget_239"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372941,
+      "name": "GestureDetector",
+      "id": "widget_240"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372951,
+      "name": "PlinthPaper",
+      "id": "widget_241"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372957,
+      "name": "Container",
+      "id": "widget_242"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372963,
+      "name": "Column",
+      "id": "widget_243"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372964,
+      "name": "Text",
+      "id": "widget_244"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372969,
+      "name": "Text",
+      "id": "widget_245"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372973,
+      "name": "FittedBox",
+      "id": "widget_246"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372975,
+      "name": "PlinthBadge",
+      "id": "widget_247"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372980,
+      "name": "Container",
+      "id": "widget_248"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372983,
+      "name": "Row",
+      "id": "widget_249"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372984,
+      "name": "Text",
+      "id": "widget_250"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006372995,
+      "name": "FittedBox",
+      "id": "widget_251"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373004,
+      "name": "Text",
+      "id": "widget_252"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373075,
+      "name": "PlinthLine",
+      "id": "widget_253"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373078,
+      "name": "Column",
+      "id": "widget_254"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373079,
+      "name": "GestureDetector",
+      "id": "widget_255"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373083,
+      "name": "PlinthPaper",
+      "id": "widget_256"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373084,
+      "name": "Container",
+      "id": "widget_257"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373086,
+      "name": "Column",
+      "id": "widget_258"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373088,
+      "name": "Text",
+      "id": "widget_259"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373093,
+      "name": "Text",
+      "id": "widget_260"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373095,
+      "name": "FittedBox",
+      "id": "widget_261"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373097,
+      "name": "PlinthBadge",
+      "id": "widget_262"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373100,
+      "name": "Container",
+      "id": "widget_263"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373103,
+      "name": "Row",
+      "id": "widget_264"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373105,
+      "name": "Text",
+      "id": "widget_265"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373210,
+      "name": "PlinthButton",
+      "id": "widget_266"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373215,
+      "name": "PlinthTapTarget",
+      "id": "widget_267"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373218,
+      "name": "ConstrainedBox",
+      "id": "widget_268"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373220,
+      "name": "SizedBox",
+      "id": "widget_269"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373225,
+      "name": "Semantics",
+      "id": "widget_270"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373232,
+      "name": "Material",
+      "id": "widget_271"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373252,
+      "name": "InkWell",
+      "id": "widget_272"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373284,
+      "name": "Container",
+      "id": "widget_273"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373286,
+      "name": "Row",
+      "id": "widget_274"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373288,
+      "name": "Flexible",
+      "id": "widget_275"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006373290,
+      "name": "Text",
+      "id": "widget_276"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006389796,
+      "buildUs": 232,
+      "rasterUs": 800,
+      "elapsedUs": 2175,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_9"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006390248,
+      "name": "phone-1",
+      "id": "action_5"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006390286,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_3"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006406053,
+      "buildUs": 3221,
+      "rasterUs": 335,
+      "elapsedUs": 4295,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_10"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406237,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_277"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406243,
+      "name": "ExchangeHost",
+      "id": "widget_278"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406246,
+      "name": "ExchangeActions",
+      "id": "widget_279"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406363,
+      "name": "ExchangeScope",
+      "id": "widget_280"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406381,
+      "name": "SwitchDesk",
+      "id": "widget_281"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406390,
+      "name": "CustomPaint",
+      "id": "widget_282"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406393,
+      "name": "Center",
+      "id": "widget_283"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406395,
+      "name": "Column",
+      "id": "widget_284"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406398,
+      "name": "Text",
+      "id": "widget_285"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406424,
+      "name": "PlinthLine",
+      "id": "widget_286"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406431,
+      "name": "Column",
+      "id": "widget_287"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406433,
+      "name": "GestureDetector",
+      "id": "widget_288"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406442,
+      "name": "PlinthPaper",
+      "id": "widget_289"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406449,
+      "name": "Container",
+      "id": "widget_290"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406455,
+      "name": "Column",
+      "id": "widget_291"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406456,
+      "name": "Text",
+      "id": "widget_292"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406460,
+      "name": "Text",
+      "id": "widget_293"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406465,
+      "name": "FittedBox",
+      "id": "widget_294"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406467,
+      "name": "PlinthBadge",
+      "id": "widget_295"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406473,
+      "name": "Container",
+      "id": "widget_296"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406476,
+      "name": "Row",
+      "id": "widget_297"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406477,
+      "name": "Text",
+      "id": "widget_298"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406487,
+      "name": "FittedBox",
+      "id": "widget_299"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406488,
+      "name": "Text",
+      "id": "widget_300"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406502,
+      "name": "PlinthLine",
+      "id": "widget_301"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406504,
+      "name": "Column",
+      "id": "widget_302"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406505,
+      "name": "GestureDetector",
+      "id": "widget_303"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406508,
+      "name": "PlinthPaper",
+      "id": "widget_304"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406510,
+      "name": "Container",
+      "id": "widget_305"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406512,
+      "name": "Column",
+      "id": "widget_306"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406512,
+      "name": "Text",
+      "id": "widget_307"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406516,
+      "name": "Text",
+      "id": "widget_308"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406528,
+      "name": "FittedBox",
+      "id": "widget_309"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406529,
+      "name": "PlinthBadge",
+      "id": "widget_310"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406531,
+      "name": "Container",
+      "id": "widget_311"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406533,
+      "name": "Row",
+      "id": "widget_312"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406533,
+      "name": "Text",
+      "id": "widget_313"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406640,
+      "name": "FittedBox",
+      "id": "widget_314"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006406649,
+      "name": "Text",
+      "id": "widget_315"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006423514,
+      "buildUs": 564,
+      "rasterUs": 325,
+      "elapsedUs": 2431,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_11"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006424428,
+      "name": "phone-4",
+      "id": "action_6"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006424487,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_4"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006439605,
+      "buildUs": 1337,
+      "rasterUs": 435,
+      "elapsedUs": 2730,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_12"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439805,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_316"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439810,
+      "name": "ExchangeHost",
+      "id": "widget_317"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439814,
+      "name": "ExchangeActions",
+      "id": "widget_318"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439816,
+      "name": "ExchangeScope",
+      "id": "widget_319"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439831,
+      "name": "PlinthLine",
+      "id": "widget_320"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439840,
+      "name": "Column",
+      "id": "widget_321"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439845,
+      "name": "GestureDetector",
+      "id": "widget_322"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439853,
+      "name": "PlinthPaper",
+      "id": "widget_323"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439859,
+      "name": "Container",
+      "id": "widget_324"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439867,
+      "name": "Column",
+      "id": "widget_325"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439868,
+      "name": "Text",
+      "id": "widget_326"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006439992,
+      "name": "Text",
+      "id": "widget_327"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440015,
+      "name": "FittedBox",
+      "id": "widget_328"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440025,
+      "name": "PlinthBadge",
+      "id": "widget_329"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440033,
+      "name": "Container",
+      "id": "widget_330"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440043,
+      "name": "Row",
+      "id": "widget_331"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440046,
+      "name": "Text",
+      "id": "widget_332"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440056,
+      "name": "Wrap",
+      "id": "widget_333"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440058,
+      "name": "_Digit",
+      "id": "widget_334"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440060,
+      "name": "PlinthButton",
+      "id": "widget_335"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440064,
+      "name": "PlinthTapTarget",
+      "id": "widget_336"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440066,
+      "name": "ConstrainedBox",
+      "id": "widget_337"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440068,
+      "name": "SizedBox",
+      "id": "widget_338"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440070,
+      "name": "Semantics",
+      "id": "widget_339"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440078,
+      "name": "Material",
+      "id": "widget_340"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440100,
+      "name": "InkWell",
+      "id": "widget_341"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440133,
+      "name": "Container",
+      "id": "widget_342"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440135,
+      "name": "Row",
+      "id": "widget_343"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440137,
+      "name": "Flexible",
+      "id": "widget_344"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440138,
+      "name": "Text",
+      "id": "widget_345"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440149,
+      "name": "_Digit",
+      "id": "widget_346"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440150,
+      "name": "PlinthButton",
+      "id": "widget_347"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440152,
+      "name": "PlinthTapTarget",
+      "id": "widget_348"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440153,
+      "name": "ConstrainedBox",
+      "id": "widget_349"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440155,
+      "name": "SizedBox",
+      "id": "widget_350"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440156,
+      "name": "Semantics",
+      "id": "widget_351"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440158,
+      "name": "Material",
+      "id": "widget_352"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440164,
+      "name": "InkWell",
+      "id": "widget_353"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440174,
+      "name": "Container",
+      "id": "widget_354"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440176,
+      "name": "Row",
+      "id": "widget_355"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440177,
+      "name": "Flexible",
+      "id": "widget_356"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440178,
+      "name": "Text",
+      "id": "widget_357"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440281,
+      "name": "_Digit",
+      "id": "widget_358"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440282,
+      "name": "PlinthButton",
+      "id": "widget_359"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440316,
+      "name": "PlinthTapTarget",
+      "id": "widget_360"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440317,
+      "name": "ConstrainedBox",
+      "id": "widget_361"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440319,
+      "name": "SizedBox",
+      "id": "widget_362"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440320,
+      "name": "Semantics",
+      "id": "widget_363"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440322,
+      "name": "Material",
+      "id": "widget_364"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440331,
+      "name": "InkWell",
+      "id": "widget_365"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440348,
+      "name": "Container",
+      "id": "widget_366"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440351,
+      "name": "Row",
+      "id": "widget_367"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440352,
+      "name": "Flexible",
+      "id": "widget_368"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440354,
+      "name": "Text",
+      "id": "widget_369"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440361,
+      "name": "PlinthButton",
+      "id": "widget_370"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440361,
+      "name": "_Digit",
+      "id": "widget_371"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440364,
+      "name": "PlinthTapTarget",
+      "id": "widget_372"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440365,
+      "name": "ConstrainedBox",
+      "id": "widget_373"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440367,
+      "name": "SizedBox",
+      "id": "widget_374"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440368,
+      "name": "Semantics",
+      "id": "widget_375"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440374,
+      "name": "Material",
+      "id": "widget_376"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440379,
+      "name": "InkWell",
+      "id": "widget_377"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440389,
+      "name": "Container",
+      "id": "widget_378"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440391,
+      "name": "Row",
+      "id": "widget_379"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440392,
+      "name": "Flexible",
+      "id": "widget_380"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440393,
+      "name": "Text",
+      "id": "widget_381"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440399,
+      "name": "_Digit",
+      "id": "widget_382"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440400,
+      "name": "PlinthButton",
+      "id": "widget_383"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440402,
+      "name": "PlinthTapTarget",
+      "id": "widget_384"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440403,
+      "name": "ConstrainedBox",
+      "id": "widget_385"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440404,
+      "name": "Semantics",
+      "id": "widget_386"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440404,
+      "name": "SizedBox",
+      "id": "widget_387"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440406,
+      "name": "Material",
+      "id": "widget_388"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440414,
+      "name": "InkWell",
+      "id": "widget_389"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440423,
+      "name": "Container",
+      "id": "widget_390"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440425,
+      "name": "Row",
+      "id": "widget_391"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440426,
+      "name": "Flexible",
+      "id": "widget_392"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440427,
+      "name": "Text",
+      "id": "widget_393"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440542,
+      "name": "_Digit",
+      "id": "widget_394"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440543,
+      "name": "PlinthButton",
+      "id": "widget_395"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440546,
+      "name": "PlinthTapTarget",
+      "id": "widget_396"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440547,
+      "name": "ConstrainedBox",
+      "id": "widget_397"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440548,
+      "name": "SizedBox",
+      "id": "widget_398"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440549,
+      "name": "Semantics",
+      "id": "widget_399"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440551,
+      "name": "Material",
+      "id": "widget_400"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440557,
+      "name": "InkWell",
+      "id": "widget_401"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440573,
+      "name": "Container",
+      "id": "widget_402"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440574,
+      "name": "Row",
+      "id": "widget_403"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440576,
+      "name": "Flexible",
+      "id": "widget_404"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440577,
+      "name": "Text",
+      "id": "widget_405"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440584,
+      "name": "_Digit",
+      "id": "widget_406"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440585,
+      "name": "PlinthButton",
+      "id": "widget_407"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440586,
+      "name": "PlinthTapTarget",
+      "id": "widget_408"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440587,
+      "name": "ConstrainedBox",
+      "id": "widget_409"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440588,
+      "name": "SizedBox",
+      "id": "widget_410"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440589,
+      "name": "Semantics",
+      "id": "widget_411"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440590,
+      "name": "Material",
+      "id": "widget_412"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440595,
+      "name": "InkWell",
+      "id": "widget_413"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440610,
+      "name": "Container",
+      "id": "widget_414"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440612,
+      "name": "Row",
+      "id": "widget_415"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440613,
+      "name": "Flexible",
+      "id": "widget_416"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006440614,
+      "name": "Text",
+      "id": "widget_417"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006455610,
+      "buildUs": 226,
+      "rasterUs": 352,
+      "elapsedUs": 1003,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_13"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006456259,
+      "name": "digit-4-5",
+      "id": "action_7"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006456303,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_5"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006473017,
+      "buildUs": 1268,
+      "rasterUs": 348,
+      "elapsedUs": 2648,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_14"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473277,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_418"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473282,
+      "name": "ExchangeHost",
+      "id": "widget_419"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473287,
+      "name": "ExchangeActions",
+      "id": "widget_420"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473289,
+      "name": "ExchangeScope",
+      "id": "widget_421"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473304,
+      "name": "SwitchDesk",
+      "id": "widget_422"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473314,
+      "name": "CustomPaint",
+      "id": "widget_423"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473317,
+      "name": "Center",
+      "id": "widget_424"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473320,
+      "name": "Column",
+      "id": "widget_425"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473323,
+      "name": "Text",
+      "id": "widget_426"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473347,
+      "name": "Text",
+      "id": "widget_427"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473367,
+      "name": "PlinthLine",
+      "id": "widget_428"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473373,
+      "name": "Column",
+      "id": "widget_429"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473376,
+      "name": "GestureDetector",
+      "id": "widget_430"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473384,
+      "name": "PlinthPaper",
+      "id": "widget_431"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473390,
+      "name": "Container",
+      "id": "widget_432"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473397,
+      "name": "Column",
+      "id": "widget_433"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473398,
+      "name": "Text",
+      "id": "widget_434"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473402,
+      "name": "Text",
+      "id": "widget_435"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473407,
+      "name": "FittedBox",
+      "id": "widget_436"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473408,
+      "name": "PlinthBadge",
+      "id": "widget_437"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473414,
+      "name": "Container",
+      "id": "widget_438"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473417,
+      "name": "Row",
+      "id": "widget_439"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473535,
+      "name": "Text",
+      "id": "widget_440"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473547,
+      "name": "FittedBox",
+      "id": "widget_441"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473557,
+      "name": "Text",
+      "id": "widget_442"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473643,
+      "name": "PlinthLine",
+      "id": "widget_443"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473647,
+      "name": "Column",
+      "id": "widget_444"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473648,
+      "name": "GestureDetector",
+      "id": "widget_445"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473653,
+      "name": "PlinthPaper",
+      "id": "widget_446"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473656,
+      "name": "Container",
+      "id": "widget_447"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473659,
+      "name": "Column",
+      "id": "widget_448"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473659,
+      "name": "Text",
+      "id": "widget_449"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473663,
+      "name": "Text",
+      "id": "widget_450"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473666,
+      "name": "FittedBox",
+      "id": "widget_451"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473669,
+      "name": "PlinthBadge",
+      "id": "widget_452"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473671,
+      "name": "Container",
+      "id": "widget_453"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473675,
+      "name": "Row",
+      "id": "widget_454"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473677,
+      "name": "Text",
+      "id": "widget_455"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473684,
+      "name": "PlinthButton",
+      "id": "widget_456"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473688,
+      "name": "PlinthTapTarget",
+      "id": "widget_457"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473690,
+      "name": "ConstrainedBox",
+      "id": "widget_458"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473692,
+      "name": "SizedBox",
+      "id": "widget_459"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473694,
+      "name": "Semantics",
+      "id": "widget_460"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473701,
+      "name": "Material",
+      "id": "widget_461"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473723,
+      "name": "InkWell",
+      "id": "widget_462"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473791,
+      "name": "Container",
+      "id": "widget_463"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473793,
+      "name": "Row",
+      "id": "widget_464"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473796,
+      "name": "Flexible",
+      "id": "widget_465"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006473798,
+      "name": "Text",
+      "id": "widget_466"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006490505,
+      "buildUs": 232,
+      "rasterUs": 454,
+      "elapsedUs": 2667,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_15"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006491091,
+      "name": "phone-6",
+      "id": "action_8"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006491125,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_6"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006506085,
+      "buildUs": 1262,
+      "rasterUs": 322,
+      "elapsedUs": 2352,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_16"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506260,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_467"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506265,
+      "name": "ExchangeHost",
+      "id": "widget_468"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506269,
+      "name": "ExchangeActions",
+      "id": "widget_469"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506271,
+      "name": "ExchangeScope",
+      "id": "widget_470"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506286,
+      "name": "PlinthLine",
+      "id": "widget_471"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506295,
+      "name": "Column",
+      "id": "widget_472"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506299,
+      "name": "GestureDetector",
+      "id": "widget_473"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506306,
+      "name": "PlinthPaper",
+      "id": "widget_474"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506417,
+      "name": "Container",
+      "id": "widget_475"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506425,
+      "name": "Column",
+      "id": "widget_476"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506427,
+      "name": "Text",
+      "id": "widget_477"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506435,
+      "name": "Text",
+      "id": "widget_478"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506454,
+      "name": "FittedBox",
+      "id": "widget_479"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506464,
+      "name": "PlinthBadge",
+      "id": "widget_480"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506472,
+      "name": "Container",
+      "id": "widget_481"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506476,
+      "name": "Row",
+      "id": "widget_482"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506479,
+      "name": "Text",
+      "id": "widget_483"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506495,
+      "name": "Wrap",
+      "id": "widget_484"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506497,
+      "name": "_Digit",
+      "id": "widget_485"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506499,
+      "name": "PlinthButton",
+      "id": "widget_486"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506503,
+      "name": "PlinthTapTarget",
+      "id": "widget_487"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506505,
+      "name": "ConstrainedBox",
+      "id": "widget_488"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506507,
+      "name": "SizedBox",
+      "id": "widget_489"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506508,
+      "name": "Semantics",
+      "id": "widget_490"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506515,
+      "name": "Material",
+      "id": "widget_491"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506537,
+      "name": "InkWell",
+      "id": "widget_492"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506570,
+      "name": "Container",
+      "id": "widget_493"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506572,
+      "name": "Row",
+      "id": "widget_494"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506574,
+      "name": "Flexible",
+      "id": "widget_495"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506576,
+      "name": "Text",
+      "id": "widget_496"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506584,
+      "name": "_Digit",
+      "id": "widget_497"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506585,
+      "name": "PlinthButton",
+      "id": "widget_498"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506590,
+      "name": "PlinthTapTarget",
+      "id": "widget_499"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506591,
+      "name": "ConstrainedBox",
+      "id": "widget_500"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506592,
+      "name": "SizedBox",
+      "id": "widget_501"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506593,
+      "name": "Semantics",
+      "id": "widget_502"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506595,
+      "name": "Material",
+      "id": "widget_503"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506602,
+      "name": "InkWell",
+      "id": "widget_504"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506612,
+      "name": "Container",
+      "id": "widget_505"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506614,
+      "name": "Row",
+      "id": "widget_506"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506615,
+      "name": "Flexible",
+      "id": "widget_507"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506616,
+      "name": "Text",
+      "id": "widget_508"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506721,
+      "name": "_Digit",
+      "id": "widget_509"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506722,
+      "name": "PlinthButton",
+      "id": "widget_510"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506725,
+      "name": "PlinthTapTarget",
+      "id": "widget_511"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506726,
+      "name": "ConstrainedBox",
+      "id": "widget_512"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506727,
+      "name": "SizedBox",
+      "id": "widget_513"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506728,
+      "name": "Semantics",
+      "id": "widget_514"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506730,
+      "name": "Material",
+      "id": "widget_515"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506740,
+      "name": "InkWell",
+      "id": "widget_516"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506752,
+      "name": "Container",
+      "id": "widget_517"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506754,
+      "name": "Row",
+      "id": "widget_518"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506755,
+      "name": "Flexible",
+      "id": "widget_519"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506757,
+      "name": "Text",
+      "id": "widget_520"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506764,
+      "name": "_Digit",
+      "id": "widget_521"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506765,
+      "name": "PlinthButton",
+      "id": "widget_522"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506766,
+      "name": "PlinthTapTarget",
+      "id": "widget_523"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506767,
+      "name": "ConstrainedBox",
+      "id": "widget_524"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506768,
+      "name": "SizedBox",
+      "id": "widget_525"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506769,
+      "name": "Semantics",
+      "id": "widget_526"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506770,
+      "name": "Material",
+      "id": "widget_527"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506778,
+      "name": "InkWell",
+      "id": "widget_528"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506787,
+      "name": "Container",
+      "id": "widget_529"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506788,
+      "name": "Row",
+      "id": "widget_530"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506790,
+      "name": "Text",
+      "id": "widget_531"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506790,
+      "name": "Flexible",
+      "id": "widget_532"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506797,
+      "name": "PlinthButton",
+      "id": "widget_533"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506797,
+      "name": "_Digit",
+      "id": "widget_534"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506799,
+      "name": "PlinthTapTarget",
+      "id": "widget_535"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506800,
+      "name": "ConstrainedBox",
+      "id": "widget_536"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506801,
+      "name": "SizedBox",
+      "id": "widget_537"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506802,
+      "name": "Semantics",
+      "id": "widget_538"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506804,
+      "name": "Material",
+      "id": "widget_539"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506809,
+      "name": "InkWell",
+      "id": "widget_540"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506821,
+      "name": "Container",
+      "id": "widget_541"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506824,
+      "name": "Row",
+      "id": "widget_542"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506825,
+      "name": "Flexible",
+      "id": "widget_543"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506918,
+      "name": "Text",
+      "id": "widget_544"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506927,
+      "name": "_Digit",
+      "id": "widget_545"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506928,
+      "name": "PlinthButton",
+      "id": "widget_546"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506930,
+      "name": "PlinthTapTarget",
+      "id": "widget_547"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506931,
+      "name": "ConstrainedBox",
+      "id": "widget_548"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506932,
+      "name": "Semantics",
+      "id": "widget_549"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506932,
+      "name": "SizedBox",
+      "id": "widget_550"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506935,
+      "name": "Material",
+      "id": "widget_551"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506941,
+      "name": "InkWell",
+      "id": "widget_552"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506957,
+      "name": "Container",
+      "id": "widget_553"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506959,
+      "name": "Row",
+      "id": "widget_554"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506960,
+      "name": "Flexible",
+      "id": "widget_555"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506961,
+      "name": "Text",
+      "id": "widget_556"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506967,
+      "name": "_Digit",
+      "id": "widget_557"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506968,
+      "name": "PlinthButton",
+      "id": "widget_558"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506969,
+      "name": "PlinthTapTarget",
+      "id": "widget_559"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506970,
+      "name": "ConstrainedBox",
+      "id": "widget_560"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506971,
+      "name": "SizedBox",
+      "id": "widget_561"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506972,
+      "name": "Semantics",
+      "id": "widget_562"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506973,
+      "name": "Material",
+      "id": "widget_563"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506978,
+      "name": "InkWell",
+      "id": "widget_564"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506990,
+      "name": "Container",
+      "id": "widget_565"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506992,
+      "name": "Row",
+      "id": "widget_566"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506996,
+      "name": "Flexible",
+      "id": "widget_567"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006506997,
+      "name": "Text",
+      "id": "widget_568"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006522421,
+      "buildUs": 253,
+      "rasterUs": 411,
+      "elapsedUs": 1223,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_17"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006523117,
+      "name": "digit-6-5",
+      "id": "action_9"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006523155,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_7"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006540418,
+      "buildUs": 1003,
+      "rasterUs": 375,
+      "elapsedUs": 3243,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_18"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540611,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_569"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540615,
+      "name": "ExchangeHost",
+      "id": "widget_570"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540619,
+      "name": "ExchangeActions",
+      "id": "widget_571"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540621,
+      "name": "ExchangeScope",
+      "id": "widget_572"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540637,
+      "name": "PlinthLine",
+      "id": "widget_573"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540653,
+      "name": "Column",
+      "id": "widget_574"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540658,
+      "name": "GestureDetector",
+      "id": "widget_575"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540668,
+      "name": "PlinthPaper",
+      "id": "widget_576"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540674,
+      "name": "Container",
+      "id": "widget_577"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540682,
+      "name": "Column",
+      "id": "widget_578"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540684,
+      "name": "Text",
+      "id": "widget_579"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540693,
+      "name": "Text",
+      "id": "widget_580"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540697,
+      "name": "FittedBox",
+      "id": "widget_581"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540699,
+      "name": "PlinthBadge",
+      "id": "widget_582"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540705,
+      "name": "Container",
+      "id": "widget_583"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540707,
+      "name": "Row",
+      "id": "widget_584"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540708,
+      "name": "Text",
+      "id": "widget_585"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540835,
+      "name": "Wrap",
+      "id": "widget_586"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540838,
+      "name": "_Digit",
+      "id": "widget_587"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540840,
+      "name": "PlinthButton",
+      "id": "widget_588"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540845,
+      "name": "PlinthTapTarget",
+      "id": "widget_589"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540847,
+      "name": "ConstrainedBox",
+      "id": "widget_590"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540849,
+      "name": "Semantics",
+      "id": "widget_591"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540849,
+      "name": "SizedBox",
+      "id": "widget_592"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540851,
+      "name": "Material",
+      "id": "widget_593"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540862,
+      "name": "InkWell",
+      "id": "widget_594"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540883,
+      "name": "Container",
+      "id": "widget_595"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540885,
+      "name": "Row",
+      "id": "widget_596"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540887,
+      "name": "Flexible",
+      "id": "widget_597"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540889,
+      "name": "Text",
+      "id": "widget_598"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540895,
+      "name": "_Digit",
+      "id": "widget_599"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540897,
+      "name": "PlinthButton",
+      "id": "widget_600"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540899,
+      "name": "PlinthTapTarget",
+      "id": "widget_601"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540900,
+      "name": "ConstrainedBox",
+      "id": "widget_602"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540901,
+      "name": "SizedBox",
+      "id": "widget_603"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540901,
+      "name": "Semantics",
+      "id": "widget_604"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540902,
+      "name": "Material",
+      "id": "widget_605"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540905,
+      "name": "InkWell",
+      "id": "widget_606"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540912,
+      "name": "Container",
+      "id": "widget_607"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540913,
+      "name": "Row",
+      "id": "widget_608"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540914,
+      "name": "Flexible",
+      "id": "widget_609"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540915,
+      "name": "Text",
+      "id": "widget_610"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540920,
+      "name": "_Digit",
+      "id": "widget_611"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540921,
+      "name": "PlinthButton",
+      "id": "widget_612"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540923,
+      "name": "ConstrainedBox",
+      "id": "widget_613"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540923,
+      "name": "PlinthTapTarget",
+      "id": "widget_614"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540924,
+      "name": "SizedBox",
+      "id": "widget_615"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540925,
+      "name": "Semantics",
+      "id": "widget_616"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540925,
+      "name": "Material",
+      "id": "widget_617"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540928,
+      "name": "InkWell",
+      "id": "widget_618"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540933,
+      "name": "Container",
+      "id": "widget_619"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540934,
+      "name": "Row",
+      "id": "widget_620"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540935,
+      "name": "Flexible",
+      "id": "widget_621"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006540937,
+      "name": "Text",
+      "id": "widget_622"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541031,
+      "name": "_Digit",
+      "id": "widget_623"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541032,
+      "name": "PlinthButton",
+      "id": "widget_624"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541034,
+      "name": "PlinthTapTarget",
+      "id": "widget_625"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541035,
+      "name": "ConstrainedBox",
+      "id": "widget_626"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541035,
+      "name": "SizedBox",
+      "id": "widget_627"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541036,
+      "name": "Semantics",
+      "id": "widget_628"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541037,
+      "name": "Material",
+      "id": "widget_629"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541039,
+      "name": "InkWell",
+      "id": "widget_630"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541049,
+      "name": "Container",
+      "id": "widget_631"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541051,
+      "name": "Row",
+      "id": "widget_632"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541052,
+      "name": "Flexible",
+      "id": "widget_633"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541053,
+      "name": "Text",
+      "id": "widget_634"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541058,
+      "name": "_Digit",
+      "id": "widget_635"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541059,
+      "name": "PlinthButton",
+      "id": "widget_636"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541061,
+      "name": "PlinthTapTarget",
+      "id": "widget_637"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541062,
+      "name": "ConstrainedBox",
+      "id": "widget_638"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541063,
+      "name": "SizedBox",
+      "id": "widget_639"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541063,
+      "name": "Semantics",
+      "id": "widget_640"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541064,
+      "name": "Material",
+      "id": "widget_641"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541066,
+      "name": "InkWell",
+      "id": "widget_642"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541074,
+      "name": "Container",
+      "id": "widget_643"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541075,
+      "name": "Row",
+      "id": "widget_644"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541076,
+      "name": "Flexible",
+      "id": "widget_645"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541077,
+      "name": "Text",
+      "id": "widget_646"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541082,
+      "name": "_Digit",
+      "id": "widget_647"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541083,
+      "name": "PlinthButton",
+      "id": "widget_648"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541084,
+      "name": "PlinthTapTarget",
+      "id": "widget_649"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541085,
+      "name": "ConstrainedBox",
+      "id": "widget_650"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541086,
+      "name": "SizedBox",
+      "id": "widget_651"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541178,
+      "name": "Semantics",
+      "id": "widget_652"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541179,
+      "name": "Material",
+      "id": "widget_653"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541183,
+      "name": "InkWell",
+      "id": "widget_654"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541189,
+      "name": "Container",
+      "id": "widget_655"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541191,
+      "name": "Row",
+      "id": "widget_656"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541192,
+      "name": "Flexible",
+      "id": "widget_657"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541194,
+      "name": "Text",
+      "id": "widget_658"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541199,
+      "name": "_Digit",
+      "id": "widget_659"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541200,
+      "name": "PlinthButton",
+      "id": "widget_660"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541202,
+      "name": "PlinthTapTarget",
+      "id": "widget_661"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541203,
+      "name": "SizedBox",
+      "id": "widget_662"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541203,
+      "name": "ConstrainedBox",
+      "id": "widget_663"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541204,
+      "name": "Material",
+      "id": "widget_664"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541204,
+      "name": "Semantics",
+      "id": "widget_665"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541207,
+      "name": "InkWell",
+      "id": "widget_666"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541213,
+      "name": "Container",
+      "id": "widget_667"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541214,
+      "name": "Row",
+      "id": "widget_668"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541215,
+      "name": "Flexible",
+      "id": "widget_669"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006541217,
+      "name": "Text",
+      "id": "widget_670"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006557432,
+      "buildUs": 257,
+      "rasterUs": 320,
+      "elapsedUs": 2692,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_19"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006558012,
+      "name": "digit-6-0",
+      "id": "action_10"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006558059,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_8"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006572617,
+      "buildUs": 1885,
+      "rasterUs": 382,
+      "elapsedUs": 2900,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_20"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572843,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_671"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572849,
+      "name": "ExchangeHost",
+      "id": "widget_672"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572854,
+      "name": "ExchangeActions",
+      "id": "widget_673"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572857,
+      "name": "ExchangeScope",
+      "id": "widget_674"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572875,
+      "name": "PlinthLine",
+      "id": "widget_675"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572886,
+      "name": "Column",
+      "id": "widget_676"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572892,
+      "name": "GestureDetector",
+      "id": "widget_677"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572904,
+      "name": "PlinthPaper",
+      "id": "widget_678"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572912,
+      "name": "Container",
+      "id": "widget_679"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572920,
+      "name": "Column",
+      "id": "widget_680"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572922,
+      "name": "Text",
+      "id": "widget_681"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572933,
+      "name": "Text",
+      "id": "widget_682"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572939,
+      "name": "FittedBox",
+      "id": "widget_683"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572941,
+      "name": "PlinthBadge",
+      "id": "widget_684"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572949,
+      "name": "Container",
+      "id": "widget_685"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572952,
+      "name": "Row",
+      "id": "widget_686"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572954,
+      "name": "Text",
+      "id": "widget_687"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572959,
+      "name": "FittedBox",
+      "id": "widget_688"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572971,
+      "name": "Text",
+      "id": "widget_689"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572988,
+      "name": "Wrap",
+      "id": "widget_690"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572991,
+      "name": "_Digit",
+      "id": "widget_691"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572993,
+      "name": "PlinthButton",
+      "id": "widget_692"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006572999,
+      "name": "PlinthTapTarget",
+      "id": "widget_693"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573001,
+      "name": "ConstrainedBox",
+      "id": "widget_694"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573007,
+      "name": "SizedBox",
+      "id": "widget_695"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573009,
+      "name": "Semantics",
+      "id": "widget_696"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573011,
+      "name": "Material",
+      "id": "widget_697"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573025,
+      "name": "InkWell",
+      "id": "widget_698"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573049,
+      "name": "Container",
+      "id": "widget_699"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573051,
+      "name": "Row",
+      "id": "widget_700"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573053,
+      "name": "Flexible",
+      "id": "widget_701"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573229,
+      "name": "Text",
+      "id": "widget_702"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573242,
+      "name": "_Digit",
+      "id": "widget_703"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573245,
+      "name": "PlinthButton",
+      "id": "widget_704"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573250,
+      "name": "PlinthTapTarget",
+      "id": "widget_705"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573252,
+      "name": "ConstrainedBox",
+      "id": "widget_706"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573253,
+      "name": "SizedBox",
+      "id": "widget_707"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573254,
+      "name": "Semantics",
+      "id": "widget_708"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573255,
+      "name": "Material",
+      "id": "widget_709"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573262,
+      "name": "InkWell",
+      "id": "widget_710"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573275,
+      "name": "Container",
+      "id": "widget_711"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573277,
+      "name": "Row",
+      "id": "widget_712"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573279,
+      "name": "Flexible",
+      "id": "widget_713"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573281,
+      "name": "Text",
+      "id": "widget_714"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573289,
+      "name": "_Digit",
+      "id": "widget_715"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573291,
+      "name": "PlinthButton",
+      "id": "widget_716"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573334,
+      "name": "PlinthTapTarget",
+      "id": "widget_717"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573336,
+      "name": "ConstrainedBox",
+      "id": "widget_718"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573337,
+      "name": "SizedBox",
+      "id": "widget_719"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573338,
+      "name": "Semantics",
+      "id": "widget_720"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573339,
+      "name": "Material",
+      "id": "widget_721"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573344,
+      "name": "InkWell",
+      "id": "widget_722"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573357,
+      "name": "Container",
+      "id": "widget_723"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573360,
+      "name": "Row",
+      "id": "widget_724"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573361,
+      "name": "Flexible",
+      "id": "widget_725"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573364,
+      "name": "Text",
+      "id": "widget_726"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573374,
+      "name": "_Digit",
+      "id": "widget_727"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573375,
+      "name": "PlinthButton",
+      "id": "widget_728"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573378,
+      "name": "PlinthTapTarget",
+      "id": "widget_729"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573576,
+      "name": "ConstrainedBox",
+      "id": "widget_730"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573585,
+      "name": "SizedBox",
+      "id": "widget_731"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573589,
+      "name": "Semantics",
+      "id": "widget_732"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573591,
+      "name": "Material",
+      "id": "widget_733"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573612,
+      "name": "InkWell",
+      "id": "widget_734"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573644,
+      "name": "Container",
+      "id": "widget_735"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573650,
+      "name": "Row",
+      "id": "widget_736"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573654,
+      "name": "Flexible",
+      "id": "widget_737"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573659,
+      "name": "Text",
+      "id": "widget_738"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573672,
+      "name": "_Digit",
+      "id": "widget_739"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573676,
+      "name": "PlinthButton",
+      "id": "widget_740"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573686,
+      "name": "PlinthTapTarget",
+      "id": "widget_741"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573688,
+      "name": "ConstrainedBox",
+      "id": "widget_742"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573689,
+      "name": "SizedBox",
+      "id": "widget_743"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573690,
+      "name": "Semantics",
+      "id": "widget_744"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573691,
+      "name": "Material",
+      "id": "widget_745"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573697,
+      "name": "InkWell",
+      "id": "widget_746"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573710,
+      "name": "Container",
+      "id": "widget_747"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573713,
+      "name": "Row",
+      "id": "widget_748"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573714,
+      "name": "Flexible",
+      "id": "widget_749"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573718,
+      "name": "Text",
+      "id": "widget_750"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573727,
+      "name": "_Digit",
+      "id": "widget_751"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573729,
+      "name": "PlinthButton",
+      "id": "widget_752"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573734,
+      "name": "PlinthTapTarget",
+      "id": "widget_753"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573735,
+      "name": "ConstrainedBox",
+      "id": "widget_754"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573736,
+      "name": "SizedBox",
+      "id": "widget_755"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573737,
+      "name": "Semantics",
+      "id": "widget_756"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573738,
+      "name": "Material",
+      "id": "widget_757"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573742,
+      "name": "InkWell",
+      "id": "widget_758"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573752,
+      "name": "Container",
+      "id": "widget_759"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573753,
+      "name": "Row",
+      "id": "widget_760"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573755,
+      "name": "Flexible",
+      "id": "widget_761"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006573757,
+      "name": "Text",
+      "id": "widget_762"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574013,
+      "name": "_Digit",
+      "id": "widget_763"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574021,
+      "name": "PlinthButton",
+      "id": "widget_764"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574036,
+      "name": "PlinthTapTarget",
+      "id": "widget_765"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574039,
+      "name": "ConstrainedBox",
+      "id": "widget_766"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574041,
+      "name": "SizedBox",
+      "id": "widget_767"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574043,
+      "name": "Semantics",
+      "id": "widget_768"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574044,
+      "name": "Material",
+      "id": "widget_769"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574059,
+      "name": "InkWell",
+      "id": "widget_770"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574094,
+      "name": "Container",
+      "id": "widget_771"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574100,
+      "name": "Row",
+      "id": "widget_772"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574104,
+      "name": "Flexible",
+      "id": "widget_773"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006574111,
+      "name": "Text",
+      "id": "widget_774"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006589593,
+      "buildUs": 328,
+      "rasterUs": 518,
+      "elapsedUs": 1807,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_21"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006590390,
+      "name": "digit-6-1",
+      "id": "action_11"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006590448,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_9"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006607106,
+      "buildUs": 1595,
+      "rasterUs": 9546,
+      "elapsedUs": 12930,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_22"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607330,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_775"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607482,
+      "name": "ExchangeHost",
+      "id": "widget_776"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607489,
+      "name": "ExchangeActions",
+      "id": "widget_777"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607491,
+      "name": "ExchangeScope",
+      "id": "widget_778"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607508,
+      "name": "SwitchDesk",
+      "id": "widget_779"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607522,
+      "name": "CustomPaint",
+      "id": "widget_780"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607528,
+      "name": "Center",
+      "id": "widget_781"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607534,
+      "name": "Column",
+      "id": "widget_782"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607538,
+      "name": "Text",
+      "id": "widget_783"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607549,
+      "name": "Text",
+      "id": "widget_784"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607555,
+      "name": "Text",
+      "id": "widget_785"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607577,
+      "name": "PlinthLine",
+      "id": "widget_786"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607585,
+      "name": "Column",
+      "id": "widget_787"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607587,
+      "name": "GestureDetector",
+      "id": "widget_788"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607597,
+      "name": "PlinthPaper",
+      "id": "widget_789"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607605,
+      "name": "Container",
+      "id": "widget_790"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607612,
+      "name": "Column",
+      "id": "widget_791"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607613,
+      "name": "Text",
+      "id": "widget_792"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607618,
+      "name": "Text",
+      "id": "widget_793"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607623,
+      "name": "FittedBox",
+      "id": "widget_794"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607625,
+      "name": "PlinthBadge",
+      "id": "widget_795"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607632,
+      "name": "Container",
+      "id": "widget_796"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607635,
+      "name": "Row",
+      "id": "widget_797"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607637,
+      "name": "Text",
+      "id": "widget_798"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607657,
+      "name": "FittedBox",
+      "id": "widget_799"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006607658,
+      "name": "Text",
+      "id": "widget_800"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006623946,
+      "buildUs": 569,
+      "rasterUs": 490,
+      "elapsedUs": 3034,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_23"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006624730,
+      "name": "phone-4",
+      "id": "action_12"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006624776,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_10"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006639935,
+      "buildUs": 860,
+      "rasterUs": 1961,
+      "elapsedUs": 4116,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_24"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640069,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_801"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640078,
+      "name": "ExchangeHost",
+      "id": "widget_802"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640085,
+      "name": "ExchangeActions",
+      "id": "widget_803"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640088,
+      "name": "ExchangeScope",
+      "id": "widget_804"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640105,
+      "name": "SwitchDesk",
+      "id": "widget_805"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640114,
+      "name": "CustomPaint",
+      "id": "widget_806"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640118,
+      "name": "Center",
+      "id": "widget_807"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640121,
+      "name": "Column",
+      "id": "widget_808"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640124,
+      "name": "Text",
+      "id": "widget_809"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640151,
+      "name": "Text",
+      "id": "widget_810"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640164,
+      "name": "PlinthLine",
+      "id": "widget_811"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640170,
+      "name": "Column",
+      "id": "widget_812"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640172,
+      "name": "GestureDetector",
+      "id": "widget_813"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640182,
+      "name": "PlinthPaper",
+      "id": "widget_814"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640192,
+      "name": "Container",
+      "id": "widget_815"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640197,
+      "name": "Column",
+      "id": "widget_816"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640198,
+      "name": "Text",
+      "id": "widget_817"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640203,
+      "name": "Text",
+      "id": "widget_818"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640221,
+      "name": "PlinthLine",
+      "id": "widget_819"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640224,
+      "name": "Column",
+      "id": "widget_820"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640225,
+      "name": "GestureDetector",
+      "id": "widget_821"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640228,
+      "name": "PlinthPaper",
+      "id": "widget_822"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640344,
+      "name": "Container",
+      "id": "widget_823"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640348,
+      "name": "Column",
+      "id": "widget_824"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640349,
+      "name": "Text",
+      "id": "widget_825"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640354,
+      "name": "Text",
+      "id": "widget_826"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640359,
+      "name": "FittedBox",
+      "id": "widget_827"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640361,
+      "name": "PlinthBadge",
+      "id": "widget_828"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640367,
+      "name": "Container",
+      "id": "widget_829"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640370,
+      "name": "Row",
+      "id": "widget_830"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640371,
+      "name": "Text",
+      "id": "widget_831"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640380,
+      "name": "FittedBox",
+      "id": "widget_832"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640381,
+      "name": "Text",
+      "id": "widget_833"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640389,
+      "name": "PlinthLine",
+      "id": "widget_834"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640392,
+      "name": "Column",
+      "id": "widget_835"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640393,
+      "name": "GestureDetector",
+      "id": "widget_836"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640397,
+      "name": "PlinthPaper",
+      "id": "widget_837"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640398,
+      "name": "Container",
+      "id": "widget_838"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640400,
+      "name": "Column",
+      "id": "widget_839"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640401,
+      "name": "Text",
+      "id": "widget_840"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006640404,
+      "name": "Text",
+      "id": "widget_841"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006655852,
+      "buildUs": 116,
+      "rasterUs": 525,
+      "elapsedUs": 1171,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_25"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006656256,
+      "name": "phone-6",
+      "id": "action_13"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006656302,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_11"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006674092,
+      "buildUs": 898,
+      "rasterUs": 914,
+      "elapsedUs": 3944,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_26"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674273,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_842"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674282,
+      "name": "ExchangeHost",
+      "id": "widget_843"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674290,
+      "name": "ExchangeActions",
+      "id": "widget_844"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674293,
+      "name": "ExchangeScope",
+      "id": "widget_845"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674341,
+      "name": "PlinthLine",
+      "id": "widget_846"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674363,
+      "name": "Column",
+      "id": "widget_847"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674369,
+      "name": "GestureDetector",
+      "id": "widget_848"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674383,
+      "name": "PlinthPaper",
+      "id": "widget_849"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674396,
+      "name": "Container",
+      "id": "widget_850"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674404,
+      "name": "Column",
+      "id": "widget_851"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674405,
+      "name": "Text",
+      "id": "widget_852"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674417,
+      "name": "Text",
+      "id": "widget_853"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674440,
+      "name": "FittedBox",
+      "id": "widget_854"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674442,
+      "name": "PlinthBadge",
+      "id": "widget_855"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674449,
+      "name": "Container",
+      "id": "widget_856"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674451,
+      "name": "Row",
+      "id": "widget_857"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674453,
+      "name": "Text",
+      "id": "widget_858"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674460,
+      "name": "FittedBox",
+      "id": "widget_859"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674461,
+      "name": "Text",
+      "id": "widget_860"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674466,
+      "name": "PlinthButton",
+      "id": "widget_861"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674474,
+      "name": "PlinthTapTarget",
+      "id": "widget_862"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674476,
+      "name": "ConstrainedBox",
+      "id": "widget_863"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674485,
+      "name": "SizedBox",
+      "id": "widget_864"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674488,
+      "name": "Semantics",
+      "id": "widget_865"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674496,
+      "name": "Material",
+      "id": "widget_866"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674526,
+      "name": "InkWell",
+      "id": "widget_867"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674567,
+      "name": "Container",
+      "id": "widget_868"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674570,
+      "name": "Row",
+      "id": "widget_869"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674573,
+      "name": "Flexible",
+      "id": "widget_870"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006674575,
+      "name": "Text",
+      "id": "widget_871"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006689202,
+      "buildUs": 266,
+      "rasterUs": 817,
+      "elapsedUs": 1637,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_27"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006689813,
+      "name": "phone-5",
+      "id": "action_14"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006689857,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_12"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006706208,
+      "buildUs": 1506,
+      "rasterUs": 752,
+      "elapsedUs": 3157,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_28"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706320,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_872"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706329,
+      "name": "ExchangeHost",
+      "id": "widget_873"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706338,
+      "name": "ExchangeActions",
+      "id": "widget_874"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706341,
+      "name": "ExchangeScope",
+      "id": "widget_875"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706362,
+      "name": "PlinthLine",
+      "id": "widget_876"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706506,
+      "name": "Column",
+      "id": "widget_877"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706515,
+      "name": "GestureDetector",
+      "id": "widget_878"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706531,
+      "name": "PlinthPaper",
+      "id": "widget_879"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706544,
+      "name": "Container",
+      "id": "widget_880"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706552,
+      "name": "Column",
+      "id": "widget_881"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706554,
+      "name": "Text",
+      "id": "widget_882"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706564,
+      "name": "Text",
+      "id": "widget_883"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706589,
+      "name": "FittedBox",
+      "id": "widget_884"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706601,
+      "name": "PlinthBadge",
+      "id": "widget_885"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706609,
+      "name": "Container",
+      "id": "widget_886"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706614,
+      "name": "Row",
+      "id": "widget_887"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706616,
+      "name": "Text",
+      "id": "widget_888"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706628,
+      "name": "Wrap",
+      "id": "widget_889"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706630,
+      "name": "_Digit",
+      "id": "widget_890"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706632,
+      "name": "PlinthButton",
+      "id": "widget_891"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706636,
+      "name": "PlinthTapTarget",
+      "id": "widget_892"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706638,
+      "name": "ConstrainedBox",
+      "id": "widget_893"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706640,
+      "name": "SizedBox",
+      "id": "widget_894"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706641,
+      "name": "Semantics",
+      "id": "widget_895"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706650,
+      "name": "Material",
+      "id": "widget_896"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706675,
+      "name": "InkWell",
+      "id": "widget_897"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706708,
+      "name": "Container",
+      "id": "widget_898"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706711,
+      "name": "Row",
+      "id": "widget_899"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706712,
+      "name": "Flexible",
+      "id": "widget_900"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706714,
+      "name": "Text",
+      "id": "widget_901"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706722,
+      "name": "_Digit",
+      "id": "widget_902"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706723,
+      "name": "PlinthButton",
+      "id": "widget_903"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706725,
+      "name": "PlinthTapTarget",
+      "id": "widget_904"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706726,
+      "name": "ConstrainedBox",
+      "id": "widget_905"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706727,
+      "name": "SizedBox",
+      "id": "widget_906"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706728,
+      "name": "Semantics",
+      "id": "widget_907"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706730,
+      "name": "Material",
+      "id": "widget_908"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706737,
+      "name": "InkWell",
+      "id": "widget_909"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706747,
+      "name": "Container",
+      "id": "widget_910"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706749,
+      "name": "Row",
+      "id": "widget_911"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706750,
+      "name": "Flexible",
+      "id": "widget_912"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706751,
+      "name": "Text",
+      "id": "widget_913"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706874,
+      "name": "_Digit",
+      "id": "widget_914"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706875,
+      "name": "PlinthButton",
+      "id": "widget_915"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706877,
+      "name": "PlinthTapTarget",
+      "id": "widget_916"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706879,
+      "name": "ConstrainedBox",
+      "id": "widget_917"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706880,
+      "name": "SizedBox",
+      "id": "widget_918"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706881,
+      "name": "Semantics",
+      "id": "widget_919"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706883,
+      "name": "Material",
+      "id": "widget_920"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706888,
+      "name": "InkWell",
+      "id": "widget_921"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706898,
+      "name": "Container",
+      "id": "widget_922"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706899,
+      "name": "Row",
+      "id": "widget_923"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706901,
+      "name": "Flexible",
+      "id": "widget_924"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706902,
+      "name": "Text",
+      "id": "widget_925"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706910,
+      "name": "_Digit",
+      "id": "widget_926"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706914,
+      "name": "PlinthButton",
+      "id": "widget_927"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706916,
+      "name": "PlinthTapTarget",
+      "id": "widget_928"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706916,
+      "name": "ConstrainedBox",
+      "id": "widget_929"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706917,
+      "name": "SizedBox",
+      "id": "widget_930"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706918,
+      "name": "Semantics",
+      "id": "widget_931"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706920,
+      "name": "Material",
+      "id": "widget_932"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706924,
+      "name": "InkWell",
+      "id": "widget_933"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706933,
+      "name": "Container",
+      "id": "widget_934"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706935,
+      "name": "Row",
+      "id": "widget_935"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706936,
+      "name": "Flexible",
+      "id": "widget_936"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706937,
+      "name": "Text",
+      "id": "widget_937"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706944,
+      "name": "PlinthButton",
+      "id": "widget_938"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706944,
+      "name": "_Digit",
+      "id": "widget_939"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706946,
+      "name": "PlinthTapTarget",
+      "id": "widget_940"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706947,
+      "name": "ConstrainedBox",
+      "id": "widget_941"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706948,
+      "name": "Semantics",
+      "id": "widget_942"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706948,
+      "name": "SizedBox",
+      "id": "widget_943"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706950,
+      "name": "Material",
+      "id": "widget_944"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006706954,
+      "name": "InkWell",
+      "id": "widget_945"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707077,
+      "name": "Container",
+      "id": "widget_946"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707080,
+      "name": "Row",
+      "id": "widget_947"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707082,
+      "name": "Flexible",
+      "id": "widget_948"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707083,
+      "name": "Text",
+      "id": "widget_949"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707090,
+      "name": "_Digit",
+      "id": "widget_950"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707091,
+      "name": "PlinthButton",
+      "id": "widget_951"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707093,
+      "name": "PlinthTapTarget",
+      "id": "widget_952"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707094,
+      "name": "ConstrainedBox",
+      "id": "widget_953"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707095,
+      "name": "SizedBox",
+      "id": "widget_954"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707096,
+      "name": "Semantics",
+      "id": "widget_955"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707098,
+      "name": "Material",
+      "id": "widget_956"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707103,
+      "name": "InkWell",
+      "id": "widget_957"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707114,
+      "name": "Container",
+      "id": "widget_958"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707116,
+      "name": "Row",
+      "id": "widget_959"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707117,
+      "name": "Flexible",
+      "id": "widget_960"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707118,
+      "name": "Text",
+      "id": "widget_961"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707158,
+      "name": "_Digit",
+      "id": "widget_962"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707159,
+      "name": "PlinthButton",
+      "id": "widget_963"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707163,
+      "name": "PlinthTapTarget",
+      "id": "widget_964"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707165,
+      "name": "ConstrainedBox",
+      "id": "widget_965"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707167,
+      "name": "SizedBox",
+      "id": "widget_966"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707167,
+      "name": "Semantics",
+      "id": "widget_967"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707172,
+      "name": "Material",
+      "id": "widget_968"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707179,
+      "name": "InkWell",
+      "id": "widget_969"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707191,
+      "name": "Container",
+      "id": "widget_970"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707193,
+      "name": "Row",
+      "id": "widget_971"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707194,
+      "name": "Flexible",
+      "id": "widget_972"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006707195,
+      "name": "Text",
+      "id": "widget_973"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006723016,
+      "buildUs": 128,
+      "rasterUs": 831,
+      "elapsedUs": 2143,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_29"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006723537,
+      "name": "phone-5",
+      "id": "action_15"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006723574,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_13"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006739104,
+      "buildUs": 733,
+      "rasterUs": 774,
+      "elapsedUs": 1975,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_30"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739241,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_974"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739251,
+      "name": "ExchangeHost",
+      "id": "widget_975"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739259,
+      "name": "ExchangeActions",
+      "id": "widget_976"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739262,
+      "name": "ExchangeScope",
+      "id": "widget_977"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739283,
+      "name": "PlinthLine",
+      "id": "widget_978"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739293,
+      "name": "Column",
+      "id": "widget_979"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739299,
+      "name": "GestureDetector",
+      "id": "widget_980"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739313,
+      "name": "PlinthPaper",
+      "id": "widget_981"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739325,
+      "name": "Container",
+      "id": "widget_982"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739332,
+      "name": "Column",
+      "id": "widget_983"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739333,
+      "name": "Text",
+      "id": "widget_984"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006739343,
+      "name": "Text",
+      "id": "widget_985"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006756052,
+      "buildUs": 134,
+      "rasterUs": 703,
+      "elapsedUs": 1567,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_31"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006756551,
+      "name": "phone-6",
+      "id": "action_16"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006756586,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_14"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006773307,
+      "buildUs": 1055,
+      "rasterUs": 583,
+      "elapsedUs": 2964,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_32"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773404,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_986"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773413,
+      "name": "ExchangeHost",
+      "id": "widget_987"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773421,
+      "name": "ExchangeActions",
+      "id": "widget_988"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773424,
+      "name": "ExchangeScope",
+      "id": "widget_989"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773443,
+      "name": "SwitchDesk",
+      "id": "widget_990"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773460,
+      "name": "CustomPaint",
+      "id": "widget_991"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773466,
+      "name": "Center",
+      "id": "widget_992"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773469,
+      "name": "Column",
+      "id": "widget_993"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773472,
+      "name": "Text",
+      "id": "widget_994"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773498,
+      "name": "Text",
+      "id": "widget_995"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773505,
+      "name": "PlinthLine",
+      "id": "widget_996"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773512,
+      "name": "Column",
+      "id": "widget_997"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773514,
+      "name": "GestureDetector",
+      "id": "widget_998"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773524,
+      "name": "PlinthPaper",
+      "id": "widget_999"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773533,
+      "name": "Container",
+      "id": "widget_1000"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773540,
+      "name": "Column",
+      "id": "widget_1001"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773541,
+      "name": "Text",
+      "id": "widget_1002"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773545,
+      "name": "Text",
+      "id": "widget_1003"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773554,
+      "name": "FittedBox",
+      "id": "widget_1004"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773556,
+      "name": "PlinthBadge",
+      "id": "widget_1005"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773562,
+      "name": "Container",
+      "id": "widget_1006"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773565,
+      "name": "Row",
+      "id": "widget_1007"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773566,
+      "name": "Text",
+      "id": "widget_1008"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773681,
+      "name": "FittedBox",
+      "id": "widget_1009"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773682,
+      "name": "Text",
+      "id": "widget_1010"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773712,
+      "name": "PlinthLine",
+      "id": "widget_1011"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773715,
+      "name": "Column",
+      "id": "widget_1012"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773716,
+      "name": "GestureDetector",
+      "id": "widget_1013"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773721,
+      "name": "PlinthPaper",
+      "id": "widget_1014"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773723,
+      "name": "Container",
+      "id": "widget_1015"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773725,
+      "name": "Column",
+      "id": "widget_1016"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773726,
+      "name": "Text",
+      "id": "widget_1017"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773730,
+      "name": "Text",
+      "id": "widget_1018"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773734,
+      "name": "FittedBox",
+      "id": "widget_1019"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773743,
+      "name": "PlinthBadge",
+      "id": "widget_1020"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773746,
+      "name": "Container",
+      "id": "widget_1021"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773749,
+      "name": "Row",
+      "id": "widget_1022"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773752,
+      "name": "Text",
+      "id": "widget_1023"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773761,
+      "name": "PlinthButton",
+      "id": "widget_1024"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773765,
+      "name": "PlinthTapTarget",
+      "id": "widget_1025"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773767,
+      "name": "ConstrainedBox",
+      "id": "widget_1026"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773768,
+      "name": "SizedBox",
+      "id": "widget_1027"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773770,
+      "name": "Semantics",
+      "id": "widget_1028"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773777,
+      "name": "Material",
+      "id": "widget_1029"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773800,
+      "name": "InkWell",
+      "id": "widget_1030"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773829,
+      "name": "Container",
+      "id": "widget_1031"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773831,
+      "name": "Row",
+      "id": "widget_1032"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773833,
+      "name": "Flexible",
+      "id": "widget_1033"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006773834,
+      "name": "Text",
+      "id": "widget_1034"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006789669,
+      "buildUs": 317,
+      "rasterUs": 835,
+      "elapsedUs": 2289,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_33"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006790325,
+      "name": "phone-5",
+      "id": "action_17"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006790364,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_15"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006806532,
+      "buildUs": 893,
+      "rasterUs": 2035,
+      "elapsedUs": 4168,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_34"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806649,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_1035"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806657,
+      "name": "ExchangeHost",
+      "id": "widget_1036"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806663,
+      "name": "ExchangeActions",
+      "id": "widget_1037"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806666,
+      "name": "ExchangeScope",
+      "id": "widget_1038"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806682,
+      "name": "SwitchDesk",
+      "id": "widget_1039"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806691,
+      "name": "CustomPaint",
+      "id": "widget_1040"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806695,
+      "name": "Center",
+      "id": "widget_1041"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806698,
+      "name": "Column",
+      "id": "widget_1042"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806701,
+      "name": "Text",
+      "id": "widget_1043"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806727,
+      "name": "Text",
+      "id": "widget_1044"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806738,
+      "name": "PlinthLine",
+      "id": "widget_1045"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806743,
+      "name": "Column",
+      "id": "widget_1046"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806745,
+      "name": "GestureDetector",
+      "id": "widget_1047"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806755,
+      "name": "PlinthPaper",
+      "id": "widget_1048"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806764,
+      "name": "Container",
+      "id": "widget_1049"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806770,
+      "name": "Column",
+      "id": "widget_1050"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806771,
+      "name": "Text",
+      "id": "widget_1051"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806775,
+      "name": "Text",
+      "id": "widget_1052"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806780,
+      "name": "FittedBox",
+      "id": "widget_1053"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806781,
+      "name": "PlinthBadge",
+      "id": "widget_1054"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806787,
+      "name": "Container",
+      "id": "widget_1055"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806791,
+      "name": "Row",
+      "id": "widget_1056"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806905,
+      "name": "Text",
+      "id": "widget_1057"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806917,
+      "name": "FittedBox",
+      "id": "widget_1058"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806918,
+      "name": "Text",
+      "id": "widget_1059"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806926,
+      "name": "PlinthLine",
+      "id": "widget_1060"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806929,
+      "name": "Column",
+      "id": "widget_1061"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806930,
+      "name": "GestureDetector",
+      "id": "widget_1062"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806933,
+      "name": "PlinthPaper",
+      "id": "widget_1063"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806936,
+      "name": "Container",
+      "id": "widget_1064"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806938,
+      "name": "Column",
+      "id": "widget_1065"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806939,
+      "name": "Text",
+      "id": "widget_1066"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806942,
+      "name": "Text",
+      "id": "widget_1067"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806950,
+      "name": "FittedBox",
+      "id": "widget_1068"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806951,
+      "name": "PlinthBadge",
+      "id": "widget_1069"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806953,
+      "name": "Container",
+      "id": "widget_1070"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806955,
+      "name": "Row",
+      "id": "widget_1071"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806956,
+      "name": "Text",
+      "id": "widget_1072"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806962,
+      "name": "FittedBox",
+      "id": "widget_1073"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006806971,
+      "name": "Text",
+      "id": "widget_1074"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006824266,
+      "buildUs": 137,
+      "rasterUs": 743,
+      "elapsedUs": 3156,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_35"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006824642,
+      "name": "phone-3",
+      "id": "action_18"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006824692,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_16"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006839268,
+      "buildUs": 751,
+      "rasterUs": 548,
+      "elapsedUs": 1912,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_36"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839435,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_1075"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839444,
+      "name": "ExchangeHost",
+      "id": "widget_1076"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839451,
+      "name": "ExchangeActions",
+      "id": "widget_1077"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839454,
+      "name": "ExchangeScope",
+      "id": "widget_1078"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839501,
+      "name": "SwitchDesk",
+      "id": "widget_1079"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839511,
+      "name": "CustomPaint",
+      "id": "widget_1080"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839516,
+      "name": "Center",
+      "id": "widget_1081"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839519,
+      "name": "Column",
+      "id": "widget_1082"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839522,
+      "name": "Text",
+      "id": "widget_1083"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839560,
+      "name": "PlinthLine",
+      "id": "widget_1084"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839566,
+      "name": "Column",
+      "id": "widget_1085"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839568,
+      "name": "GestureDetector",
+      "id": "widget_1086"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839579,
+      "name": "PlinthPaper",
+      "id": "widget_1087"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839590,
+      "name": "Container",
+      "id": "widget_1088"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839597,
+      "name": "Column",
+      "id": "widget_1089"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839597,
+      "name": "Text",
+      "id": "widget_1090"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839602,
+      "name": "Text",
+      "id": "widget_1091"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839623,
+      "name": "PlinthLine",
+      "id": "widget_1092"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839625,
+      "name": "Column",
+      "id": "widget_1093"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839626,
+      "name": "GestureDetector",
+      "id": "widget_1094"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839629,
+      "name": "PlinthPaper",
+      "id": "widget_1095"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839632,
+      "name": "Container",
+      "id": "widget_1096"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839634,
+      "name": "Text",
+      "id": "widget_1097"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839634,
+      "name": "Column",
+      "id": "widget_1098"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006839638,
+      "name": "Text",
+      "id": "widget_1099"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006856100,
+      "buildUs": 114,
+      "rasterUs": 674,
+      "elapsedUs": 1691,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_37"
+    },
+    {
+      "type": "user.action",
+      "timeUs": 136006856552,
+      "name": "phone-5",
+      "id": "action_19"
+    },
+    {
+      "type": "state.changed",
+      "timeUs": 136006856585,
+      "adapter": "bloc",
+      "name": "ExchangeCubit",
+      "event": null,
+      "summary": "Exchange",
+      "value": null,
+      "id": "state_17"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006873095,
+      "buildUs": 649,
+      "rasterUs": 920,
+      "elapsedUs": 2686,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_38"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873204,
+      "name": "_InheritedProviderScope<ExchangeCubit?>",
+      "id": "widget_1100"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873212,
+      "name": "ExchangeHost",
+      "id": "widget_1101"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873220,
+      "name": "ExchangeActions",
+      "id": "widget_1102"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873223,
+      "name": "ExchangeScope",
+      "id": "widget_1103"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873243,
+      "name": "SwitchDesk",
+      "id": "widget_1104"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873249,
+      "name": "CustomPaint",
+      "id": "widget_1105"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873254,
+      "name": "Center",
+      "id": "widget_1106"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873257,
+      "name": "Column",
+      "id": "widget_1107"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873260,
+      "name": "Text",
+      "id": "widget_1108"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873289,
+      "name": "PlinthLine",
+      "id": "widget_1109"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873295,
+      "name": "Column",
+      "id": "widget_1110"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873297,
+      "name": "GestureDetector",
+      "id": "widget_1111"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873309,
+      "name": "PlinthPaper",
+      "id": "widget_1112"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873319,
+      "name": "Container",
+      "id": "widget_1113"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873325,
+      "name": "Column",
+      "id": "widget_1114"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873326,
+      "name": "Text",
+      "id": "widget_1115"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873332,
+      "name": "Text",
+      "id": "widget_1116"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873481,
+      "name": "PlinthLine",
+      "id": "widget_1117"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873485,
+      "name": "Column",
+      "id": "widget_1118"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873487,
+      "name": "GestureDetector",
+      "id": "widget_1119"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873491,
+      "name": "PlinthPaper",
+      "id": "widget_1120"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873494,
+      "name": "Container",
+      "id": "widget_1121"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873497,
+      "name": "Column",
+      "id": "widget_1122"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873498,
+      "name": "Text",
+      "id": "widget_1123"
+    },
+    {
+      "type": "widget.rebuild",
+      "timeUs": 136006873502,
+      "name": "Text",
+      "id": "widget_1124"
+    },
+    {
+      "type": "frame",
+      "timeUs": 136006890015,
+      "buildUs": 216,
+      "rasterUs": 595,
+      "elapsedUs": 2180,
+      "targetUs": null,
+      "budgetExceeded": null,
+      "id": "frame_39"
+    }
+  ],
+  "rejected": 0,
+  "play": {
+    "board": "plinth",
+    "scenarioPath": ".\\examples\\exchange\\scenario.txt",
+    "scenario": "# The setup screen has no phones. Open six lines first; this file taps phone 6.\ntap lines-6\ntap open\ntap phone-3\ntap digit-3-1\ntap phone-1\ntap phone-4\ntap digit-4-5\ntap phone-6\ntap digit-6-5\ntap digit-6-0\ntap digit-6-1\ntap phone-4\ntap phone-6\ntap phone-5\ntap phone-5\ntap phone-6\ntap phone-5\ntap phone-3\ntap phone-5\n",
+    "commit": "fd4cf670824a92d12d8007a139341e9c0346afcb",
+    "branch": "main",
+    "subject": "Point the repository at ylahav/insight.",
+    "scenarioDirty": true
+  }
+}

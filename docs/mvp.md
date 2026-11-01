@@ -154,7 +154,7 @@ Names default to `future` and `stream` when omitted. `traceFuture` forwards the 
 | --- | --- |
 | Rebuild timeline events are not a stable API | Two supported Flutter lines, named in [runtime.md](runtime.md), each backed by a profile-mode parser test on `examples/bloc_counter` |
 | Build profiling distorts timings | Rebuild records carry names and times of occurrence. Frame `buildUs` / `rasterUs` come from `Flutter.Frame`, which does not depend on that flag |
-| CI numbers move between machines | The recorder writes a file. `tool/beside.dart` prints two files. Neither one passes or fails a run |
+| CI numbers move between machines | The recorder writes a file. `tool/compare.dart` prints two files. Neither one passes or fails a run |
 | State payloads can leak secrets | `value` defaults to `null`. Opt-in strings are truncated |
 | `flutter_bloc` major versions | The adapter is its own package, first pinned to 9.1.x |
 | `flutter_riverpod` major versions | `insight_riverpod` is its own package, first pinned to 3.4.x |
@@ -167,6 +167,6 @@ Only after the phase 3 checks pass, and only one of these at a time:
 
 1. A second supported Flutter stable. Done: the `examples/bloc_counter` profile check passed on Flutter 3.44.9. A newer stable still needs its own check.
 2. Riverpod, as `insight_riverpod`, speaking the same `state.changed` record. Done: the `examples/riverpod_shelf` profile check passed on Flutter 3.47.8. A wide tick groups `second` → `int` with `WideShelf`, `SecondReadout`, and `MarkCard` (`frame_69` and `frame_239`). A scoped tick groups the same provider with `SecondReadout` and without `MarkCard` (`frame_159`). `adapter` is `riverpod`, `event` and `value` are null, and `rejected` is 0. stayAble remains the dogfood app. That session was not this check.
-3. A side-by-side reader for two session files, such as the desk's scoped tick and wide tick, without a pass/fail exit code. Done: `dart run tool/beside.dart --left a.json --right b.json` prints both flows. It exits 0 when both files are schema 1, including when the widget names differ.
+3. A side-by-side reader for two session files, such as the desk's scoped tick and wide tick, without a pass/fail exit code. Done: `dart run tool/compare.dart --left a.json --right b.json` prints both flows. It exits 0 when both files are schema 1, including when the widget names differ.
 
 Cause labels, a CI threshold, and a desktop app wait until those three exist and the alpha has been used on the desk. They are not scheduled here. The public sequence is [roadmap.md](roadmap.md).

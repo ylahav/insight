@@ -1,5 +1,7 @@
 # Using Insight
 
+<img src="../brand/logo.png" alt="Flutter Insight" width="560">
+
 Who this is for: someone opening a session to see what an app did, not someone changing the collector.
 
 The field rules are in [events.md](events.md). This page is the benefit, and the way to read a file.
@@ -66,6 +68,8 @@ Open `insight-session.json`. Check the envelope first.
 
 Then find the one record that is your action. Ignore the rest until that record is in hand.
 
+**A tap** is `type` `user.action`. The app posts it from the control, including a manual run. `name` is that control, such as `phone-1`. Analyzer prints `tap phone-1` above the earliest step at or after that time, when the gap is at most 32 ms. The file stores the tap on its own record. The step does not say the tap caused the change.
+
 **A bloc, cubit, or Riverpod change** is `type` `state.changed`. Read `adapter`, `name`, `event`, and `summary`. `adapter` is `bloc` or `riverpod`. For a cubit, and for a Riverpod update with no mutation, `event` is null. `value` is null unless the app opted in. A Riverpod `name` is the provider's label when one was set, and otherwise the provider's runtime type.
 
 The frame that followed it is the earliest `frame` whose `timeUs` is at or after the state time, when the gap is at most 32 ms. In the desk example, `TicketSelected` is at `500000` and the frame starts at `500800`. The gap is 0.8 ms, so they group. A gap larger than 32 ms leaves the state ungrouped. The panel shows that row as ungrouped.
@@ -91,13 +95,14 @@ The exchange is the same kind of reading with two drivers. Record one ring with 
 From the repository root, two schema-1 files can be printed together:
 
 ```bash
-dart run tool/beside.dart --left scoped.json --right wide.json
+dart run tool/compare.dart --left scoped.json --right wide.json
 ```
 
 Each numbered step is one change, earliest first. The left file is the first column and the right file is the second. A shelf tick prints like this:
 
 ```text
 Time grouping, not a cause.
+Steps pair by order. The first line is the change. The second line is that frame. Profile frames list build, raster, and elapsed. Elapsed is the whole frame. The rows under that are the widgets that rebuilt. A widget in both files shares a row. The widgets do not divide the frame time.
 left   scoped.json
 right  wide.json
 
@@ -107,8 +112,13 @@ second → int        second → int
                     WideShelf
 SecondReadout       SecondReadout
                     MarkCard
+
+Elapsed is the same in step 1 (1.7 ms).
+Step 1 rebuilt 1 widget on the left and 3 widgets on the right. Elapsed time matches.
 ```
 
-The first row of the step is the change. The second row is the frame time. The rows after that are widget names. `SecondReadout` shares a row because both files rebuilt it. `WideShelf` and `MarkCard` sit only in the right column. Flutter wrappers such as `Text` and `Padding` stay hidden. The process exits 0 when those names differ. A missing file, or a file that is not schema 1, exits 1.
+Analyzer shows the same steps. When two or more recordings are open, the shortest time on a step is marked best and the longest is marked worst. The words sit on the frame line, in green and in red. Equal tenths of a millisecond are unmarked. One recording has no mark. The mark is which time was shorter. It is not a pass or a fail. How to build that app for Windows is in [windows.md](windows.md).
+
+The first row of the step is the change. The second row is the frame. A profile frame adds build and raster before elapsed. The rows after that are widget names. `SecondReadout` shares a row because both files rebuilt it. `WideShelf` and `MarkCard` sit only in the right column. Flutter wrappers such as `Text` and `Padding` stay hidden. The lines under the steps compare those columns: which side is longer on build, raster, and elapsed, and whether the side that rebuilt more widgets is the longer frame. The process exits 0 when those widgets differ. A missing file, or a file that is not schema 1, exits 1.
 
 If `rejected` is greater than zero, or `flutter` is outside 3.44.x and 3.47.x, record again before comparing.

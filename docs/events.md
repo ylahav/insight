@@ -32,19 +32,36 @@ The CLI writes `insight-session.json` in the working directory. The extension ho
 
 `mode` is never `release`. The collector does not open a session for a release isolate.
 
+`play` is optional. `tool/play.dart` adds it after the collector writes the envelope. A reader that does not know the field leaves it unread.
+
+```json
+"play": {
+  "board": "bloc",
+  "scenarioPath": "examples/exchange/ring.txt",
+  "scenario": "tap lines-3\n",
+  "commit": "fd4cf670824a92d12d8007a139341e9c0346afcb",
+  "branch": "main",
+  "subject": "Point the repository at ylahav/insight.",
+  "scenarioDirty": false
+}
+```
+
+`scenario` is the tap file that was played. `board` is `bloc`, `riverpod`, or `plinth`. `commit`, `branch`, `subject`, and `scenarioDirty` are the git state of that file when the recording was made. Compare uses the text of `scenario`, not the path alone, to decide that two recordings played the same taps. Analyzer reads this one session, and Add result reads another.
+
 ### Sort order
 
 Events are ordered by `timeUs` ascending. `async.span` uses `startUs` as its sort key. When two timestamps are equal, the order is:
 
 1. `agent.ready`
-2. `state.changed`
-3. `async.span`
-4. `widget.rebuild`
-5. `frame`
+2. `user.action`
+3. `state.changed`
+4. `async.span`
+5. `widget.rebuild`
+6. `frame`
 
 ### Identifiers
 
-The collector assigns `id`. The form is a type prefix, an underscore, and a decimal counter unique within the session: `frame_1`, `widget_1`, `state_1`, `async_1`, `agent_1`.
+The collector assigns `id`. The form is a type prefix, an underscore, and a decimal counter unique within the session: `frame_1`, `widget_1`, `state_1`, `async_1`, `agent_1`, `action_1`.
 
 The agent assigns `spanId` for async work so the collector can merge a start and an end. `spanId` is an opaque string of at most 80 characters. It is not the session `id`.
 
@@ -96,6 +113,19 @@ One record per observed user-widget build. The UI counts records. The file does 
 
 There is no `cause` field in version 1. A name and a timestamp is the whole observation. Build durations from these timeline events are discarded. Flutter's own documentation treats that overhead as large enough to distort the cost of the build.
 
+### `user.action`
+
+The app posts this when the user taps a control. The exchange board posts the same name the play script uses, such as `phone-1` or `digit-1-2`. A manual run posts it too. The file does not infer the tap from a rebuild.
+
+| Field | Type | Required | Rule |
+| --- | --- | --- | --- |
+| `type` | `"user.action"` | yes | |
+| `id` | string | yes | |
+| `timeUs` | integer | yes | `Timeline.now` at the tap |
+| `name` | string | yes | The control. Truncated to 80 characters |
+
+Analyzer prints `tap` and that name above the earliest step at or after `timeUs`, when the gap is at most 32 ms. A wider gap leaves the action off the step. That placement is the same time window as a state change. It is not a cause.
+
 ### `state.changed`
 
 | Field | Type | Required | Rule |
@@ -146,6 +176,15 @@ An `error` status still has `endUs` set. `unfinished` has `endUs: null` and `err
   "schemaVersion": 1,
   "kind": "agent.ready",
   "timeUs": 1000
+}
+```
+
+```json
+{
+  "schemaVersion": 1,
+  "kind": "user.action",
+  "timeUs": 499000,
+  "name": "phone-1"
 }
 ```
 

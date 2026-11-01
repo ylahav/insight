@@ -149,5 +149,7 @@ _Parsed? _parse(List<String> arguments) {
 const _usage = '''
 Checks a profile session from examples/bloc_counter.
 
-dart run tool/parser_check.dart --file path --flutter 3.44
+parser_check --file path --flutter 3.44
+
+From a checkout: dart run tool/parser_check.dart --file path --flutter 3.44
 ''';

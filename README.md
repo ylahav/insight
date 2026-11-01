@@ -1,5 +1,7 @@
 # Flutter Insight
 
+<img src="brand/logo.png" alt="Flutter Insight" width="640">
+
 **Status: alpha.** A session shows frames, the user widgets that rebuilt during them, bloc and cubit transitions, and futures or streams the app traces. The desk checks passed on Flutter 3.47.8. The bloc_counter parser check also passed on Flutter 3.44.9. The shelf profile check also passed on Flutter 3.47.8: a scoped tick groups `second` with `SecondReadout` and without `MarkCard`, and a wide tick groups the same provider with `MarkCard`.
 
 Flutter Insight is a debugging aid for Flutter apps. The first version groups four observations on one timeline: a frame, the user widgets that rebuilt during it, a bloc transition, and an async span the app opted to trace. Why that timeline is worth opening, and how to read a row for a problem in the widget list, is [docs/overview.md](docs/overview.md). What comes after this alpha is [docs/roadmap.md](docs/roadmap.md).
@@ -15,6 +17,8 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 | [docs/mvp.md](docs/mvp.md) | Three-phase scope, acceptance checks, and non-goals |
 | [docs/running-example.md](docs/running-example.md) | The switch example, with Bloc and Riverpod on one board |
 | [docs/roadmap.md](docs/roadmap.md) | What comes after the alpha |
+| [docs/windows.md](docs/windows.md) | The Windows installer, and the programs it contains |
+| [brand/logo.png](brand/logo.png) | The wordmark. The icon is [brand/icon.png](brand/icon.png) |
 
 ## Record a session
 
@@ -78,10 +82,10 @@ Choose a line count, open one driver, tap a phone, and dial another line. The ca
 
 ## Read two files
 
-`tool/beside.dart` prints two schema-1 sessions, earliest change first, in two columns. How to read that print is in [docs/guide.md](docs/guide.md). The process exits 0 when the widget names differ. That difference is the reading.
+`tool/compare.dart` prints two schema-1 sessions, earliest change first, in two columns. How to read that print is in [docs/guide.md](docs/guide.md). The process exits 0 when the widgets differ. That difference is the reading. `tool/analyzer` opens one recording with Select file, and Add result puts another recording beside it. The shortest time on a step is marked best and the longest is marked worst. The Windows installer for Analyzer and the other tools is in [docs/windows.md](docs/windows.md).
 
 ```bash
-dart run tool/beside.dart --left scoped.json --right wide.json
+dart run tool/compare.dart --left scoped.json --right wide.json
 ```
 
 ## License

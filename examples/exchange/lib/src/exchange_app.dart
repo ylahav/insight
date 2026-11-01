@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:insight/insight.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:insight_riverpod/insight_riverpod.dart';
+import 'package:plinth_components/plinth_components.dart';
 
 import 'bloc_host.dart' as bloc;
 import 'board.dart';
@@ -21,6 +23,7 @@ class ExchangeApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: panel,
         fontFamily: 'Georgia',
+        extensions: [PlinthTheme.defaultTheme],
         colorScheme: const ColorScheme.dark(
           surface: panel,
           primary: cord,
@@ -42,10 +45,11 @@ class SetupPage extends StatefulWidget {
 class _SetupPageState extends State<SetupPage> {
   int _lineCount = 5;
 
-  void _open(ExchangeDriver driver) {
+  void _open(ExchangeDriver driver, {bool plinth = false}) {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (context) => BoardPage(driver: driver, lineCount: _lineCount),
+        builder: (context) =>
+            BoardPage(driver: driver, lineCount: _lineCount, plinth: plinth),
       ),
     );
   }
@@ -86,7 +90,10 @@ class _SetupPageState extends State<SetupPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 4),
                       child: TextButton(
                         key: Key('lines-$count'),
-                        onPressed: () => setState(() => _lineCount = count),
+                        onPressed: () {
+                          Insight.action('lines-$count');
+                          setState(() => _lineCount = count);
+                        },
                         style: TextButton.styleFrom(
                           foregroundColor: enamel,
                           backgroundColor: _lineCount == count
@@ -110,27 +117,46 @@ class _SetupPageState extends State<SetupPage> {
                 ],
               ),
               const SizedBox(height: 28),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 16,
+                runSpacing: 12,
                 children: [
                   OutlinedButton(
                     key: const Key('open-bloc'),
-                    onPressed: () => _open(ExchangeDriver.bloc),
+                    onPressed: () {
+                      Insight.action('open-bloc');
+                      _open(ExchangeDriver.bloc);
+                    },
                     style: OutlinedButton.styleFrom(
                       foregroundColor: enamel,
                       side: const BorderSide(color: cord),
                     ),
                     child: const Text('Open with Bloc'),
                   ),
-                  const SizedBox(width: 16),
                   OutlinedButton(
                     key: const Key('open-riverpod'),
-                    onPressed: () => _open(ExchangeDriver.riverpod),
+                    onPressed: () {
+                      Insight.action('open-riverpod');
+                      _open(ExchangeDriver.riverpod);
+                    },
                     style: OutlinedButton.styleFrom(
                       foregroundColor: enamel,
                       side: const BorderSide(color: cord),
                     ),
                     child: const Text('Open with Riverpod'),
+                  ),
+                  OutlinedButton(
+                    key: const Key('open-plinth'),
+                    onPressed: () {
+                      Insight.action('open-plinth');
+                      _open(ExchangeDriver.bloc, plinth: true);
+                    },
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: enamel,
+                      side: const BorderSide(color: cord),
+                    ),
+                    child: const Text('Open the Plinth board'),
                   ),
                 ],
               ),
@@ -143,10 +169,16 @@ class _SetupPageState extends State<SetupPage> {
 }
 
 class BoardPage extends StatelessWidget {
-  const BoardPage({required this.driver, required this.lineCount, super.key});
+  const BoardPage({
+    required this.driver,
+    required this.lineCount,
+    this.plinth = false,
+    super.key,
+  });
 
   final ExchangeDriver driver;
   final int lineCount;
+  final bool plinth;
 
   @override
   Widget build(BuildContext context) {
@@ -155,7 +187,7 @@ class BoardPage extends StatelessWidget {
       child: switch (driver) {
         ExchangeDriver.bloc => BlocProvider(
           create: (_) => bloc.ExchangeCubit(lineCount),
-          child: const bloc.ExchangeHost(),
+          child: bloc.ExchangeHost(plinth: plinth),
         ),
         ExchangeDriver.riverpod => ProviderScope(
           overrides: [riverpod.lineCountProvider.overrideWithValue(lineCount)],
