@@ -81,44 +81,57 @@ flutter run -d windows
 
 Choose a line count. Open with Bloc or Open with Riverpod. Tap a phone, then tap a digit.
 
-To read the two drivers side by side, record one action per file from the repository root. Leave the Insight tab closed. `1.json` and `2.json` under the example are ignored by git.
+To read the two drivers side by side, record one action per file from the repository root. The commands below are the installed programs. The Windows installer in [windows.md](windows.md) puts them on `PATH`. A developer who downloads the source runs the same tools from the repository root with `dart run tool/record.dart`, `dart run tool/play.dart`, and `dart run tool/compare.dart`. Those commands are listed after the installed ones. Leave the Insight tab closed. `1.json` and `2.json` under the example are ignored by git.
 
 ```bash
-dart run tool/record.dart --app examples/exchange --duration 25 --profile --out examples/exchange/1.json
+record --app examples/exchange --duration 25 --profile --out examples/exchange/1.json
 ```
 
 Press Enter, choose 3, Open with Bloc, tap phone 1, tap 2.
 
 ```bash
-dart run tool/record.dart --app examples/exchange --duration 25 --profile --out examples/exchange/2.json
+record --app examples/exchange --duration 25 --profile --out examples/exchange/2.json
 ```
 
 Press Enter, choose 3, Open with Riverpod, tap phone 1, tap 2.
 
 ```bash
-dart run tool/compare.dart --left examples/exchange/1.json --right examples/exchange/2.json
+compare --left examples/exchange/1.json --right examples/exchange/2.json
 ```
 
 Compare the widget names on the row where the call is established. How that print is laid out is in [guide.md](guide.md). Bloc names `ExchangeCubit`. Riverpod names `exchange`. The process exits 0 when those rows differ. Those widget names should match. The state row is the part that differs.
 
-The same ring can be played from a file. The script waits until the collector is listening, then runs every line in [examples/exchange/ring.txt](../examples/exchange/ring.txt). `tap` presses that control. `see` waits until that text is on screen. `tap open` follows `--board`. Edit the file, or pass `--scenario` with another file, and run that file once for each driver. Leave the Insight tab closed.
+The same ring can be played from a file. The scripts are in [examples/exchange/scenarios](../examples/exchange/scenarios). The script waits until the collector is listening, then runs every line in [answered-call.txt](../examples/exchange/scenarios/answered-call.txt). `tap` presses that control. `see` waits until that text is on screen. `tap open` follows `--board`. Pass `--scenario` with another file in that folder, and run that file once for each driver. Leave the Insight tab closed.
 
 ```bash
+play --board bloc --out examples/exchange/1.json
+play --board riverpod --out examples/exchange/2.json
+compare --left examples/exchange/1.json --right examples/exchange/2.json --out examples/exchange/compare.json
+```
+
+`--board` is `bloc`, `riverpod`, or `plinth`. The default mode is profile. `--debug` records the order without frame times worth keeping. `--scenario` on `play` replaces `answered-call.txt`. [two-waiters.txt](../examples/exchange/scenarios/two-waiters.txt) has two phones waiting for the same line, then a `01` split by a hang-up. [camp-on-a-ring.txt](../examples/exchange/scenarios/camp-on-a-ring.txt) camps on a line that is still ringing. Each recording stores that file and the git commit. Compare reads the two stored scripts and says whether they are the same taps.
+
+Downloading the source is enough to run those steps. From the repository root, the first `record` still waits for Enter, then Bloc, and the second waits for Enter, then Riverpod.
+
+```bash
+dart run tool/record.dart --app examples/exchange --duration 25 --profile --out examples/exchange/1.json
+dart run tool/record.dart --app examples/exchange --duration 25 --profile --out examples/exchange/2.json
+dart run tool/compare.dart --left examples/exchange/1.json --right examples/exchange/2.json
 dart run tool/play.dart --board bloc --out examples/exchange/1.json
 dart run tool/play.dart --board riverpod --out examples/exchange/2.json
 dart run tool/compare.dart --left examples/exchange/1.json --right examples/exchange/2.json --out examples/exchange/compare.json
 ```
 
-`--board` is `bloc`, `riverpod`, or `plinth`. The default mode is profile. `--debug` records the order without frame times worth keeping. `--scenario` on `play` replaces `ring.txt`. Each recording stores that file and the git commit. Compare reads the two stored scripts and says whether they are the same taps.
-
 Analyzer reads one of those recordings, then another beside it. On each step, the shortest frame time is marked best and the longest is marked worst. Two times that print as the same tenth of a millisecond are left unmarked. The mark says which recording was shorter. It does not pass or fail the run.
+
+The installer adds Analyzer to the Start menu. From a checkout:
 
 ```bash
 cd tool/analyzer
 flutter run -d windows
 ```
 
-A release copy of that app is described in [windows.md](windows.md). Press Select file and choose the session. Add result chooses the recording to compare with it. A tap recorded on the board, including a manual run, is printed above the step that follows it. Export taps writes the scenario that recording stored. A manual run has no scenario file, so Export taps writes the taps the session recorded.
+Press Select file and choose the session. Add result chooses the recording to compare with it. A tap recorded on the board, including a manual run, is printed above the step that follows it. Export taps writes the scenario that recording stored. A manual run has no scenario file, so Export taps writes the taps the session recorded.
 
 ## A second board
 

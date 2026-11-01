@@ -215,6 +215,48 @@ void main() {
     expect(voice.signal, LineSignal.voice);
   });
 
+  test('two camp-ons and a 01 split by a hang-up follow two-waiters.txt', () {
+    var exchange = Exchange.opened(5).offHook(1).dial(1, 2).offHook(2);
+    expect(exchange.calls, [(1, 2)]);
+
+    exchange = exchange.offHook(3).dial(3, 1).dial(3, 0).dial(3, 1);
+    exchange = exchange.offHook(4).dial(4, 1).dial(4, 0).dial(4, 1);
+    expect(exchange.line(3).detail, 'Waiting for 1');
+    expect(exchange.line(4).detail, 'Waiting for 1');
+    expect(exchange.waiting, [
+      const CampOn(waiter: 3, target: 1),
+      const CampOn(waiter: 4, target: 1),
+    ]);
+
+    exchange = exchange.onHook(1);
+    expect(exchange.line(3).status, LineStatus.recall);
+    expect(exchange.line(3).detail, 'Calling 1');
+    expect(exchange.recalls, [(3, 1)]);
+    expect(exchange.waiting, [const CampOn(waiter: 4, target: 1)]);
+
+    exchange = exchange.onHook(3).offHook(3).offHook(1);
+    expect(exchange.calls, [(1, 3)]);
+    exchange = exchange.onHook(3);
+    expect(exchange.line(4).status, LineStatus.recall);
+    expect(exchange.waiting, isEmpty);
+
+    exchange = exchange.onHook(4).offHook(4).offHook(1);
+    expect(exchange.calls, [(1, 4)]);
+
+    exchange = exchange.offHook(5).dial(5, 1).dial(5, 0);
+    expect(exchange.line(5).digits, '0');
+    expect(exchange.line(5).attempt, 1);
+    exchange = exchange.onHook(1);
+    expect(exchange.line(1).status, LineStatus.idle);
+    expect(exchange.line(5).attempt, 1);
+    exchange = exchange.dial(5, 1);
+    expect(exchange.line(5).status, LineStatus.recall);
+    expect(exchange.line(5).detail, 'Calling 1');
+    expect(exchange.line(1).status, LineStatus.idle);
+    expect(exchange.waiting, isEmpty);
+    expect(exchange.recalls, [(5, 1)]);
+  });
+
   test('the line count stays between 3 and 9', () {
     expect(() => Exchange.opened(2), throwsArgumentError);
     expect(() => Exchange.opened(10), throwsArgumentError);

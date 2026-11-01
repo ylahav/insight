@@ -37,7 +37,7 @@ The CLI writes `insight-session.json` in the working directory. The extension ho
 ```json
 "play": {
   "board": "bloc",
-  "scenarioPath": "examples/exchange/ring.txt",
+  "scenarioPath": "examples/exchange/scenarios/answered-call.txt",
   "scenario": "tap lines-3\n",
   "commit": "fd4cf670824a92d12d8007a139341e9c0346afcb",
   "branch": "main",

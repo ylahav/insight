@@ -50,7 +50,9 @@ insight_cli --uri http://127.0.0.1:8181/token=/ --duration 15 --out insight-sess
 
 `play` and `record` in that list still run from the checkout. Analyzer opens from the Start menu and reads any session file.
 
-## From a checkout, without the installer
+## From the downloaded source
+
+A developer who downloads the source runs the tools with `dart run tool/...` from the repository root. Analyzer starts with `flutter run`.
 
 ```bash
 cd tool/analyzer

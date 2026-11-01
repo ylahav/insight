@@ -16,7 +16,7 @@ The packages prepared for pub.dev are `insight`, `insight_bloc`, `insight_riverp
 
 ## Next check
 
-Record the exchange twice, and read the files with `compare`. One ring with Bloc, the same ring with Riverpod. `tool/play.dart` plays the steps in `examples/exchange/ring.txt`. The widget names should share rows. The state row is `ExchangeCubit` on one side and `exchange` on the other. The steps are in [running-example.md](running-example.md).
+Record the exchange twice, and read the files with `compare`. One ring with Bloc, the same ring with Riverpod. `tool/play.dart` plays the steps in `examples/exchange/scenarios/answered-call.txt`. The widget names should share rows. The state row is `ExchangeCubit` on one side and `exchange` on the other. The steps are in [running-example.md](running-example.md).
 
 That pair is the use this alpha still owes. It comes before any new phase. The widget names should match, because both drivers paint the same board.
 
@@ -24,7 +24,7 @@ That pair is the use this alpha still owes. It comes before any new phase. The w
 
 After that pair, record the same ring on two boards. The state holder stays Bloc, so both files name `ExchangeCubit`. The board changes.
 
-`tool/play.dart --board bloc` plays `examples/exchange/ring.txt` on the enamel phones: `LinePhone`, `DialKey`, and `SwitchDesk`. `--board plinth` plays that same file on the circle drawn with `PlinthPaper`, `PlinthBadge`, and `PlinthButton`. The reducer does not change. The file does not change. Phone 1 dials phone 2, and the called phone answers.
+`tool/play.dart --board bloc` plays `examples/exchange/scenarios/answered-call.txt` on the enamel phones: `LinePhone`, `DialKey`, and `SwitchDesk`. `--board plinth` plays that same file on the circle drawn with `PlinthPaper`, `PlinthBadge`, and `PlinthButton`. The reducer does not change. The file does not change. Phone 1 dials phone 2, and the called phone answers.
 
 `compare` then lines up one `ExchangeCubit` row. `LinePhone` sits across from `PlinthPaper`. `DialKey` sits across from `PlinthButton`. The state change is the same. The widget names are the difference. Both boards put the switch in the middle, give each phone its own color, and mix those two colors in the cord.
 

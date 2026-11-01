@@ -1,0 +1,59 @@
+# Five lines. Two phones camp on the same busy line, then a third
+# starts 01 and the call ends before the 1.
+# A tap on the phone body hooks an idle, ringing, or recall phone off,
+# and hooks any other phone on.
+tap lines-5
+tap open
+
+# Phone 1 calls phone 2, and phone 2 answers.
+tap phone-1
+tap digit-1-2
+see Calling 2
+tap phone-2
+see 1 and 2
+see In call with 2
+
+# Phones 3 and 4 both camp on phone 1.
+tap phone-3
+tap digit-3-1
+see Busy signal
+tap digit-3-0
+tap digit-3-1
+see Waiting for 1
+see 3 is waiting for 1
+tap phone-4
+tap digit-4-1
+see Busy signal
+tap digit-4-0
+tap digit-4-1
+see 4 is waiting for 1
+
+# Phone 1 hangs up. Phone 3 rings first. Phone 4 stays on the list.
+tap phone-1
+see 3 is ringing
+see 4 is waiting for 1
+
+# Phone 3 finishes that recall, then the call ends and phone 4 rings.
+tap phone-3
+tap phone-3
+see 1 is ringing
+tap phone-1
+see 1 and 3
+tap phone-3
+see 4 is ringing
+tap phone-4
+tap phone-4
+see 1 is ringing
+tap phone-1
+see 1 and 4
+
+# Phone 5 hears busy, presses 0, and the call ends before the 1.
+# The 1 still camps on, and phone 5 rings at once because line 1 is idle.
+tap phone-5
+tap digit-5-1
+see Busy signal
+tap digit-5-0
+tap phone-1
+tap digit-5-1
+see 5 is ringing
+see Calling 1

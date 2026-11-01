@@ -30,7 +30,7 @@ void main() {
     final result = _session(board: 'plinth', name: 'PlinthButton');
 
     expect(result.board, 'plinth');
-    expect(result.scenarioPath, 'examples/exchange/ring.txt');
+    expect(result.scenarioPath, 'examples/exchange/scenarios/answered-call.txt');
     expect(result.steps.single.widgets, ['PlinthButton']);
   });
 
@@ -41,7 +41,7 @@ void main() {
         board: 'bloc',
         name: 'LinePhone',
         elapsedUs: 4500,
-        path: 'examples/exchange/ring.txt',
+        path: 'examples/exchange/scenarios/answered-call.txt',
       ),
     );
 
@@ -71,10 +71,10 @@ void main() {
     const scenario = 'tap phone-1\nsee Calling 2\n';
     await resultFile.writeAsString(jsonEncode({'schemaVersion': 1}));
 
-    final out = tapsFileFor(resultFile.path, 'examples/exchange/ring.txt');
+    final out = tapsFileFor(resultFile.path, 'examples/exchange/scenarios/answered-call.txt');
     await out.writeAsString(scenario);
 
-    expect(out.path, endsWith('${Platform.pathSeparator}ring.txt'));
+    expect(out.path, endsWith('${Platform.pathSeparator}answered-call.txt'));
     expect(out.readAsStringSync(), scenario);
   });
 
@@ -100,7 +100,7 @@ void main() {
     );
 
     expect(find.text('1.json'), findsOneWidget);
-    expect(find.text('examples/exchange/ring.txt'), findsOneWidget);
+    expect(find.text('examples/exchange/scenarios/answered-call.txt'), findsOneWidget);
     expect(find.text('plinth · profile'), findsOneWidget);
     expect(find.text('tap phone-1'), findsOneWidget);
     expect(find.text('PlinthButton'), findsOneWidget);
@@ -259,7 +259,7 @@ RunResult _session({
   int elapsedUs = 15400,
   String? extra,
   String? action,
-  String path = 'examples/exchange/ring.txt',
+  String path = 'examples/exchange/scenarios/answered-call.txt',
 }) {
   return readRunResult({
     'schemaVersion': 1,

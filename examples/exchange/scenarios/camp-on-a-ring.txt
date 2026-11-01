@@ -1,4 +1,6 @@
-# The setup screen has no phones. Open six lines first; this file taps phone 6.
+# Six lines. One call is answered, another line is still ringing,
+# and a third phone camps on that ring, then finishes the recall.
+# The setup screen has no phones, so this file opens the board first.
 tap lines-6
 tap open
 tap phone-3

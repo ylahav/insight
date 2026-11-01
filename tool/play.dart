@@ -170,13 +170,13 @@ const _usage = '''
 Plays one exchange scenario from a file and records it.
 
 play --out examples/exchange/1.json
-    [--scenario examples/exchange/ring.txt] [--board bloc]
+    [--scenario examples/exchange/scenarios/answered-call.txt] [--board bloc]
     [--device windows] [--flutter path] [--debug]
 
 From a checkout: dart run tool/play.dart --out examples/exchange/1.json
 
 --out        Session file. Required.
---scenario   Step file. Default examples/exchange/ring.txt.
+--scenario   Step file. Default examples/exchange/scenarios/answered-call.txt.
              Each line is "tap <key>" or "see <text>". "tap open" follows --board.
 --board      bloc, riverpod, or plinth. Default bloc.
 --device     flutter device id. Default windows.
@@ -212,7 +212,7 @@ class _Options {
 
   static _Options? parse(List<String> arguments) {
     var board = 'bloc';
-    var scenario = 'examples/exchange/ring.txt';
+    var scenario = 'examples/exchange/scenarios/answered-call.txt';
     String? out;
     String? flutterBin;
     var device = 'windows';

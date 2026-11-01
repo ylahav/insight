@@ -54,11 +54,14 @@ Future<void> _play(WidgetTester tester, String board) async {
 }
 
 String _ringScript() {
-  for (final path in ['ring.txt', 'examples/exchange/ring.txt']) {
+  for (final path in [
+    'scenarios/answered-call.txt',
+    'examples/exchange/scenarios/answered-call.txt',
+  ]) {
     final file = File(path);
     if (file.existsSync()) {
       return file.readAsStringSync();
     }
   }
-  throw StateError('ring.txt was not found.');
+  throw StateError('answered-call.txt was not found.');
 }
