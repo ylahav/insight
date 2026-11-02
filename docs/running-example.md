@@ -151,4 +151,4 @@ A later recording keeps Bloc and changes the board. `--board bloc` is the enamel
 
 ## A switch and its phones
 
-`examples/exchange2` is the same call rules in two programs. The switch holds the lines and the log. Each phone is its own process. `play` does not start them. The scripts, the scenario commands, and what one recording of each process contains are in [exchange2.md](exchange2.md).
+`examples/exchange2` is the same call rules in two programs. The switch holds the lines and the log. Each phone is its own process. `play` does not start them. This example is under investigation and is not fully tested. The scripts, the scenario commands, and what one recording of each process contains are in [exchange2.md](exchange2.md).

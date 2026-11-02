@@ -1,6 +1,8 @@
 # Exchange 2
 
-The second example. The switch and the phones are separate programs. The phones talk to the switch over HTTP. The switch keeps each phone's current state, and a log of what happened, in a database. An Insight server reads the scenario and sends each step to the program that should run it.
+The second example. This example is under investigation and is not fully tested.
+
+The switch and the phones are separate programs. The phones talk to the switch over HTTP. The switch keeps each phone's current state, and a log of what happened, in a database. An Insight server reads the scenario and sends each step to the program that should run it.
 
 This does not replace `examples/exchange`. That board stays the short pair: one process, Bloc beside Riverpod. The call rules stay the ones in [running-example.md](running-example.md). This file is how those rules sit across processes, and what a recording of each process shows.
 

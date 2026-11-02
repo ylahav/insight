@@ -98,7 +98,7 @@ await Insight.traceFuture(loadBoard(), name: 'loadBoard');
 
 The panel shows that span once, on the earliest frame it overlapped, with a frame count. On the desk, `loadBoard` overlaps the frame that contains `TicketCard`. `BoardLoadRequested` is stamped when the handler starts, about a third of a second earlier, so that state change can sit on its own row. The span is the record that meets the paint. **Fail load** is the same name with status `error`, a short error string, and no stack trace.
 
-**Two drivers, one screen.** The exchange is one board. Open with Bloc or Open with Riverpod chooses who holds the switch. Record the same ring both ways. The widget names should match. The state row is `ExchangeCubit` or `exchange`. A widget name that appears for only one driver is the difference to open. The script is in [running-example.md](running-example.md). The same rules with the switch and each phone in its own process are in [exchange2.md](exchange2.md).
+**Two drivers, one screen.** The exchange is one board. Open with Bloc or Open with Riverpod chooses who holds the switch. Record the same ring both ways. The widget names should match. The state row is `ExchangeCubit` or `exchange`. A widget name that appears for only one driver is the difference to open. The script is in [running-example.md](running-example.md). The same rules with the switch and each phone in its own process are in [exchange2.md](exchange2.md). That example is under investigation and is not fully tested.
 
 **No state library.** Frames and rebuilds still record. A session of CaptureGuide's Sunny 16 screen has `Sunny16View` and has no `state.changed` row. The finding there is which of your widgets rebuilt.
 

@@ -21,7 +21,7 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 | [docs/mvp.md](docs/mvp.md) | Three-phase scope, acceptance checks, and non-goals |
 | [docs/running-example.md](docs/running-example.md) | The switch example, with Bloc and Riverpod on one board |
 | [docs/what-can-be-learned.md](docs/what-can-be-learned.md) | Two profile readings: bloc beside riverpod, and the wide board beside enamel |
-| [docs/exchange2.md](docs/exchange2.md) | The same rules across a switch and its phones |
+| [docs/exchange2.md](docs/exchange2.md) | The same rules across a switch and its phones. Under investigation, and not fully tested |
 | [docs/roadmap.md](docs/roadmap.md) | What comes after the alpha |
 | [docs/windows.md](docs/windows.md) | The Windows installer, and the programs it contains |
 | [brand/logo.png](brand/logo.png) | The wordmark. The icon is [brand/icon.png](brand/icon.png) |
@@ -88,7 +88,7 @@ Choose a line count, open one driver, tap a phone, and dial another line. The ca
 
 ## Run the switch and the phones
 
-`examples/exchange2` splits that board into two programs. The switch decides the call and keeps the log. Each phone is its own window. How to start them, and how a scenario drives them, is [docs/exchange2.md](docs/exchange2.md).
+`examples/exchange2` splits that board into two programs. The switch decides the call and keeps the log. Each phone is its own window. This example is under investigation and is not fully tested. How to start them, and how a scenario drives them, is [docs/exchange2.md](docs/exchange2.md).
 
 From the repository root, on Windows:
 

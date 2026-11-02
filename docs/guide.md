@@ -92,7 +92,7 @@ One action, one file. For the desk, three files are worth keeping:
 
 Compare the widget names in the two tick frames. Byte-identical files are not the goal.
 
-The exchange is the same kind of reading with two drivers. Record one ring with Bloc and the same ring with Riverpod, as [running-example.md](running-example.md) describes. The widget names should match. The state row is `ExchangeCubit` or `exchange`. A switch and its phones, each in its own process, are the same rules recorded one program at a time. That example is [exchange2.md](exchange2.md).
+The exchange is the same kind of reading with two drivers. Record one ring with Bloc and the same ring with Riverpod, as [running-example.md](running-example.md) describes. The widget names should match. The state row is `ExchangeCubit` or `exchange`. A switch and its phones, each in its own process, are the same rules recorded one program at a time. That example is [exchange2.md](exchange2.md). It is under investigation and is not fully tested.
 
 From the repository root, two schema-1 files can be printed together:
 
