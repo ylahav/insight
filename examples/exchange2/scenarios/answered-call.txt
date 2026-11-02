@@ -1,0 +1,21 @@
+# Phone 1 dials phone 2, and phone 2 answers.
+# The Insight server starts each program, then sends the steps.
+start switch
+start phone 1
+start phone 2
+record switch
+
+on phone 1
+tap hook
+delay 150
+tap digit-2
+see Calling 2
+
+on phone 2
+see Ringing
+tap hook
+see In call with 1
+
+on switch
+see 1 and 2
+see 1 digit 2

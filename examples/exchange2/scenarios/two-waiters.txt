@@ -1,0 +1,77 @@
+# Five phones. Two camp on the same line, then a third presses 0
+# and the call ends before the 1.
+start switch
+start phone 1
+start phone 2
+start phone 3
+start phone 4
+start phone 5
+record switch
+
+on phone 1
+tap hook
+delay 150
+tap digit-2
+see Calling 2
+on phone 2
+see Ringing
+tap hook
+see In call with 1
+
+on phone 3
+tap hook
+tap digit-1
+see Busy
+tap digit-0
+tap digit-1
+see Waiting for 1
+on phone 4
+tap hook
+tap digit-1
+see Busy
+tap digit-0
+tap digit-1
+see Waiting for 1
+on switch
+see 3 waiting for 1
+see 4 waiting for 1
+
+on phone 1
+tap hook
+on switch
+see 3 ringing
+see 4 waiting for 1
+
+on phone 3
+tap hook
+tap hook
+on phone 1
+see Ringing
+tap hook
+see In call with 3
+on phone 3
+tap hook
+on switch
+see 4 ringing
+
+on phone 4
+tap hook
+tap hook
+on phone 1
+see Ringing
+tap hook
+see In call with 4
+
+on phone 5
+tap hook
+tap digit-1
+see Busy
+tap digit-0
+on phone 1
+tap hook
+delay 200
+on phone 5
+tap digit-1
+see Calling 1
+on switch
+see 5 ringing

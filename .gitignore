@@ -8,6 +8,7 @@ examples/*/build/
 *.iml
 .idea/
 insight-session.json
+exchange2.db
 /[0-9].json
 examples/*/[0-9].json
 examples/*/compare.json

@@ -14,6 +14,10 @@ workspace:
   - tool/analyzer
   - examples/desk
   - examples/exchange
+  - examples/exchange2/rules
+  - examples/exchange2/agent
+  - examples/exchange2/switch
+  - examples/exchange2/phone
   - examples/riverpod_shelf
 
 dependencies:
@@ -23,3 +27,4 @@ dependencies:
 
 dev_dependencies:
   lints: ^6.0.0
+  test: ^1.26.3

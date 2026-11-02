@@ -1,0 +1,28 @@
+name: exchange2_phone
+description: One handset. The line number comes from --dart-define=LINE.
+publish_to: none
+resolution: workspace
+version: 0.1.0
+
+environment:
+  sdk: ^3.12.2
+  flutter: ">=3.44.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  exchange2_agent:
+    path: ../agent
+  insight:
+    path: ../../../packages/insight
+  insight_bloc:
+    path: ../../../packages/insight_bloc
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

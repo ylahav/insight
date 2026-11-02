@@ -1,0 +1,12 @@
+name: exchange2_agent
+description: Registers an app with the Insight server and calls the switch.
+publish_to: none
+resolution: workspace
+version: 0.1.0
+
+environment:
+  sdk: ^3.12.2
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.26.3
