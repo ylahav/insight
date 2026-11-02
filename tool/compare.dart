@@ -33,7 +33,14 @@ Future<void> main(List<String> arguments) async {
   final played = scenarioReading(left: left.play, right: right.play);
   stdout.writeln(played.note);
   stdout.writeln('');
-  _print(options.left!, left.lines, options.right!, right.lines);
+  _print(
+    options.left!,
+    left.lines,
+    options.right!,
+    right.lines,
+    leftBoard: left.play?.board,
+    rightBoard: right.play?.board,
+  );
   final out = options.out;
   if (out == null) {
     return;
@@ -70,9 +77,7 @@ Future<
     PlayedScenario? play,
   })?
 >
-_load(
-  String path,
-) async {
+_load(String path) async {
   final file = File(path);
   if (!file.existsSync()) {
     stderr.writeln('No session file at $path.');
@@ -106,18 +111,20 @@ void _print(
   String leftPath,
   List<BesideLine> left,
   String rightPath,
-  List<BesideLine> right,
-) {
+  List<BesideLine> right, {
+  String? leftBoard,
+  String? rightBoard,
+}) {
   stdout.writeln('Time grouping, not a cause.');
   stdout.writeln(
     'Steps pair by order. A recorded tap is the line above the change. '
-        'The change is the next line. '
+    'The change is the next line. '
     'The second line is that frame. Profile frames list build, raster, and elapsed. '
     'Elapsed is the whole frame. The rows under that are the widgets that rebuilt. '
     'A widget in both files shares a row. The widgets do not divide the frame time.',
   );
-  stdout.writeln('left   $leftPath');
-  stdout.writeln('right  $rightPath');
+  stdout.writeln(_fileLine('left', leftPath, leftBoard));
+  stdout.writeln(_fileLine('right', rightPath, rightBoard));
   final count = left.length > right.length ? left.length : right.length;
   if (count == 0) {
     stdout.writeln('');
@@ -141,13 +148,26 @@ void _print(
       stdout.writeln(_format(row.$1, row.$2, width));
     }
   }
-  final reading = besideReading(left, right);
+  final reading = besideReading(
+    left,
+    right,
+    leftName: leftBoard,
+    rightName: rightBoard,
+  );
   if (reading.isNotEmpty) {
     stdout.writeln('');
     for (final line in reading) {
       stdout.writeln(line);
     }
   }
+}
+
+String _fileLine(String side, String path, String? board) {
+  final label = side == 'left' ? 'left   ' : 'right  ';
+  if (board == null || board.isEmpty) {
+    return '$label$path';
+  }
+  return '$label$path  $board';
 }
 
 int _columnWidth(List<BesideLine> left) {

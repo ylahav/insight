@@ -98,6 +98,38 @@ void main() {
     expect(find.text('Tap a phone and dial a line.'), findsOneWidget);
   });
 
+  testWidgets('the wide board rebuilds the phone that is not in the call', (
+    tester,
+  ) async {
+    await _openWide(tester);
+    await tester.tap(find.byKey(const Key('phone-1')));
+    await tester.pump();
+    ExchangeBuilds.reset();
+
+    await tester.tap(find.byKey(const Key('digit-1-2')));
+    await tester.pump();
+
+    expect(find.text('Calling 2'), findsOneWidget);
+    expect(find.text('2 is ringing'), findsOneWidget);
+    expect(ExchangeBuilds.phones, 3);
+    expect(ExchangeBuilds.switchDesk, 1);
+  });
+
+  testWidgets('the enamel board leaves that phone unbuilt', (tester) async {
+    await _open(tester, bloc: true);
+    await tester.tap(find.byKey(const Key('phone-1')));
+    await tester.pump();
+    ExchangeBuilds.reset();
+
+    await tester.tap(find.byKey(const Key('digit-1-2')));
+    await tester.pump();
+
+    expect(find.text('Calling 2'), findsOneWidget);
+    expect(find.text('2 is ringing'), findsOneWidget);
+    expect(ExchangeBuilds.phones, 2);
+    expect(ExchangeBuilds.switchDesk, 1);
+  });
+
   testWidgets('the plinth board rings with plinth widgets', (tester) async {
     await tester.pumpWidget(const ExchangeApp());
     await tester.tap(find.byKey(const Key('lines-3')));
@@ -130,5 +162,13 @@ Future<void> _open(WidgetTester tester, {required bool bloc}) async {
   await tester.tap(find.byKey(const Key('lines-3')));
   await tester.pump();
   await tester.tap(find.byKey(Key(bloc ? 'open-bloc' : 'open-riverpod')));
+  await tester.pumpAndSettle();
+}
+
+Future<void> _openWide(WidgetTester tester) async {
+  await tester.pumpWidget(const ExchangeApp());
+  await tester.tap(find.byKey(const Key('lines-3')));
+  await tester.pump();
+  await tester.tap(find.byKey(const Key('open-wide')));
   await tester.pumpAndSettle();
 }

@@ -69,6 +69,16 @@ The phone widgets subscribe to one line each. The cord area subscribes to live c
 
 `ExchangeHost` rebuilds on every change. It is the driver shell. The comparison that matters is the phone and the cords.
 
+**Open the wide board** is the same enamel phones with every phone reading the whole switch. An idle phone then rebuilds with the phones that are in the call. The enamel board is each phone reading only its own line, so that idle phone stays off the row. The words on screen stay `Calling 2` and `2 is ringing`. The script is [third-phone.txt](../examples/exchange/scenarios/third-phone.txt). What one profile pair of those two boards showed is in [what-can-be-learned.md](what-can-be-learned.md).
+
+```bash
+dart run tool/play.dart --board wide --scenario examples/exchange/scenarios/third-phone.txt --out examples/exchange/1.json
+dart run tool/play.dart --board bloc --scenario examples/exchange/scenarios/third-phone.txt --out examples/exchange/2.json
+dart run tool/compare.dart --left examples/exchange/1.json --right examples/exchange/2.json
+```
+
+The installed `play` is the released program. It accepts `bloc`, `riverpod`, and `plinth`. `wide` is in this checkout, so that run uses `dart run tool/play.dart`.
+
 Bloc records `ExchangeCubit`, adapter `bloc`, event null, summary `Exchange`, value null. Riverpod records `exchange`, adapter `riverpod`, event null, summary `Exchange`, value null. `Insight.captureStateValues` stays off. The same taps should list the same widget names. The state row is the part that differs.
 
 ## Run it
@@ -109,7 +119,9 @@ play --board riverpod --out examples/exchange/2.json
 compare --left examples/exchange/1.json --right examples/exchange/2.json --out examples/exchange/compare.json
 ```
 
-`--board` is `bloc`, `riverpod`, or `plinth`. The default mode is profile. `--debug` records the order without frame times worth keeping. `--scenario` on `play` replaces `answered-call.txt`. [two-waiters.txt](../examples/exchange/scenarios/two-waiters.txt) has two phones waiting for the same line, then a `01` split by a hang-up. [camp-on-a-ring.txt](../examples/exchange/scenarios/camp-on-a-ring.txt) camps on a line that is still ringing. Each recording stores that file and the git commit. Compare reads the two stored scripts and says whether they are the same taps.
+What that pair shows is [what-can-be-learned.md](what-can-be-learned.md). When the two files stored different boards, the sentences name those boards. The columns in the file stay `left` and `right`, which is the order of `--left` and `--right`.
+
+`--board` is `bloc`, `riverpod`, `wide`, or `plinth`. `wide` is the enamel board with every phone reading the whole switch. The default mode is profile. `--debug` records the order without frame times worth keeping. `--scenario` on `play` replaces `answered-call.txt`. [two-waiters.txt](../examples/exchange/scenarios/two-waiters.txt) has two phones waiting for the same line, then a `01` split by a hang-up. [camp-on-a-ring.txt](../examples/exchange/scenarios/camp-on-a-ring.txt) camps on a line that is still ringing. Each recording stores that file and the git commit. Compare reads the two stored scripts and says whether they are the same taps.
 
 Downloading the source is enough to run those steps. From the repository root, the first `record` still waits for Enter, then Bloc, and the second waits for Enter, then Riverpod.
 

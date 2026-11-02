@@ -173,7 +173,9 @@ class LinePhone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ExchangeBuilds.phones++;
-    final line = ExchangeScope.lineOf(context, number);
+    final line = WholeSwitch.of(context)
+        ? ExchangeScope.of(context).line(number)
+        : ExchangeScope.lineOf(context, number);
     final lineCount = LineCountScope.of(context);
     final actions = ExchangeActions.of(context);
     final showDigits =

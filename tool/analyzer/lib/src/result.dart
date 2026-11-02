@@ -99,11 +99,7 @@ class RunStep {
 
 /// The first recording against one that was added.
 class PairReading {
-  PairReading({
-    required this.note,
-    required this.reading,
-    required this.rows,
-  });
+  PairReading({required this.note, required this.reading, required this.rows});
 
   final String note;
   final List<String> reading;
@@ -117,7 +113,12 @@ PairReading readPair(RunResult left, RunResult right) {
       : right.lines.length;
   return PairReading(
     note: played.note,
-    reading: besideReading(left.lines, right.lines),
+    reading: besideReading(
+      left.lines,
+      right.lines,
+      leftName: left.board,
+      rightName: right.board,
+    ),
     rows: [
       for (var i = 0; i < count; i++)
         besideStepRows(

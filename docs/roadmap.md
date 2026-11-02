@@ -16,9 +16,7 @@ The packages prepared for pub.dev are `insight`, `insight_bloc`, `insight_riverp
 
 ## Next check
 
-Record the exchange twice, and read the files with `compare`. One ring with Bloc, the same ring with Riverpod. `tool/play.dart` plays the steps in `examples/exchange/scenarios/answered-call.txt`. The widget names should share rows. The state row is `ExchangeCubit` on one side and `exchange` on the other. The steps are in [running-example.md](running-example.md).
-
-That pair is the use this alpha still owes. It comes before any new phase. The widget names should match, because both drivers paint the same board.
+The exchange has been recorded twice and read with `compare`. One ring with Bloc, the same ring with Riverpod, both profile, both `examples/exchange/scenarios/answered-call.txt`. The widget names share rows. The state row is `ExchangeCubit` on bloc and `exchange` on riverpod. What those columns show is [what-can-be-learned.md](what-can-be-learned.md). The steps are in [running-example.md](running-example.md).
 
 `examples/exchange2` is a separate example, already in the tree. The switch and each phone are their own processes, and an Insight server sends the scenario to the program that should run a step. It does not replace the pair above. The programs, the scripts, and the recordings are in [exchange2.md](exchange2.md).
 

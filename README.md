@@ -20,6 +20,7 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 | [docs/events.md](docs/events.md) | Schema version 1, the session file, and the agent wire format |
 | [docs/mvp.md](docs/mvp.md) | Three-phase scope, acceptance checks, and non-goals |
 | [docs/running-example.md](docs/running-example.md) | The switch example, with Bloc and Riverpod on one board |
+| [docs/what-can-be-learned.md](docs/what-can-be-learned.md) | Two profile readings: bloc beside riverpod, and the wide board beside enamel |
 | [docs/exchange2.md](docs/exchange2.md) | The same rules across a switch and its phones |
 | [docs/roadmap.md](docs/roadmap.md) | What comes after the alpha |
 | [docs/windows.md](docs/windows.md) | The Windows installer, and the programs it contains |

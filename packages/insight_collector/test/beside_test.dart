@@ -107,78 +107,109 @@ void main() {
     expect(lines.single.elapsedUs, 15400);
   });
 
-  test('the reading follows each step and keeps a longer list apart from the time', () {
-    final left = [
-      BesideLine(
-        timeUs: 1,
-        title: 'ExchangeCubit → Exchange',
-        detail: '',
-        widgets: List.filled(8, 'PlinthButton'),
-        buildUs: 1648,
-        rasterUs: 945,
-        elapsedUs: 15400,
-      ),
-      BesideLine(
-        timeUs: 2,
-        title: 'ExchangeCubit → Exchange',
-        detail: '',
-        widgets: List.filled(6, 'PlinthLine'),
-        buildUs: 1403,
-        rasterUs: 847,
-        elapsedUs: 3043,
-      ),
-      BesideLine(
-        timeUs: 3,
-        title: 'ExchangeCubit → Exchange',
-        detail: '',
-        widgets: List.filled(4, 'PlinthLine'),
-        buildUs: 1315,
-        rasterUs: 308,
-        elapsedUs: 2604,
-      ),
-    ];
-    final right = [
-      BesideLine(
-        timeUs: 1,
-        title: 'exchange → Exchange',
-        detail: '',
-        widgets: List.filled(4, 'DialKey'),
-        buildUs: 1507,
-        rasterUs: 1696,
-        elapsedUs: 4517,
-      ),
-      BesideLine(
-        timeUs: 2,
-        title: 'exchange → Exchange',
-        detail: '',
-        widgets: List.filled(4, 'LinePhone'),
-        buildUs: 1338,
-        rasterUs: 977,
-        elapsedUs: 4280,
-      ),
-      BesideLine(
-        timeUs: 3,
-        title: 'exchange → Exchange',
-        detail: '',
-        widgets: List.filled(4, 'LinePhone'),
-        buildUs: 1263,
-        rasterUs: 532,
-        elapsedUs: 2505,
-      ),
-    ];
+  test(
+    'the reading follows each step and keeps a longer list apart from the time',
+    () {
+      final left = [
+        BesideLine(
+          timeUs: 1,
+          title: 'ExchangeCubit → Exchange',
+          detail: '',
+          widgets: List.filled(8, 'PlinthButton'),
+          buildUs: 1648,
+          rasterUs: 945,
+          elapsedUs: 15400,
+        ),
+        BesideLine(
+          timeUs: 2,
+          title: 'ExchangeCubit → Exchange',
+          detail: '',
+          widgets: List.filled(6, 'PlinthLine'),
+          buildUs: 1403,
+          rasterUs: 847,
+          elapsedUs: 3043,
+        ),
+        BesideLine(
+          timeUs: 3,
+          title: 'ExchangeCubit → Exchange',
+          detail: '',
+          widgets: List.filled(4, 'PlinthLine'),
+          buildUs: 1315,
+          rasterUs: 308,
+          elapsedUs: 2604,
+        ),
+      ];
+      final right = [
+        BesideLine(
+          timeUs: 1,
+          title: 'exchange → Exchange',
+          detail: '',
+          widgets: List.filled(4, 'DialKey'),
+          buildUs: 1507,
+          rasterUs: 1696,
+          elapsedUs: 4517,
+        ),
+        BesideLine(
+          timeUs: 2,
+          title: 'exchange → Exchange',
+          detail: '',
+          widgets: List.filled(4, 'LinePhone'),
+          buildUs: 1338,
+          rasterUs: 977,
+          elapsedUs: 4280,
+        ),
+        BesideLine(
+          timeUs: 3,
+          title: 'exchange → Exchange',
+          detail: '',
+          widgets: List.filled(4, 'LinePhone'),
+          buildUs: 1263,
+          rasterUs: 532,
+          elapsedUs: 2505,
+        ),
+      ];
 
-    expect(besideReading(left, right), [
-      'Build is longer on the left in steps 1 and 2 (1.6 ms, 1.5 ms; 1.4 ms, 1.3 ms), '
-          'and the same in step 3 (1.3 ms).',
-      'Raster is longer on the right in steps 1, 2, and 3 '
-          '(0.9 ms, 1.7 ms; 0.8 ms, 1.0 ms; 0.3 ms, 0.5 ms).',
-      'Elapsed is longer on the left in steps 1 and 3 (15.4 ms, 4.5 ms; 2.6 ms, 2.5 ms), '
-          'and longer on the right in step 2 (3.0 ms, 4.3 ms).',
-      'Step 1 rebuilt 8 widgets on the left and 4 widgets on the right, '
-          'and the left elapsed time is longer.',
-      'Step 2 rebuilt 6 widgets on the left and 4 widgets on the right, '
-          'and the left elapsed time is shorter.',
+      expect(besideReading(left, right), [
+        'Build is longer on the left in steps 1 and 2 (1.6 ms, 1.5 ms; 1.4 ms, 1.3 ms), '
+            'and the same in step 3 (1.3 ms).',
+        'Raster is longer on the right in steps 1, 2, and 3 '
+            '(0.9 ms, 1.7 ms; 0.8 ms, 1.0 ms; 0.3 ms, 0.5 ms).',
+        'Elapsed is longer on the left in steps 1 and 3 (15.4 ms, 4.5 ms; 2.6 ms, 2.5 ms), '
+            'and longer on the right in step 2 (3.0 ms, 4.3 ms).',
+        'Step 1 rebuilt 8 widgets on the left and 4 widgets on the right, '
+            'and the left elapsed time is longer.',
+        'Step 2 rebuilt 6 widgets on the left and 4 widgets on the right, '
+            'and the left elapsed time is shorter.',
+      ]);
+    },
+  );
+
+  test('different boards are the names in the reading', () {
+    final bloc = besideLines([
+      {
+        'type': 'state.changed',
+        'timeUs': 100,
+        'name': 'ExchangeCubit',
+        'summary': 'Exchange',
+      },
+      {'type': 'frame', 'timeUs': 110, 'elapsedUs': 2000, 'id': 'frame_1'},
     ]);
+    final riverpod = besideLines([
+      {
+        'type': 'state.changed',
+        'timeUs': 100,
+        'name': 'exchange',
+        'summary': 'Exchange',
+      },
+      {'type': 'frame', 'timeUs': 110, 'elapsedUs': 3000, 'id': 'frame_1'},
+    ]);
+
+    expect(
+      besideReading(bloc, riverpod, leftName: 'bloc', rightName: 'riverpod'),
+      [
+        'Elapsed is longer on riverpod in step 1 (bloc 2.0 ms, riverpod 3.0 ms).',
+      ],
+    );
   });
 
   test('an ungrouped state stays in the list', () {
@@ -232,7 +263,11 @@ void main() {
 
   test('different scenario files are not the same taps', () {
     final played = scenarioReading(
-      left: PlayedScenario(path: 'ring.txt', board: 'bloc', script: 'tap open\n'),
+      left: PlayedScenario(
+        path: 'ring.txt',
+        board: 'bloc',
+        script: 'tap open\n',
+      ),
       right: PlayedScenario(
         path: 'busy.txt',
         board: 'plinth',
@@ -245,7 +280,7 @@ void main() {
       played.note,
       'The recordings did not play the same scenario. '
       'Left played ring.txt. Right played busy.txt. '
-      'Left opened bloc. Right opened plinth.',
+      'The boards are bloc and plinth.',
     );
   });
 

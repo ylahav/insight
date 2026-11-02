@@ -45,11 +45,15 @@ class SetupPage extends StatefulWidget {
 class _SetupPageState extends State<SetupPage> {
   int _lineCount = 5;
 
-  void _open(ExchangeDriver driver, {bool plinth = false}) {
+  void _open(ExchangeDriver driver, {bool plinth = false, bool wide = false}) {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (context) =>
-            BoardPage(driver: driver, lineCount: _lineCount, plinth: plinth),
+        builder: (context) => BoardPage(
+          driver: driver,
+          lineCount: _lineCount,
+          plinth: plinth,
+          wide: wide,
+        ),
       ),
     );
   }
@@ -147,6 +151,18 @@ class _SetupPageState extends State<SetupPage> {
                     child: const Text('Open with Riverpod'),
                   ),
                   OutlinedButton(
+                    key: const Key('open-wide'),
+                    onPressed: () {
+                      Insight.action('open-wide');
+                      _open(ExchangeDriver.bloc, wide: true);
+                    },
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: enamel,
+                      side: const BorderSide(color: cord),
+                    ),
+                    child: const Text('Open the wide board'),
+                  ),
+                  OutlinedButton(
                     key: const Key('open-plinth'),
                     onPressed: () {
                       Insight.action('open-plinth');
@@ -173,28 +189,35 @@ class BoardPage extends StatelessWidget {
     required this.driver,
     required this.lineCount,
     this.plinth = false,
+    this.wide = false,
     super.key,
   });
 
   final ExchangeDriver driver;
   final int lineCount;
   final bool plinth;
+  final bool wide;
 
   @override
   Widget build(BuildContext context) {
     return LineCountScope(
       lineCount: lineCount,
-      child: switch (driver) {
-        ExchangeDriver.bloc => BlocProvider(
-          create: (_) => bloc.ExchangeCubit(lineCount),
-          child: bloc.ExchangeHost(plinth: plinth),
-        ),
-        ExchangeDriver.riverpod => ProviderScope(
-          overrides: [riverpod.lineCountProvider.overrideWithValue(lineCount)],
-          observers: const [InsightRiverpodObserver()],
-          child: const riverpod.ExchangeHost(),
-        ),
-      },
+      child: WholeSwitch(
+        enabled: wide,
+        child: switch (driver) {
+          ExchangeDriver.bloc => BlocProvider(
+            create: (_) => bloc.ExchangeCubit(lineCount),
+            child: bloc.ExchangeHost(plinth: plinth),
+          ),
+          ExchangeDriver.riverpod => ProviderScope(
+            overrides: [
+              riverpod.lineCountProvider.overrideWithValue(lineCount),
+            ],
+            observers: const [InsightRiverpodObserver()],
+            child: const riverpod.ExchangeHost(),
+          ),
+        },
+      ),
     );
   }
 }

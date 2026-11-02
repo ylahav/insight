@@ -8,6 +8,7 @@ The design of record is:
 - [docs/events.md](docs/events.md)
 - [docs/mvp.md](docs/mvp.md)
 - [docs/running-example.md](docs/running-example.md)
+- [docs/what-can-be-learned.md](docs/what-can-be-learned.md)
 - [docs/exchange2.md](docs/exchange2.md)
 - [docs/roadmap.md](docs/roadmap.md)
 

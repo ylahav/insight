@@ -7,7 +7,8 @@ import 'package:flutter/widgets.dart';
 /// Plays the steps in [script] on [board].
 ///
 /// Each line is `tap <key>` or `see <text>`. A `#` line is a comment.
-/// `tap open` presses the button for [board]: `bloc`, `riverpod`, or `plinth`.
+/// `tap open` presses the button for [board]: `bloc`, `riverpod`, `wide`, or
+/// `plinth`.
 /// Recording sends the file text through `ext.flutter.exchange.play` after the
 /// collector is listening, so both runs follow the file and not a fixed ring.
 Future<void> playScript(
@@ -19,9 +20,10 @@ Future<void> playScript(
   final open = switch (board) {
     'bloc' => 'open-bloc',
     'riverpod' => 'open-riverpod',
+    'wide' => 'open-wide',
     'plinth' => 'open-plinth',
     _ => throw ArgumentError(
-      'Unknown board $board. Use bloc, riverpod, or plinth.',
+      'Unknown board $board. Use bloc, riverpod, wide, or plinth.',
     ),
   };
   final steps = _readScenario(script);
@@ -111,9 +113,7 @@ List<_Step> _readScenario(String source) {
       case 'see':
         steps.add(_See(target));
       default:
-        throw FormatException(
-          'Line ${i + 1} uses "$command". Use tap or see.',
-        );
+        throw FormatException('Line ${i + 1} uses "$command". Use tap or see.');
     }
   }
   if (steps.isEmpty) {

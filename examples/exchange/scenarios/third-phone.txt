@@ -1,0 +1,9 @@
+# Three lines. Phone 1 calls idle phone 2. Phone 3 is not in the call.
+# On the wide board that idle phone rebuilds with the other two.
+# On the enamel board it does not. The words on screen are the same.
+tap lines-3
+tap open
+tap phone-1
+tap digit-1-2
+see Calling 2
+see 2 is ringing

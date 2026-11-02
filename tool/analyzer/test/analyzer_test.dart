@@ -30,7 +30,10 @@ void main() {
     final result = _session(board: 'plinth', name: 'PlinthButton');
 
     expect(result.board, 'plinth');
-    expect(result.scenarioPath, 'examples/exchange/scenarios/answered-call.txt');
+    expect(
+      result.scenarioPath,
+      'examples/exchange/scenarios/answered-call.txt',
+    );
     expect(result.steps.single.widgets, ['PlinthButton']);
   });
 
@@ -46,7 +49,7 @@ void main() {
     );
 
     expect(pair.note, contains('Both recordings played'));
-    expect(pair.reading.join('\n'), contains('longer on the left'));
+    expect(pair.reading.join('\n'), contains('longer on plinth'));
     expect(pair.rows.single.any((row) => row.$2 == 'LinePhone'), isTrue);
   });
 
@@ -71,7 +74,10 @@ void main() {
     const scenario = 'tap phone-1\nsee Calling 2\n';
     await resultFile.writeAsString(jsonEncode({'schemaVersion': 1}));
 
-    final out = tapsFileFor(resultFile.path, 'examples/exchange/scenarios/answered-call.txt');
+    final out = tapsFileFor(
+      resultFile.path,
+      'examples/exchange/scenarios/answered-call.txt',
+    );
     await out.writeAsString(scenario);
 
     expect(out.path, endsWith('${Platform.pathSeparator}answered-call.txt'));
@@ -100,7 +106,10 @@ void main() {
     );
 
     expect(find.text('1.json'), findsOneWidget);
-    expect(find.text('examples/exchange/scenarios/answered-call.txt'), findsOneWidget);
+    expect(
+      find.text('examples/exchange/scenarios/answered-call.txt'),
+      findsOneWidget,
+    );
     expect(find.text('plinth · profile'), findsOneWidget);
     expect(find.text('tap phone-1'), findsOneWidget);
     expect(find.text('PlinthButton'), findsOneWidget);
@@ -141,7 +150,7 @@ void main() {
     expect(find.text('3.json'), findsOneWidget);
     expect(find.text('PlinthButton'), findsOneWidget);
     expect(find.text('LinePhone'), findsOneWidget);
-    expect(find.textContaining('longer on the left'), findsOneWidget);
+    expect(find.textContaining('longer on plinth'), findsOneWidget);
     expect(find.textContaining('15.4 ms worst'), findsOneWidget);
     expect(find.textContaining('4.5 ms best'), findsOneWidget);
     expect(find.byKey(const Key('remove-result-1')), findsOneWidget);
@@ -273,8 +282,7 @@ RunResult _session({
       'subject': 'Point the repository at ylahav/insight.',
     },
     'events': [
-      if (action != null)
-        {'type': 'user.action', 'timeUs': 90, 'name': action},
+      if (action != null) {'type': 'user.action', 'timeUs': 90, 'name': action},
       {
         'type': 'state.changed',
         'timeUs': 100,

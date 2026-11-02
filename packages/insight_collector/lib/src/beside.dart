@@ -116,9 +116,7 @@ List<BesideLine> _withActions(
     return lines;
   }
   final used = <int>{};
-  return [
-    for (final line in lines) _claimAction(line, actions, used),
-  ];
+  return [for (final line in lines) _claimAction(line, actions, used)];
 }
 
 BesideLine _claimAction(
@@ -211,21 +209,49 @@ String _ms(int microseconds) =>
 ///
 /// Steps are paired by order. Each sentence compares a number the columns
 /// already print, or counts the names in them. Nothing here names a cause.
-List<String> besideReading(List<BesideLine> left, List<BesideLine> right) {
+/// [leftName] and [rightName] are the boards, when the two recordings stored
+/// different ones. The sentences then say `bloc` and `riverpod` instead of
+/// left and right.
+List<String> besideReading(
+  List<BesideLine> left,
+  List<BesideLine> right, {
+  String? leftName,
+  String? rightName,
+}) {
+  final sides = _sides(leftName, rightName);
   final lines = <String>[
-    ?_metricLine('Build', left, right, (line) => line.buildUs),
-    ?_metricLine('Raster', left, right, (line) => line.rasterUs),
-    ?_metricLine('Elapsed', left, right, (line) => line.elapsedUs),
-    ..._nameLines(left, right),
+    ?_metricLine('Build', left, right, (line) => line.buildUs, sides),
+    ?_metricLine('Raster', left, right, (line) => line.rasterUs, sides),
+    ?_metricLine('Elapsed', left, right, (line) => line.elapsedUs, sides),
+    ..._nameLines(left, right, sides),
   ];
   return lines;
 }
+
+/// Board names when they distinguish the columns. Otherwise left and right.
+({String left, String right, bool named}) _sides(
+  String? leftName,
+  String? rightName,
+) {
+  if (leftName != null &&
+      rightName != null &&
+      leftName.isNotEmpty &&
+      rightName.isNotEmpty &&
+      leftName != rightName) {
+    return (left: leftName, right: rightName, named: true);
+  }
+  return (left: 'left', right: 'right', named: false);
+}
+
+String _onSide(String label) =>
+    label == 'left' || label == 'right' ? 'the $label' : label;
 
 String? _metricLine(
   String label,
   List<BesideLine> left,
   List<BesideLine> right,
   int? Function(BesideLine line) read,
+  ({String left, String right, bool named}) sides,
 ) {
   final count = left.length > right.length ? left.length : right.length;
   final largerLeft = <({int step, String leftMs, String rightMs})>[];
@@ -253,11 +279,11 @@ String? _metricLine(
   }
   final clauses = <String>[
     if (largerLeft.isNotEmpty)
-      'longer on the left in ${_stepList(largerLeft.map((pair) => pair.step))} '
-          '(${_pairs(largerLeft)})',
+      'longer on ${_onSide(sides.left)} in ${_stepList(largerLeft.map((pair) => pair.step))} '
+          '(${_pairs(largerLeft, sides)})',
     if (largerRight.isNotEmpty)
-      'longer on the right in ${_stepList(largerRight.map((pair) => pair.step))} '
-          '(${_pairs(largerRight)})',
+      'longer on ${_onSide(sides.right)} in ${_stepList(largerRight.map((pair) => pair.step))} '
+          '(${_pairs(largerRight, sides)})',
     if (same.isNotEmpty)
       'the same in ${_stepList(same.map((pair) => pair.step))} '
           '(${same.map((pair) => pair.ms).join(', ')})',
@@ -265,13 +291,25 @@ String? _metricLine(
   return '$label is ${_joinClauses(clauses)}.';
 }
 
-String _pairs(List<({int step, String leftMs, String rightMs})> pairs) {
+String _pairs(
+  List<({int step, String leftMs, String rightMs})> pairs,
+  ({String left, String right, bool named}) sides,
+) {
   return pairs
-      .map((pair) => '${pair.leftMs}, ${pair.rightMs}')
+      .map((pair) {
+        if (!sides.named) {
+          return '${pair.leftMs}, ${pair.rightMs}';
+        }
+        return '${sides.left} ${pair.leftMs}, ${sides.right} ${pair.rightMs}';
+      })
       .join('; ');
 }
 
-List<String> _nameLines(List<BesideLine> left, List<BesideLine> right) {
+List<String> _nameLines(
+  List<BesideLine> left,
+  List<BesideLine> right,
+  ({String left, String right, bool named}) sides,
+) {
   final count = left.length > right.length ? left.length : right.length;
   final lines = <String>[];
   for (var i = 0; i < count; i++) {
@@ -280,7 +318,7 @@ List<String> _nameLines(List<BesideLine> left, List<BesideLine> right) {
     final step = i + 1;
     if (!hasLeft || !hasRight) {
       lines.add(
-        'Step $step is only in the ${hasLeft ? 'left' : 'right'} file.',
+        'Step $step is only in the ${hasLeft ? sides.left : sides.right} file.',
       );
       continue;
     }
@@ -289,11 +327,15 @@ List<String> _nameLines(List<BesideLine> left, List<BesideLine> right) {
     if (leftCount == rightCount) {
       continue;
     }
-    final more = leftCount > rightCount ? 'left' : 'right';
+    final more = leftCount > rightCount ? sides.left : sides.right;
     final names =
-        'Step $step rebuilt ${_nameCount(leftCount)} on the left and '
-        '${_nameCount(rightCount)} on the right';
-    final elapsed = _elapsedRelation(left[i].elapsedUs, right[i].elapsedUs);
+        'Step $step rebuilt ${_nameCount(leftCount)} on ${_onSide(sides.left)} and '
+        '${_nameCount(rightCount)} on ${_onSide(sides.right)}';
+    final elapsed = _elapsedRelation(
+      left[i].elapsedUs,
+      right[i].elapsedUs,
+      sides,
+    );
     if (elapsed == null) {
       lines.add('$names.');
       continue;
@@ -311,8 +353,12 @@ List<String> _nameLines(List<BesideLine> left, List<BesideLine> right) {
   return lines;
 }
 
-/// `left`, `right`, or `same` from the milliseconds the print shows.
-String? _elapsedRelation(int? leftUs, int? rightUs) {
+/// The side with the longer elapsed time, or `same`, from the printed milliseconds.
+String? _elapsedRelation(
+  int? leftUs,
+  int? rightUs,
+  ({String left, String right, bool named}) sides,
+) {
   if (leftUs == null || rightUs == null) {
     return null;
   }
@@ -321,7 +367,7 @@ String? _elapsedRelation(int? leftUs, int? rightUs) {
   if (leftMs == rightMs) {
     return 'same';
   }
-  return leftUs > rightUs ? 'left' : 'right';
+  return leftUs > rightUs ? sides.left : sides.right;
 }
 
 String _nameCount(int count) => count == 1 ? '1 widget' : '$count widgets';
@@ -448,6 +494,9 @@ String? _boardSentence(PlayedScenario? left, PlayedScenario? right) {
   if (leftBoard == null && rightBoard == null) {
     return null;
   }
+  if (leftBoard != null && rightBoard != null && leftBoard != rightBoard) {
+    return 'The boards are $leftBoard and $rightBoard.';
+  }
   return 'Left opened ${leftBoard ?? 'an unrecorded board'}. '
       'Right opened ${rightBoard ?? 'an unrecorded board'}.';
 }
@@ -501,16 +550,17 @@ Map<String, Object?> compareDocument({
           'right': i < right.length ? _column(right[i]) : null,
         },
     ],
-    'reading': besideReading(left, right),
+    'reading': besideReading(
+      left,
+      right,
+      leftName: leftPlay?.board,
+      rightName: rightPlay?.board,
+    ),
   };
 }
 
 Map<String, Object?> _column(BesideLine line) {
-  return {
-    'title': line.title,
-    'detail': line.detail,
-    'widgets': line.widgets,
-  };
+  return {'title': line.title, 'detail': line.detail, 'widgets': line.widgets};
 }
 
 /// One step of the side-by-side print.

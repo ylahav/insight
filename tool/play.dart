@@ -178,7 +178,8 @@ From a checkout: dart run tool/play.dart --out examples/exchange/1.json
 --out        Session file. Required.
 --scenario   Step file. Default examples/exchange/scenarios/answered-call.txt.
              Each line is "tap <key>" or "see <text>". "tap open" follows --board.
---board      bloc, riverpod, or plinth. Default bloc.
+--board      bloc, riverpod, wide, or plinth. Default bloc. The wide board
+             is the issue: every phone reads the whole switch.
 --device     flutter device id. Default windows.
 --flutter    Flutter tool to run. Default is flutter on PATH.
 --profile    Profile mode. This is the default.
@@ -189,7 +190,7 @@ compare --left <first> --right <second>.
 Leave the Insight tab closed.
 ''';
 
-const _boards = {'bloc', 'riverpod', 'plinth'};
+const _boards = {'bloc', 'riverpod', 'wide', 'plinth'};
 
 class _Options {
   _Options({
@@ -238,7 +239,7 @@ class _Options {
         case '--board':
           final value = next();
           if (value == null || !_boards.contains(value)) {
-            stderr.writeln('--board must be bloc, riverpod, or plinth.');
+            stderr.writeln('--board must be bloc, riverpod, wide, or plinth.');
             return null;
           }
           board = value;

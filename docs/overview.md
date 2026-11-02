@@ -86,7 +86,7 @@ Before you compare, check the envelope. `schemaVersion` is `1`. `flutter` is `3.
 
 ## Where an issue shows up
 
-**A widget you did not expect.** The title is the change you made. A name under it rebuilt in the following frame. On the exchange, dialing an idle line lists `LinePhone` for the caller and the called phone, and `SwitchDesk`. An idle phone is absent. A third `LinePhone` on that row rebuilt for a call it is not in.
+**A widget you did not expect.** The title is the change you made. A name under it rebuilt in the following frame. On the exchange, dialing an idle line lists `LinePhone` for the caller and the called phone, and `SwitchDesk`. An idle phone is absent. A third `LinePhone` on that row rebuilt for a call it is not in. The wide board is that row, and the reading is in [what-can-be-learned.md](what-can-be-learned.md).
 
 **The same change, a longer list.** Record the action twice, once in each arrangement, and read them with `compare`. The state title matches. The extra names are the widgets the wider tree rebuilt. The desk's `TicketCard` rows and the shelf's `MarkCard` rows are that finding.
 

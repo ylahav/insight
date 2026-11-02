@@ -51,6 +51,25 @@ class ExchangeActions extends InheritedWidget {
   }
 }
 
+/// When this is on, every phone reads the whole switch.
+///
+/// That is the issue: a line that is not in the call still rebuilds.
+/// The enamel board leaves this off, so a phone reads only its own line.
+class WholeSwitch extends InheritedWidget {
+  const WholeSwitch({required this.enabled, required super.child, super.key});
+
+  final bool enabled;
+
+  static bool of(BuildContext context) {
+    final scope = context.dependOnInheritedWidgetOfExactType<WholeSwitch>();
+    return scope?.enabled ?? false;
+  }
+
+  @override
+  bool updateShouldNotify(WholeSwitch oldWidget) =>
+      enabled != oldWidget.enabled;
+}
+
 /// Notifies a phone when its own line changes, and the cords when a call or
 /// a camp-on request changes.
 class ExchangeScope extends InheritedModel<int> {
@@ -64,6 +83,12 @@ class ExchangeScope extends InheritedModel<int> {
 
   /// Aspect for [SwitchDesk]. Line numbers start at 1.
   static const switchAspect = 0;
+
+  /// The whole switch. Every phone that calls this rebuilds on any change.
+  static Exchange of(BuildContext context) {
+    final scope = context.dependOnInheritedWidgetOfExactType<ExchangeScope>();
+    return scope!.exchange;
+  }
 
   static Line lineOf(BuildContext context, int number) {
     final scope = InheritedModel.inheritFrom<ExchangeScope>(
