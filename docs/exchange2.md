@@ -1,6 +1,6 @@
 # Exchange 2
 
-A proposal for a second example. The switch and the phones are separate programs. The phones talk to the switch over HTTP. The switch keeps each phone's current state, and a log of what happened, in a database. An Insight server reads the scenario and sends each step to the program that should run it.
+The second example. The switch and the phones are separate programs. The phones talk to the switch over HTTP. The switch keeps each phone's current state, and a log of what happened, in a database. An Insight server reads the scenario and sends each step to the program that should run it.
 
 This does not replace `examples/exchange`. That board stays the short pair: one process, Bloc beside Riverpod. The call rules stay the ones in [running-example.md](running-example.md). This file is how those rules sit across processes, and what a recording of each process shows.
 
@@ -80,7 +80,7 @@ An unknown line is HTTP 404. A digit while the phone is on hook is HTTP 409. The
 
 ## Database
 
-One SQLite file, `exchange2.db`, beside the switch process. The cubit holds the same facts in memory and emits them. The file is what survives a look at the desk after the command has returned. Insight never reads the file. The insert and the update are spans, and the desk widgets rebuild from the emit.
+One SQLite file, `exchange2.db`, beside the switch process. The switch keeps the same facts in memory and emits them. The file is what survives a look at the desk after the command has returned. Insight never reads the file. The insert and the update are spans, and the desk widgets rebuild from the emit.
 
 `lines` is the current state, one row per registered number. A change replaces that row.
 

@@ -136,3 +136,7 @@ Press Select file and choose the session. Add result chooses the recording to co
 ## A second board
 
 A later recording keeps Bloc and changes the board. `--board bloc` is the enamel phones. `--board plinth` is the same switch drawn with `PlinthPaper`, `PlinthBadge`, and `PlinthButton`. The taps stay phone 1 dials phone 2. The state row stays `ExchangeCubit`. The widget names are the difference. The sequence is in [roadmap.md](roadmap.md).
+
+## A switch and its phones
+
+`examples/exchange2` is the same call rules in two programs. The switch holds the lines and the log. Each phone is its own process. `play` does not start them. The scripts, the scenario commands, and what one recording of each process contains are in [exchange2.md](exchange2.md).

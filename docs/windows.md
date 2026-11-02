@@ -67,3 +67,5 @@ dart run tool/parser_check.dart --file path --flutter 3.44
 ```
 
 `record` writes the session itself. It does not start `insight_cli`.
+
+`examples/exchange2` is not one of those programs. It is a switch and a phone in the checkout. On Windows, `.\examples\exchange2\start.ps1` opens them, and `.\examples\exchange2\test.ps1` plays a scenario file. The first argument is `bloc`, `riverpod`, or `plinth`. The same commands from a checkout are `dart run examples/exchange2/start.dart` and `dart run examples/exchange2/test.dart`. What each recording shows is in [exchange2.md](exchange2.md).

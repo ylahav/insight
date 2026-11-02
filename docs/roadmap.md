@@ -20,6 +20,8 @@ Record the exchange twice, and read the files with `compare`. One ring with Bloc
 
 That pair is the use this alpha still owes. It comes before any new phase. The widget names should match, because both drivers paint the same board.
 
+`examples/exchange2` is a separate example, already in the tree. The switch and each phone are their own processes, and an Insight server sends the scenario to the program that should run a step. It does not replace the pair above. The programs, the scripts, and the recordings are in [exchange2.md](exchange2.md).
+
 ## Same switch, two boards
 
 After that pair, record the same ring on two boards. The state holder stays Bloc, so both files name `ExchangeCubit`. The board changes.

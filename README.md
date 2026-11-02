@@ -20,6 +20,7 @@ Flutter DevTools already charts frames. Insight lines a frame up with the bloc t
 | [docs/events.md](docs/events.md) | Schema version 1, the session file, and the agent wire format |
 | [docs/mvp.md](docs/mvp.md) | Three-phase scope, acceptance checks, and non-goals |
 | [docs/running-example.md](docs/running-example.md) | The switch example, with Bloc and Riverpod on one board |
+| [docs/exchange2.md](docs/exchange2.md) | The same rules across a switch and its phones |
 | [docs/roadmap.md](docs/roadmap.md) | What comes after the alpha |
 | [docs/windows.md](docs/windows.md) | The Windows installer, and the programs it contains |
 | [brand/logo.png](brand/logo.png) | The wordmark. The icon is [brand/icon.png](brand/icon.png) |
@@ -83,6 +84,19 @@ flutter run -d windows
 ```
 
 Choose a line count, open one driver, tap a phone, and dial another line. The called phone stays on hook with Ringing signal, and a cord blinks until that phone is clicked. Both phones then show Voice and the cord stays lit. An idle phone stays as it was. `01` waits for a busy line. When that line is free, the caller rings and hooks on, then hooks off, and only then the other phone rings. `01` after dialing your own number stays on Busy signal.
+
+## Run the switch and the phones
+
+`examples/exchange2` splits that board into two programs. The switch decides the call and keeps the log. Each phone is its own window. How to start them, and how a scenario drives them, is [docs/exchange2.md](docs/exchange2.md).
+
+From the repository root, on Windows:
+
+```powershell
+.\examples\exchange2\start.ps1 bloc
+.\examples\exchange2\test.ps1 bloc .\examples\exchange2\scenarios\answered-call.txt
+```
+
+The first argument is `bloc`, `riverpod`, or `plinth`. `start` takes a line count after that. The default is 3. From a checkout the same commands are `dart run examples/exchange2/start.dart` and `dart run examples/exchange2/test.dart`.
 
 ## Read two files
 
